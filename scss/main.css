@@ -81,6 +81,10 @@ body {
   margin: 0 18px;
 }
 
+.tit {
+  margin-bottom: 20px;
+}
+
 .Container {
   max-width: 640px;
   min-width: 270px;
@@ -101,8 +105,8 @@ body {
   background: var(--color-bg);
   margin: 0 auto;
   padding: 0 20px;
-  height: 80px;
-  line-height: 80px;
+  height: 70px;
+  line-height: 70px;
   box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.12);
   z-index: 100;
 }
@@ -117,7 +121,7 @@ body {
   width: 1.8rem;
 }
 #header .logoContainer .logo .txtLogo {
-  width: 5.8rem;
+  width: 5rem;
 }
 #header .logoContainer .sub {
   display: flex;
@@ -136,13 +140,13 @@ body {
 
 /***** 배너 ******/
 .bannerContainer {
-  margin: 80px 0 40px 0;
+  margin: 70px 0 40px 0;
   position: relative;
   font-family: "GmarketSansMedium";
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.bannerContainer .bannerWrap .bannerTxt {
+.bannerContainer .bannerWrap li .bannerTxt {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -150,46 +154,43 @@ body {
   color: var(--color-white);
   line-height: 1.2;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-.bannerContainer .bannerWrap .bannerTxt h3 {
+.bannerContainer .bannerWrap li .bannerTxt h3 {
   font-size: 18px;
   font-weight: 500;
 }
-.bannerContainer .bannerWrap .bannerTxt p {
+.bannerContainer .bannerWrap li .bannerTxt p {
   font-size: 20px;
   font-weight: 900;
 }
-.bannerContainer .bannerWrap .txt2 {
+.bannerContainer .bannerWrap li .txt2 {
   color: var(--color-text);
   text-align: end;
   bottom: 20px;
   line-height: 1.3;
   top: 25%;
   padding-right: 1.3rem;
-  text-shadow: none;
 }
-.bannerContainer .bannerWrap .txt2 p {
+.bannerContainer .bannerWrap li .txt2 p {
   margin-top: 1rem;
 }
-.bannerContainer .bannerWrap .txt2 strong {
+.bannerContainer .bannerWrap li .txt2 strong {
   color: #0038a2;
 }
-.bannerContainer .bannerWrap .txt2 span {
+.bannerContainer .bannerWrap li .txt2 span {
   display: block;
   margin-top: 0.2rem;
   font-size: 15px;
 }
-.bannerContainer .bannerWrap .txt4 {
+.bannerContainer .bannerWrap li .txt4 {
   text-align: start;
-  text-shadow: none;
   padding-left: 1.3rem;
   top: 10%;
 }
-.bannerContainer .bannerWrap .txt4 p {
+.bannerContainer .bannerWrap li .txt4 p {
   font-size: 25px;
 }
-.bannerContainer .bannerWrap img {
+.bannerContainer .bannerWrap li img {
   width: 100%;
   height: 30%;
 }
@@ -214,11 +215,11 @@ body {
 }
 .tktContainer .tktTit p img {
   margin-left: 5px;
-  width: 13px;
+  width: 14px;
 }
 .tktContainer .tktMenu .tktBar {
   font-size: 15px;
-  margin: 15px 0;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -233,7 +234,7 @@ body {
   display: block;
   content: "";
   border: 1px solid var(--color-gray2);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .tktMainList {
@@ -243,7 +244,7 @@ body {
   overflow: hidden;
 }
 .tktMainList #tktSlide a .tktImg img {
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
 }
 .tktMainList #tktSlide a .tktImg .label {
@@ -314,6 +315,7 @@ body {
   margin: 40px 30px;
   background: var(--color-gray0);
   border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 .myMenuContainer .myMenu ul {
   display: flex;
@@ -321,10 +323,11 @@ body {
   align-items: center;
 }
 .myMenuContainer .myMenu ul li {
-  border-right: 2px solid var(--color-white);
   padding: 0px 7px 10px 7px;
+  border-right: 2px solid var(--color-white);
 }
 .myMenuContainer .myMenu ul li a {
+  color: var(--color-gray4);
   text-align: center;
 }
 .myMenuContainer .myMenu ul li a img {
@@ -344,7 +347,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 .eventBannerContainer .event .eventTit h2 {
   font-size: 20px;
@@ -360,24 +362,29 @@ body {
 }
 .eventBannerContainer .event .eventTit p img {
   margin-left: 5px;
-  width: 13px;
+  width: 14px;
 }
 .eventBannerContainer .event .eventImg img {
   width: 100%;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .eventBannerContainer .playBannerContainer a img {
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0 30px 0;
 }
 
 /**** section 5 post ****/
+.postContainer .post {
+  overflow: hidden;
+  margin-right: 0;
+  padding-bottom: 40px;
+}
 .postContainer .post .postTit {
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 .postContainer .post .postTit h2 {
   font-size: 20px;
@@ -393,22 +400,99 @@ body {
 }
 .postContainer .post .postTit p img {
   margin-left: 5px;
-  width: 13px;
+  width: 14px;
 }
 .postContainer .post .postTxt {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
 }
 .postContainer .post .postTxt p {
   font-size: 14px;
+  line-height: 1.5;
 }
 .postContainer .post .postTxt a span {
-  width: 100%;
-  padding: 5px 10px;
-  border: 1px solid var(--color-text);
+  line-height: 1.5;
+  padding: 10px 15px;
+  background: var(--color-gray1);
   border-radius: 50px;
   font-size: 13px;
+  color: var(--color-gray5);
+}
+.postContainer #postSlide {
+  padding-top: 15px;
+}
+.postContainer #postSlide .postWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.postContainer #postSlide .postWrap li {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: var(--color-gray0);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+.postContainer #postSlide .postWrap li .postImg {
+  width: 100%;
+  overflow: hidden;
+}
+.postContainer #postSlide .postWrap li .postImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.postContainer #postSlide .postWrap li .postContent {
+  height: 140px;
+  padding: 10px;
+}
+.postContainer #postSlide .postWrap li .postContent p {
+  padding-top: 10px;
+  color: var(--color-gray5);
+}
+.postContainer #postSlide .postWrap li .postContent .showName {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.postContainer #postSlide .postWrap li .postContent .id, .postContainer #postSlide .postWrap li .postContent .review {
+  font-size: 10px;
+  color: var(--color-gray4);
+}
+.postContainer #postSlide .postWrap li .postContent .review {
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 2;
+}
+.postContainer #postSlide .postWrap li .postBtn {
+  display: flex;
+  padding: 0px 0px 10px 10px;
+}
+.postContainer #postSlide .postWrap li .postBtn button {
+  margin-right: 3px;
+  border: 0;
+  background: transparent;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.postContainer #postSlide .postWrap li .postBtn button img {
+  width: 100%;
+  height: 100%;
+}
+.postContainer #postSlide .postWrap li .postBtn span {
+  font-size: 12px;
+  line-height: 20px;
+  margin-right: 7px;
 }
 
 /*** section 6 feed ****/
@@ -416,7 +500,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 .feed .feedTit h2 {
   font-size: 20px;
@@ -432,7 +515,7 @@ body {
 }
 .feed .feedTit p img {
   margin-left: 5px;
-  width: 13px;
+  width: 14px;
 }
 
 .feedTag ul {
@@ -440,7 +523,7 @@ body {
   flex-wrap: wrap;
 }
 .feedTag ul li {
-  margin: 5px 10px 0 0;
+  margin: 0 10px 5px 0;
 }
 .feedTag ul li a span {
   font-size: 13px;

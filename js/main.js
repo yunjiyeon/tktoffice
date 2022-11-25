@@ -46,8 +46,20 @@ let showSlide = {
 const sSlide = new Swiper('#showSlide', showSlide)
 
 
+/***** post slide *****/
+let postSlide = {
+  slidesPerView : 2.2,
+  spaceBetween : 10,
+  loop : true,
+}
+const pSlide = new Swiper('#postSlide', postSlide)
 
 
+
+
+
+
+/****** tkt 클릭시 변동 ******/
 const $btn = $('.tktMenu li a');  //버튼역할하는 nav a를 변수로
 
 $btn.click(function(){
