@@ -81,17 +81,19 @@ body {
   margin: 0 18px;
 }
 
-.tit {
-  margin-bottom: 20px;
-}
-
 .Container {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none;
   max-width: 640px;
   min-width: 270px;
   background: var(--color-bg);
   margin: 0 auto;
   height: 100vh;
   color: var(--color-text);
+}
+.Container::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
 /***** 헤더 ******/
@@ -196,6 +198,18 @@ body {
 }
 
 /***** section 1 *****/
+.tit {
+  margin-bottom: 20px;
+}
+.tit p {
+  color: var(--color-gray3);
+  font-size: 12px;
+}
+.tit p img {
+  margin-left: 5px;
+  width: 12px;
+}
+
 .tktContainer .tktTit {
   display: flex;
   justify-content: space-between;
@@ -209,26 +223,30 @@ body {
   margin-left: 5px;
   vertical-align: bottom;
 }
-.tktContainer .tktTit p {
-  color: var(--color-gray3);
-  font-size: 13px;
-}
-.tktContainer .tktTit p img {
-  margin-left: 5px;
-  width: 14px;
-}
 .tktContainer .tktMenu .tktBar {
-  font-size: 15px;
-  margin-bottom: 15px;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 }
 .tktContainer .tktMenu .tktBar a {
   color: var(--color-gray3);
+  padding-bottom: 20px;
 }
 .tktContainer .tktMenu .tktBar .tktActive {
+  position: relative;
   color: var(--color-text);
+}
+.tktContainer .tktMenu .tktBar .tktActive::after {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: var(--color-text);
+  z-index: 1;
 }
 .tktContainer .tktMenu::after {
   display: block;
@@ -239,7 +257,7 @@ body {
 
 .tktMainList {
   margin: initial;
-  padding: 30px 0 20px 0;
+  padding: 20px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -277,9 +295,9 @@ body {
   text-overflow: ellipsis;
 }
 .tktMainList #tktSlide .tktTxt .tktBtn {
-  padding: 12px 35px;
+  padding: 10px 25px;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 13px;
   background: var(--color-accent);
   color: var(--color-white);
 }
@@ -320,14 +338,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
 }
 .myMenuContainer .myMenu ul li {
   width: 25%;
-  margin: 5px;
+  margin: 3.75px;
   text-align: center;
 }
 .myMenuContainer .myMenu ul li a {
+  display: block;
   color: var(--color-gray4);
 }
 .myMenuContainer .myMenu ul li a .myMenuImg {
@@ -347,7 +366,7 @@ body {
   font-size: 12px;
 }
 .myMenuContainer .myMenu ul li a span:last-child {
-  padding-top: 10px;
+  padding-top: 3px;
 }
 
 /***** section 4 ******/
@@ -363,14 +382,6 @@ body {
   width: 25px;
   margin-left: 5px;
   vertical-align: bottom;
-}
-.eventBannerContainer .event .eventTit p {
-  color: var(--color-gray3);
-  font-size: 13px;
-}
-.eventBannerContainer .event .eventTit p img {
-  margin-left: 5px;
-  width: 14px;
 }
 .eventBannerContainer .event .eventImg img {
   width: 100%;
@@ -402,14 +413,6 @@ body {
   margin-left: 5px;
   vertical-align: bottom;
 }
-.postContainer .post .postTit p {
-  color: var(--color-gray3);
-  font-size: 13px;
-}
-.postContainer .post .postTit p img {
-  margin-left: 5px;
-  width: 14px;
-}
 .postContainer .post .postTxt {
   display: flex;
   justify-content: space-between;
@@ -417,12 +420,12 @@ body {
   padding-right: 20px;
 }
 .postContainer .post .postTxt p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
 }
 .postContainer .post .postTxt a span {
   line-height: 1.5;
-  padding: 10px 15px;
+  padding: 7px 13px;
   background: var(--color-gray1);
   border-radius: 50px;
   font-size: 13px;
@@ -517,14 +520,6 @@ body {
   margin-left: 5px;
   vertical-align: bottom;
 }
-.feed .feedTit p {
-  color: var(--color-gray3);
-  font-size: 13px;
-}
-.feed .feedTit p img {
-  margin-left: 5px;
-  width: 14px;
-}
 
 .feedTag ul {
   display: flex;
@@ -553,7 +548,11 @@ body {
   background: var(--color-bg);
   z-index: 150;
   overflow-y: scroll;
-  box-sizing: content-box;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none;
+}
+#gnb::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
 .gnbContainer {

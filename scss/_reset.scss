@@ -67,14 +67,17 @@ body{
 .inner {
   margin: 0 18px;
 }
-.tit {
-  margin-bottom: 20px;
-}
 .Container { 
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; 
   max-width: 640px;
   min-width: 270px;
   background: var(--color-bg);
   margin: 0 auto;
   height: 100vh;
   color: var(--color-text);
+  &::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+  }
 }

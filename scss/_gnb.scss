@@ -9,7 +9,11 @@
   background: var(--color-bg);
   z-index: 150;
   overflow-y: scroll;
-  box-sizing: content-box;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; 
+  &::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+  }
 }
 
 .gnbContainer {
