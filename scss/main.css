@@ -1,0 +1,627 @@
+@charset "UTF-8";
+:root {
+  --color-bg: #ffffff;
+  --color-white: #ffffff;
+  --color-gray0: #f5f5f5;
+  --color-gray1: #eeeeee;
+  --color-gray2: #dddddd;
+  --color-gray3: #777777;
+  --color-gray4: #555555;
+  --color-text: #222222;
+  --color-accent: #e50914;
+}
+
+html.dark {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-grey: #585a5e;
+  --color-gray1: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+section,
+aside,
+article,
+footer,
+nav,
+menu,
+details,
+figure,
+figcaption {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "NanumSquareNeo-Variable";
+  color: var(--color-text);
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.inner {
+  margin: 0 20px;
+}
+
+.Container {
+  max-width: 640px;
+  min-width: 270px;
+  background: var(--color-bg);
+  margin: 0 auto;
+  height: 100vh;
+  color: var(--color-text);
+}
+
+/***** 헤더 ******/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 270px;
+  background: var(--color-bg);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+#header .logoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#header .logoContainer .logo h1 span {
+  display: none;
+}
+#header .logoContainer .logo .imgLogo {
+  width: 1.8rem;
+}
+#header .logoContainer .logo .txtLogo {
+  width: 5.8rem;
+}
+#header .logoContainer .sub {
+  display: flex;
+  align-items: center;
+}
+#header .logoContainer .sub span {
+  font-size: 1px;
+  cursor: pointer;
+  line-height: 28.8px;
+  color: transparent;
+}
+#header .logoContainer .sub img {
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+/***** 배너 ******/
+.bannerContainer {
+  margin: 80px 0 40px 0;
+  position: relative;
+  font-family: "GmarketSansMedium";
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.bannerContainer .bannerWrap .bannerTxt {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: var(--color-white);
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.bannerContainer .bannerWrap .bannerTxt h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.bannerContainer .bannerWrap .bannerTxt p {
+  font-size: 20px;
+  font-weight: 900;
+}
+.bannerContainer .bannerWrap .txt2 {
+  color: var(--color-text);
+  text-align: end;
+  bottom: 20px;
+  line-height: 1.3;
+  top: 25%;
+  padding-right: 1.3rem;
+  text-shadow: none;
+}
+.bannerContainer .bannerWrap .txt2 p {
+  margin-top: 1rem;
+}
+.bannerContainer .bannerWrap .txt2 strong {
+  color: #0038a2;
+}
+.bannerContainer .bannerWrap .txt2 span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 15px;
+}
+.bannerContainer .bannerWrap .txt4 {
+  text-align: start;
+  text-shadow: none;
+  padding-left: 1.3rem;
+  top: 10%;
+}
+.bannerContainer .bannerWrap .txt4 p {
+  font-size: 25px;
+}
+.bannerContainer .bannerWrap img {
+  width: 100%;
+  height: 30%;
+}
+
+/***** section 1 *****/
+.tktContainer .tktTit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tktContainer .tktTit h2 {
+  font-size: 20px;
+}
+.tktContainer .tktTit h2 img {
+  width: 25px;
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+.tktContainer .tktTit p {
+  color: var(--color-gray3);
+  font-size: 13px;
+}
+.tktContainer .tktTit p img {
+  margin-left: 5px;
+  width: 13px;
+}
+.tktContainer .tktMenu .tktBar {
+  font-size: 15px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tktContainer .tktMenu .tktBar a {
+  color: var(--color-gray3);
+}
+.tktContainer .tktMenu .tktBar .tktActive {
+  color: var(--color-text);
+}
+.tktContainer .tktMenu::after {
+  display: block;
+  content: "";
+  border: 1px solid var(--color-gray2);
+  opacity: 0.5;
+}
+
+.tktMainList {
+  margin: initial;
+  padding: 30px 0 20px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.tktMainList #tktSlide a .tktImg img {
+  width: 80%;
+  border-radius: 10px;
+}
+.tktMainList #tktSlide a .tktImg .label {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 10%;
+  border-radius: 0;
+  box-shadow: none;
+}
+.tktMainList #tktSlide .tktTxt {
+  margin: 0 10px;
+}
+.tktMainList #tktSlide .tktTxt h3 {
+  font-size: 18px;
+  color: var(--color-text);
+  margin: 18px 0 10px 0;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tktMainList #tktSlide .tktTxt p {
+  color: var(--color-gray3);
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tktMainList #tktSlide .tktTxt .tktBtn {
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-size: 14px;
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+/***** section 2 *****/
+.showList {
+  overflow: hidden;
+  margin: 10px 0px 0 20px;
+}
+.showList h2 {
+  margin: 30px 0 15px 0;
+  font-weight: 100;
+  font-size: 18px;
+}
+.showList img {
+  width: 100%;
+  border-radius: 10px;
+}
+.showList::before {
+  display: block;
+  content: "";
+  border: 1px solid var(--color-gray2);
+  opacity: 0.3;
+  margin-right: 20px;
+}
+
+/****** section 3 *******/
+.myMenuContainer {
+  width: 100%;
+}
+.myMenuContainer .myMenu {
+  position: relative;
+  margin: 40px 30px;
+  background: var(--color-gray0);
+  border-radius: 15px;
+}
+.myMenuContainer .myMenu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myMenuContainer .myMenu ul li {
+  border-right: 2px solid var(--color-white);
+  padding: 0px 7px 10px 7px;
+}
+.myMenuContainer .myMenu ul li a {
+  text-align: center;
+}
+.myMenuContainer .myMenu ul li a img {
+  width: 100%;
+  padding: 10px 15px;
+}
+.myMenuContainer .myMenu ul li a span {
+  display: block;
+  font-size: 14px;
+}
+.myMenuContainer .myMenu ul li:last-child {
+  border-right: 0;
+}
+
+/***** section 4 ******/
+.eventBannerContainer .event .eventTit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.eventBannerContainer .event .eventTit h2 {
+  font-size: 20px;
+}
+.eventBannerContainer .event .eventTit h2 img {
+  width: 25px;
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+.eventBannerContainer .event .eventTit p {
+  color: var(--color-gray3);
+  font-size: 13px;
+}
+.eventBannerContainer .event .eventTit p img {
+  margin-left: 5px;
+  width: 13px;
+}
+.eventBannerContainer .event .eventImg img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.eventBannerContainer .playBannerContainer a img {
+  width: 100%;
+  margin: 40px 0;
+}
+
+/**** section 5 post ****/
+/*** section 6 feed ****/
+.feed .feedTit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.feed .feedTit h2 {
+  font-size: 20px;
+}
+.feed .feedTit h2 img {
+  width: 25px;
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+.feed .feedTit p {
+  color: var(--color-gray3);
+  font-size: 13px;
+}
+.feed .feedTit p img {
+  margin-left: 5px;
+  width: 13px;
+}
+
+.feedTag ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedTag ul li {
+  margin: 5px 10px 0 0;
+}
+.feedTag ul li a span {
+  font-size: 13px;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid var(--color-text);
+  border-radius: 50px;
+  width: 100%;
+}
+
+#gnb {
+  position: fixed;
+  top: 0;
+  right: -640px;
+  bottom: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  min-width: 270px;
+  height: 100vh;
+  background: var(--color-bg);
+  z-index: 150;
+  overflow-y: scroll;
+  box-sizing: content-box;
+}
+
+.gnbContainer {
+  max-width: 640px;
+  min-width: 270px;
+  background: #222222;
+}
+.gnbContainer .gnbTop {
+  margin: 0px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnbContainer .gnbTop h2 {
+  height: 80px;
+  line-height: 80px;
+}
+.gnbContainer .gnbTop h2 span {
+  display: none;
+}
+.gnbContainer .gnbTop h2 img {
+  width: 3.5rem;
+}
+.gnbContainer .gnbTop .close img {
+  width: 1.8rem;
+  cursor: pointer;
+}
+.gnbContainer .loginContainer {
+  margin: 10px 20px 0 20px;
+}
+.gnbContainer .loginContainer h3 {
+  display: block;
+  font-size: 20px;
+}
+.gnbContainer .loginContainer a {
+  color: #ffffff;
+}
+.gnbContainer .loginContainer .loginBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 20px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+.gnbContainer .loginContainer .loginBox .login a:nth-child(1) {
+  margin-right: 5px;
+}
+.gnbContainer .loginContainer .loginBox .login a:nth-child(2) {
+  margin-left: 5px;
+}
+
+.gnbBack {
+  background: var(--color-bg);
+  border-top: 10px solid var(--color-accent);
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+}
+.gnbBack .gnbBox {
+  margin: 40px 20px 0 20px;
+}
+.gnbBack .gnbBox .gnbTit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.gnbBack .gnbBox .gnbTit h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--color-accent);
+}
+.gnbBack .gnbBox .gnbTit p {
+  font-size: 13px;
+}
+.gnbBack .gnbBox .gnbTit p a {
+  color: var(--color-gray3);
+}
+.gnbBack .gnbBox .gnbTit p a img {
+  width: 13px;
+}
+
+.gnbMenuContainer .gnbMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.gnbMenuContainer .gnbMenu li {
+  width: 21%;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.gnbMenuContainer .gnbMenu li a {
+  line-height: 1.3;
+}
+.gnbMenuContainer .gnbMenu li a .imgBox {
+  border-radius: 50%;
+  background: var(--color--bg);
+  border: 1px solid var(--color-gray2);
+}
+.gnbMenuContainer .gnbMenu li a .imgBox img {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  opacity: 1;
+}
+.gnbMenuContainer .gnbMenu span {
+  margin-top: 10px;
+  display: block;
+}
+
+.darkMode {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 토글 버튼 */
+}
+.darkMode button {
+  border: 0;
+  background: transparent;
+  padding: 20px 0px 20px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 800;
+}
+.darkMode .toggleSwitch {
+  width: 40px;
+  margin: 13px 13px 13px 7px;
+  height: 20px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 2px solid #222222;
+  cursor: pointer;
+}
+.darkMode .toggleSwitch .toggleButton {
+  /* 버튼은 토글보다 작아야함  */
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #222222;
+}
+.darkMode #toggle:checked ~ .toggleSwitch {
+  background: #222222;
+}
+.darkMode #toggle:checked ~ .toggleSwitch .toggleButton {
+  left: calc(100% - 18px);
+  background: #fff;
+}
+.darkMode .toggleSwitch, .darkMode .toggleButton {
+  transition: all 0.2s ease-in;
+}
+
+.notice {
+  background: var(--color-gray0);
+}
+.notice p {
+  line-height: 80px;
+  margin: 30px 30px 0 30px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gnbBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.gnbBottom .sns ul {
+  display: flex;
+}
+.gnbBottom .sns ul a {
+  margin-right: 10px;
+}
+.gnbBottom .sns ul a img {
+  width: 50px;
+}
+.gnbBottom .alram {
+  font-size: 13px;
+  margin-right: 10px;
+}
+.gnbBottom .alram a:nth-child(1) {
+  margin-right: 5px;
+}
+.gnbBottom .alram a:nth-child(2) {
+  margin-left: 5px;
+}/*# sourceMappingURL=main.css.map */

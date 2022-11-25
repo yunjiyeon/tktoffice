@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매표소</title>
+  <link rel="stylesheet" href="scss/reset.css" />
+  <link rel="stylesheet" href="scss/main.css" />
+  <script src="https://kit.fontawesome.com/364ad93dfb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="Container">
+    <!-- header -->
+    <header id="header">
+      <div class="logoContainer">
+        <div class="logo">
+          <a href="index.html">
+            <h1><span>매표소</span>
+              <img class="imgLogo" src="img/mps_logo_dark.png" alt="이미지로고">
+              <img class="txtLogo" src="img/textlog_dark.png" alt="텍스트로고">
+            </h1>    
+          </a>
+        </div>
+        <div class="sub">
+          <a href="#"><img src="img/ticket.png" alt="티켓" /></a>
+          <span class="btnSub"><img src="img/ham_dark.png" alt="메뉴바" />메뉴</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner  -->
+    <div id="banner">
+      <div class="bannerContainer">
+        <div id="bannerSlide" class="swiper-container">
+          <ul class="bannerWrap swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="bannerTxt txt1">
+                  <h3>㉬매표소 단독 티켓 선오픈</h3>
+                  <p>뮤지컬 [모딜리아니], [에곤 실레]</p>
+                </div>
+                <img src="img/banner1.jpg" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <div class="bannerTxt txt2">
+                  <h3>LUCY 앵콜 콘서트</h3>
+                  <p>㉬매표소<br><strong>단독 좌석</strong> 예매</p>
+                  <span>어디에서도 볼 수 없는 단독 판매 좌석</span><br>
+                </div>
+                <img src="img/banner2-2.jpg" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <div class="bannerTxt txt3">
+                  <h3>Johnny's World</h3>
+                  <p>조니 스팀슨 내한공연</p>
+                </div>
+                <img src="img/banner3.jpg" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <div class="bannerTxt txt4">
+                  <h3>슬픔과 환희의 하모니</h3>
+                  <p>음악극 &lt;올드위키드송&gt;</p>
+                  <span>㉬매표소 예약시 예매 수수료 무료!</span>
+                </div>
+                <img src="img/banner4.jpg" alt="" />
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 1 / ticketing -->
+    <section class="tktContainer">
+      <div class="ticketing inner">
+        <div class="tktTit">
+          <h2>예매<img src="img/tkt.png" alt=""></h2>
+          <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
+        </div>
+        <div class="tktMenu">
+          <ul class="tktBar">
+            <li><a class="tktActive" href="#" class="btnAll">예매 전체</a></li>
+            <li><a href="#" class="btnPlay">연극</a></li>
+            <li><a href="#" class="btnMusical">뮤지컬</a></li>
+            <li><a href="#" class="btnConcert">콘서트</a></li>
+            <li><a href="#" class="btnExhibit">전시/행사</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tktMainList">
+        <div id="tktSlide" class="swiper-container">
+          <ul class="tktWrap swiper-wrapper">
+              <li class="swiper-slide all musical">
+                <a href="#">
+                  <div class="tktImg">
+                    <img class="label" src="img/seoul.png" alt="">
+                    <img src="img/main1.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>[매표소SEAT] 뮤지컬 CATS 오리지널 내한</h3>
+                      <p>2022.11.20 ~ 2023.03.20 | 세종 예술 극장</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all play">
+                <a href="#">
+                  <div class="tktImg">
+                    <img src="img/main2.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>연극 &lt; 옥탑방 고양이 &gt;</h3>
+                      <p>OPEN RUN | 대학로 틴틴홀</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all play">
+                <a href="#">
+                  <div class="tktImg">
+                    <img src="img/main3.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>연극 &lt; 2호선 세입자 &gt;</h3>
+                      <p>2022.01.14 ~ 2022.12.31 | 대학로 바탕골 소극장</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all concert">
+                <a href="#">
+                  <div class="tktImg">
+                    <img class="label" src="img/busan.png" alt="">
+                    <img src="img/main4.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>[부산] 2022 백지영 전국 투어 콘서트 &lt; GO BAEK &gt;</h3>
+                      <p>2022.11.29 ~ 2022.11.30 | KBS부산홀</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all play">
+                <a href="#">
+                  <div class="tktImg">
+                    <img src="img/main5.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                    <h3>연극 &lt; 한뼘사이 &gt;</h3>
+                      <p>2021.03.19 ~ 2022.12.31 | 라온아트홀</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all exhibit">
+                <a href="#">
+                  <div class="tktImg">
+                    <img src="img/main6.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>[전시] 프랑코 폰타나 : 컬러 인 라이프</h3>
+                      <p>2022.09.30 ~ 2023.03.01 | 마이아트뮤지엄</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all play">
+                <a href="#">
+                  <div class="tktImg">
+                    <img src="img/main7.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>연극 &lt; 수상한 흥신소 &gt;</h3>
+                      <p>OPEN RUN | 큐씨어터</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all musical">
+                <a href="#">
+                  <div class="tktImg">
+                    <img class="label" src="img/sejong.png" alt="">
+                    <img src="img/main8.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>뮤지컬 &lt; 엘리자벳 &gt; 10주년 기념공연</h3>
+                      <p>2022.12.02 ~ 2022.12.04 | 청주예술의전당</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide all concert">
+                <a href="#">
+                  <div class="tktImg">
+                    <img src="img/main9.jpg" alt="" />
+                  </div>
+                  <div class="tktTxt">               
+                      <h3>위아이 WEi FAN CONCERT - MERRY RUi DAY</h3>
+                      <p>2022.12.10 ~ 2022.12.11 | K-LIVE HALL</p>
+                      <a class="tktBtn" href="#">지금 예매</a>
+                  </div>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 공연 정보 -->
+    <section class="showList">
+      <div class="showLineup">
+        <!-- href = "#" 최상단으로 올라가는거 막는방법 href="javascript:void(0);" -->
+        <h2>11-12月 공연 라인업 ✅</h2>
+        <div id="showSlide" class="swiper-container">
+          <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert1.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert2.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert3.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert4.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert5.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert6.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert7.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert8.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert9.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert10.jpg" alt=""></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#"><img src="img/concert11.jpg" alt=""></a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="playList">
+        <h2>코믹? 멜로? 드라마? 원하는 모든 것 😍</h2>
+        <div id="showSlide" class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play1.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play3.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"><img src="img/play2.jpg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- section 3 마이 메뉴 -->
+    <section class="myMenuContainer">
+      <div class="myMenu">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/mymenu1.png" alt="">
+              <span>마이티켓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/mymenu2.png" alt="">
+              <span>포토티켓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/mymenu3.png" alt="">
+              <span>스탬프</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/mymenu4.png" alt="">
+              <span>제휴/할인</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section 4 event -->
+    <section class="eventBannerContainer">
+      <div class="event inner">
+        <div class="eventTit"> <!-- 이미지 아이콘 이벤트로 바꾸기-->
+          <h2>이벤트<img src="img/tkt.png" alt=""></h2>
+          <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
+        </div>
+        <div class="eventImg">
+          <a href="#">
+            <img src="img/event2.png" alt="">
+          </a>
+        </div>
+        <div class="eventImg">
+          <a href="#">
+            <img src="img/event1.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="playBannerContainer">
+        <a href="#">
+          <img src="img/banner5.png" alt="">
+        </a>
+      </div>
+    </section>
+
+    <!-- section 5 post -->
+    <section class="postContainer">
+      <div class="post inner">
+        <div class="postTit"> <!-- 이미지 아이콘 포스트로 바꾸기-->
+          <h2>포스트<img src="img/tkt.png" alt=""></h2>
+          <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
+        </div>
+        <div class="postTxt">
+          <p>이번 관람은 어떠셨나요?<br>나만의 포스트를 남겨 보세요.</p>
+          <a href="#"><span>포스트 쓰기</span></a>
+        </div>
+        <div class="postList">
+          <ul><li><a href=""><img src="" alt=""></a></li></ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- section 6 feed -->
+    <section class="feedContainer inner">
+      <div class="feed">
+        <div class="feedTit"> <!-- 이미지 아이콘 피드로 바꾸기-->
+          <h2>피드<img src="img/tkt.png" alt=""></h2>
+          <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
+        </div>
+      </div>
+      <div class="feedTag">
+        <ul>
+          <li>
+            <a href="#"><span># 연극</span></a>
+          </li>
+          <li>
+            <a href="#"><span># 뮤지컬</span></a>
+          </li>
+          <li>
+            <a href="#"><span># 티켓 오픈</span></a>
+          </li>
+          <li>
+            <a href="#"><span># 루시 콘서트</span></a>
+          </li>
+          <li>
+            <a href="#"><span># 옥탑방 고양이</span></a>
+          </li>
+          <li>
+            <a href="#"><span># 11월 전시</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div> 
+
+  <!-- sub menu -->
+  <div id="gnb">
+    <div class="gnbContainer">
+      <div class="gnbTop">
+        <h2>
+          <a href="#">
+            <span>매표소</span>
+            <img src="img/logo_W.png" alt="">
+          </a>
+        </h2>
+        <div class="close"><img src="img/close_w.png" alt=""></div>
+      </div>
+      
+      <div class="loginContainer">
+        <h3><a href="#">로그인을 해 주세요:)</a></h3>
+        <div class="loginBox">
+          <div class="login">
+            <a href="#">
+              <span>로그인</span>
+            </a> | 
+            <a href="#">
+              <span>회원가입</span>
+            </a>
+          </div>
+          <p><a href="#">비회원 예매확인</a></p>
+        </div>
+      </div>
+      <div class="gnbBack">
+        <div class="gnbBox">
+          <div class="gnbTit">
+            <h3>QUICK MENU</h3>
+            <p><a href="#">전체 메뉴 보기
+              <img src="img/b-right.png" alt=""></a></p><!-- 아래 방향 화살표로 이미지 바꾸기-->
+          </div>
+          <div class="gnbMenuContainer">
+            <ul class="gnbMenu">
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/play_icon4.png" alt=""></div>
+                  <span>연극<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/musical_icon.png" alt=""></div>
+                  <span>뮤지컬<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/concert_icon2.png" alt=""></div>
+                  <span>콘서트<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/exhibit_icon.png" alt=""></div>
+                  <span>전시/행사<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/store_icon.png" alt=""></div>
+                  <span>스토어</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/sale_icon.png" alt=""></div>
+                  <span>제휴/할인</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/event_icon.png" alt=""></div>
+                  <span>이벤트</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/qna_icon.png" alt=""></div>
+                  <span>상담톡</span>
+                </a>
+              </li>
+            </ul>
+            <div class="darkMode">
+              <button>다크모드</button>
+              <input type="checkbox" id="toggle" hidden> 
+              <label for="toggle" class="toggleSwitch">
+                <span class="toggleButton"></span>
+              </label>
+            </div>
+            <div class="notice">
+              <p>[공지] 서버 점검 안내 (2022.11.29 am 12:00 ~ 2022.11.30 am 05:00)</p>
+            </div>
+            <div class="gnbBottom">
+              <div class="sns">
+                <ul>
+                  <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/instagrame.png" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="alram">
+                <a href="#"><sapn>알림함</span></a> | 
+                <a href="#"><span>고객센터</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
