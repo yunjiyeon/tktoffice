@@ -6,7 +6,6 @@
   margin: 0 auto;
   max-width: 640px;
   min-width: 270px;
-  height: 100vh;
   background: var(--color-bg);
   z-index: 150;
   overflow-y: scroll;
@@ -17,7 +16,7 @@
   max-width: 640px;
   min-width: 270px;
   background: #222222;
-
+  height: 100vh;
   .gnbTop{
     margin: 0px 20px 0 20px;        
     @include flex-style;
@@ -69,7 +68,11 @@
   background: var(--color-bg);
   border-top: 10px solid var(--color-accent);
   border-radius: 20px 20px 0 0;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 200px;
   .gnbBox{
     margin: 40px 20px 0 20px;
     .gnbTit{
@@ -125,7 +128,7 @@
   }
 
 .darkMode{
-  padding: 30px;
+  margin: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -133,7 +136,7 @@
     button{
       border: 0;
       background: transparent;
-      padding: 20px 0px 20px 20px;
+      padding: 10px 0px 10px 20px;
       cursor: pointer;
       font-size: 15px;
       font-weight: 800;
@@ -180,7 +183,7 @@
   background: var(--color-gray0);
   p{
     line-height: 80px;
-    margin: 30px 30px 0 30px;
+    margin: 0 30px;
     font-size: 13px;
     white-space: nowrap;
     overflow: hidden;
