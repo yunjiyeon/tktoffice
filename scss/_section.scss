@@ -1,4 +1,15 @@
 /***** section 1 *****/
+.tit {
+  margin-bottom: 20px;
+  p {
+    color: var(--color-gray3);
+    font-size: 12px;
+    img {
+      margin-left: 5px;
+      width: 12px;
+    }
+  }
+}
 .tktContainer {
   .tktTit {
     display: flex;
@@ -10,25 +21,30 @@
         @include titImg-style;
       }
     }
-    p {
-      color: var(--color-gray3);
-      font-size: 13px;
-      img {
-        margin-left: 5px;
-        width: 14px;
-      }
-    }
   }
+  
   .tktMenu {
     .tktBar {
-      font-size: 15px;
-      margin-bottom: 15px;
+      font-size: 14px;
       @include flex-style;
+      margin-bottom: 5px;
       a {
         color: var(--color-gray3);
+        padding-bottom: 20px;
       }
       .tktActive {
+        position: relative;
         color: var(--color-text);
+        &::after{
+          position: absolute;
+          bottom: 13px;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 3px;
+          background: var(--color-text);
+          z-index: 1;
+        }
       }
     }
     &::after {
@@ -39,9 +55,10 @@
     }
   }
 }
+
 .tktMainList {
   margin: initial;
-  padding: 30px 0 20px 0;
+  padding: 20px 0;
   text-align: center;
   overflow: hidden;
   #tktSlide {
@@ -50,7 +67,6 @@
         img {
           width: 90%;
           border-radius: 10px;
-          //box-shadow: 3px 3px 6px rgba(0,0,0, 0.5);
         }
         .label{
           position: absolute;
@@ -84,9 +100,9 @@
         text-overflow: ellipsis;
       }
       .tktBtn{
-        padding: 12px 35px;
+        padding: 10px 25px;
         border-radius: 50px;
-        font-size: 14px;
+        font-size: 13px;
         background: var(--color-accent);
         color: var(--color-white);
       }
@@ -128,12 +144,13 @@
     border-radius: 10px;
     ul{
       @include flex-style;
-      padding: 10px 20px;
+      padding: 10px;
       li{
         width: 25%;
-        margin: 5px;
+        margin: 3.75px;
         text-align: center;
         a{
+          display: block;
           color: var(--color-gray4);
           .myMenuImg{
             width: 50px;
@@ -151,7 +168,7 @@
             display: block;
             font-size: 12px;
             &:last-child{
-              padding-top: 10px;
+              padding-top: 3px;
             }
           }
         }
@@ -169,14 +186,6 @@
         font-size: 20px;
         img{
           @include titImg-style;
-        }
-      }
-      p {
-        color: var(--color-gray3);
-        font-size: 13px;
-        img {
-          margin-left: 5px;
-          width: 14px;
         }
       }
     }
@@ -214,27 +223,19 @@
           @include titImg-style;
         }
       }
-      p {
-        color: var(--color-gray3);
-        font-size: 13px;
-        img {
-          margin-left: 5px;
-          width: 14px;
-        }
-      }
     }
     .postTxt{
       @include flex-style;
       padding-right: 20px;
 
       p{
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.5;
       }
       a{
         span{
           line-height: 1.5;
-          padding: 10px 15px;
+          padding: 7px 13px;
           background: var(--color-gray1);
           border-radius: 50px;
           font-size: 13px;
@@ -320,8 +321,6 @@
     }
   }
 }
-  
-
 
 /*** section 6 feed ****/
 .feed{
@@ -331,14 +330,6 @@
       font-size: 20px;
       img{
         @include titImg-style;
-      }
-    }
-    p {
-      color: var(--color-gray3);
-      font-size: 13px;
-      img {
-        margin-left: 5px;
-        width: 14px;
       }
     }
   }
