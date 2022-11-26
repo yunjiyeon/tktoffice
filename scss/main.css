@@ -275,7 +275,7 @@ body {
   margin: 0 10px;
 }
 .tktMainList #tktSlide .tktTxt h3 {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--color-text);
   margin: 15px 0 8px 0;
   font-weight: 900;
@@ -582,8 +582,8 @@ body {
   left: 50%;
   transform: translate(-50%, -70%);
   text-align: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: 0;
   padding: 15px 15px 15px 20px;
   background: var(--color-accent);
@@ -619,7 +619,7 @@ footer {
   color: var(--color-gray3);
 }
 footer .footerMenu {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   display: flex;
   justify-content: center;
