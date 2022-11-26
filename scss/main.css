@@ -440,22 +440,16 @@ body {
   align-items: center;
 }
 .postContainer #postSlide .postWrap li {
-  width: 100%;
-  height: 100%;
   border-radius: 10px;
   background: var(--color-gray0);
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
-}
-.postContainer #postSlide .postWrap li .postImg {
-  width: 100%;
   overflow: hidden;
 }
-.postContainer #postSlide .postWrap li .postImg img {
+.postContainer #postSlide .postWrap li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px 10px 0 0;
 }
 .postContainer #postSlide .postWrap li .postContent {
   height: 140px;
@@ -507,34 +501,77 @@ body {
 }
 
 /*** section 6 feed ****/
-.feed .feedTit {
+.feedContainer {
+  height: 530px;
+  overflow: hidden;
+}
+.feedContainer .feed .feedTit {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.feed .feedTit h2 {
+.feedContainer .feed .feedTit h2 {
   font-size: 20px;
 }
-.feed .feedTit h2 img {
+.feedContainer .feed .feedTit h2 img {
   width: 25px;
   margin-left: 5px;
   vertical-align: bottom;
 }
-
-.feedTag ul {
+.feedContainer .feedTag ul {
   display: flex;
   flex-wrap: wrap;
 }
-.feedTag ul li {
+.feedContainer .feedTag ul li {
   margin: 0 10px 5px 0;
 }
-.feedTag ul li a span {
-  font-size: 13px;
+.feedContainer .feedTag ul li a span {
+  font-size: 11px;
   display: block;
   padding: 5px 10px;
   border: 1px solid var(--color-text);
   border-radius: 50px;
   width: 100%;
+}
+.feedContainer .feedList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.feedContainer .feedList article {
+  margin-top: 10px;
+  width: 48%;
+  height: 200px;
+}
+.feedContainer .feedList article div {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+.feedContainer .feedList article div a {
+  display: block;
+}
+.feedContainer .feedList article div a h3 {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 100;
+  text-align: center;
+}
+.feedContainer .feedList article div a img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
 }
 
 #gnb {

@@ -14,6 +14,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -368,9 +369,7 @@
           <ul class="postWrap swiper-wrapper">
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-1.jpg" alt="">
-                </div>
+                <img class="" src="img/post-1.jpg" alt="">
                 <div class="postContent">
                   <p class="id">jaeaje1**</p>
                   <p class="showName">&lt;연극&gt; 2호선 세입자</p>
@@ -390,9 +389,7 @@
             </li>
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-2.jpg" alt="">
-                </div>
+                <img class="" src="img/post-2.jpg" alt="">
                 <div class="postContent">
                   <p class="id">happy5**</p>
                   <p class="showName">&lt;연극&gt; 운빨로맨스</p>
@@ -412,9 +409,7 @@
             </li>
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-3.jpg" alt="">
-                </div>
+                <img class="" src="img/post-3.jpg" alt="">
                 <div class="postContent">
                   <p class="id">iulo**</p>
                   <p class="showName">&lt;콘서트&gt; IU 콘서트 Golden Hour</p>
@@ -434,9 +429,7 @@
             </li>
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-4.jpg" alt="">
-                </div>
+                <img class="" src="img/post-4.jpg" alt="">
                 <div class="postContent">
                   <p class="id">hero52**</p>
                   <p class="showName">&lt;콘서트&gt; 임영웅 전국 콘서트</p>
@@ -456,9 +449,7 @@
             </li>
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-5.jpg" alt="">
-                </div>
+                <img class="" src="img/post-5.jpg" alt="">
                 <div class="postContent">
                   <p class="id">o2o2ya**</p>
                   <p class="showName">&lt;전시&gt; 장줄리앙 전시회</p>
@@ -478,9 +469,7 @@
             </li>
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-6.jpg" alt="">
-                </div>
+                <img class="" src="img/post-6.jpg" alt="">
                 <div class="postContent">
                   <p class="id">klee01**</p>
                   <p class="showName">&lt;전시&gt; 요시고 사진전</p>
@@ -500,9 +489,7 @@
             </li>
             <li class="swiper-slide">
               <a href="#">
-                <div class="postImg">
-                  <img class="" src="img/post-7.jpg" alt="">
-                </div>
+                <img class="" src="img/post-7.jpg" alt="">
                 <div class="postContent">
                   <p class="id">mumuduck**</p>
                   <p class="showName">&lt;뮤지컬&gt; 시카고</p>
@@ -532,55 +519,112 @@
           <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
         </div>
       </div>
-      <div class="feedTag">
-        <ul>
-          <li>
-            <a href="#"><span># 연극</span></a>
+      <nav class="feedTag">
+        <ul class="feedBtn">
+          <li class ="on">
+            <a href=".hot"><span># TOP 4</span></a>
           </li>
           <li>
-            <a href="#"><span># 뮤지컬</span></a>
+            <a href=".play"><span># 연극</span></a>
           </li>
           <li>
-            <a href="#"><span># 티켓 오픈</span></a>
+            <a href=".musical"><span># 뮤지컬</span></a>
           </li>
           <li>
-            <a href="#"><span># 루시 콘서트</span></a>
+            <a href=".concert"><span># 콘서트</span></a>
           </li>
           <li>
-            <a href="#"><span># 옥탑방 고양이</span></a>
+            <a href=".exhibit"><span># 전시</span></a>
           </li>
           <li>
-            <a href="#"><span># 11월 전시</span></a>
+            <a href=".chicago"><span># 시카고</span></a>
+          </li>
+          <li>
+            <a href=".lucy"><span># 루시 콘서트</span></a>
+          </li>
+          <li>
+            <a href=".novExhibit"><span># 11월 전시</span></a>
+          </li>
+          <li>
+            <a href=".actor"><span># 민경아</span></a>
           </li>
         </ul>
-      </div>
-      <div class="feedImg">
-        <ul>
+      </nav>
+      <div class="feedList">
+        <!-- <ul>
           <li>
             <a href="">
-              <img src="img/feed1.png" alt="">
+              <div class="feedImg"><img src="img/feed1.jpg" alt=""></div>
               <p>믿고 보는 뮤지컬 시카고가 돌아왔다</p>
             </a>
           </li>
           <li>
             <a href="">
-              <img src="img/feed2.jpg" alt="">
+              <div class="feedImg"><img src="img/feed2.jpg" alt=""></div>
               <p>무대가 끝나고 난 뒤, 이야기</p>
             </a>
           </li>
           <li>
             <a href="">
-              <img src="img/feed3.jpg" alt="">
+              <div class="feedImg"><img src="img/feed3.jpg" alt=""></div>
               <p>'사건의 지평선' 윤하 콘서트 2022</p>
             </a>
           </li>
           <li>
             <a href="">
-              <img src="img/feed4.jpg" alt="">
+              <div class="feedImg"><img src="img/feed4.jpg" alt=""></div>
               <p>비비안 사진전을 다녀와서</p>
             </a>
           </li>
-        </ul>
+        </ul> -->
+        <article class="hot musical chicago">
+          <div>
+            <a href="#">
+              <img src="img/feed1.jpg" alt="" />
+              <h3>믿고 보는 뮤지컬 시카고가 돌아왔다</h3>
+            </a>
+          </div>
+        </article>
+        <article class="play">
+          <div>
+            <a href="#">
+              <img src="img/feed2.jpg" alt="" />
+              <h3>무대가 끝나고 난 뒤, 이야기</h3>
+            </a>
+          </div>
+        </article>
+        <article class="concert">
+          <div>
+            <a href="#">
+              <img src="img/feed3.jpg" alt="" />
+              <h3>'사건의 지평선' 윤하 콘서트 2022</h3>
+            </a>
+          </div>
+        </article>
+        <article class="hot exhibit novExhibit">
+          <div>
+            <a href="#">
+              <img src="img/feed4.jpg" alt="" />
+              <h3>vivian maier 사진전은 어때?</h3>
+            </a>
+          </div>
+        </article>
+        <article class="hot concert lucy">
+          <div>
+            <a href="#">
+              <img src="img/feed5.jpg" alt="" />
+              <h3>LUCY 겨울 콘서트</h3>
+            </a>
+          </div>
+        </article>
+        <article class="hot musical actor">
+          <div>
+            <a href="#">
+              <img src="img/feed6.jpg" alt="" />
+              <h3>'CHICAGO' 완벽한 록시 하트 민경아</h3>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
   </div> 
