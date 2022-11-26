@@ -483,16 +483,14 @@
   }
 }
 
-
-
 /*** topBtn ***/
 .fixedBtn{
+  border
   position: fixed;
   right: 0px;
   bottom: 200px;
   z-index: 150;
   .tktBtnWrap{
-    border: 3px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
