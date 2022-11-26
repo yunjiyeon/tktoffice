@@ -79,7 +79,7 @@
       h3 {
         font-size: 15px;
         color: var(--color-text);
-        margin: 15px 0 8px 0;
+        margin: 10px 0 5px 0;
         font-weight: 900;
         white-space: nowrap;
         overflow: hidden;
@@ -110,7 +110,7 @@
   overflow: hidden;
   margin: 10px 0px 0 18px;
   h2 {
-    margin: 20px 0 15px 0;
+    margin: 20px 0 10px 0;
     font: {
       size: 16px;
       weight: 100;
@@ -133,7 +133,6 @@
 .myMenuContainer {
   width: 100%;
   .myMenu{
-    position: relative;
     margin: 40px 30px;
     background: var(--color-gray0);
     border-radius: 10px;
@@ -219,7 +218,7 @@
   }
 
   #postSlide{
-    padding-top: 15px;
+    padding-top: 10px;
     .postWrap{
       @include flex-style;
       
@@ -412,7 +411,7 @@
         width: 50px;
         height: 50px;
         border:0;
-        padding: 15px 15px 15px 20px;
+        padding: 15px 15px 15px 18px;
         background: var(--color-accent);
         border-radius: 50px;
         cursor: pointer;
@@ -440,11 +439,123 @@
 }
 
 
+/*** bottomMenu ***/
+.bottomMenuContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+  background: var(--color-white);
+  border-top: 1px solid var(--color-gray1);
+  z-index: 100;
+  .bottomMenu{
+  
+    ul{
+      @include flex-style;
+      padding: 10px;
+      li{
+        width: 20%;
+        margin: 5px;
+        text-align: center;
+        a{
+          display: block;
+          color: var(--color-gray4);
+          .bottomMenuImg{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            img{
+              display: block;
+              width: 100%;
+              padding: 5px;
+            }
+          }
+          span{
+            display: block;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/*** topBtn ***/
+.fixedBtn{
+  position: fixed;
+  right: 0px;
+  bottom: 200px;
+  z-index: 150;
+  .tktBtnWrap{
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    border-radius: 50px 0 0 50px;
+    background: red; // 그라데이션 넣기 
+    #tktBtn{
+      border: none;
+      background: transparent;
+    }
+    .tktBtnImg{
+      display: block;
+      width: 40px;
+      height: 40px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 3px;
+      }
+    }
+    
+  }
+  @media ( min-width: 640px) {
+    right: 50%;
+    margin-right: -320px;
+  }
+}
+#topBtn{
+  position: fixed;
+  right: 30px;
+  bottom: 130px;
+  z-index: 150;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-gray1);
+  padding-top: 8px;
+  opacity: 1;
+  transition: .3s;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.15);
+  @media ( min-width: 640px) {
+    right: 50%;
+    margin-right: -296px;
+  }
+}
+
+#topBtn img {
+  width: 24px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+
+
 /*** footer ****/
 footer{
   font-size: 11px;
   background: var(--color-gray0);
-  padding: 40px 20px;
+  padding: 40px 20px 100px 20px;
   text-align: center;
   line-height: 1.8;
   color: var(--color-gray3);
