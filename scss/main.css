@@ -199,7 +199,7 @@ body {
 
 /***** section 1 *****/
 .tit {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .tit p {
   color: var(--color-gray3);
@@ -502,10 +502,10 @@ body {
 
 /*** section 6 feed ****/
 .feedContainer {
-  height: 530px;
-  overflow: hidden;
+  margin-bottom: 30px;
 }
 .feedContainer .feed .feedTit {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -514,9 +514,8 @@ body {
   font-size: 20px;
 }
 .feedContainer .feed .feedTit h2 img {
-  width: 25px;
-  margin-left: 5px;
-  vertical-align: bottom;
+  width: 22px;
+  margin: 0 0 2px 3px;
 }
 .feedContainer .feedTag ul {
   display: flex;
@@ -528,50 +527,113 @@ body {
 .feedContainer .feedTag ul li a span {
   font-size: 11px;
   display: block;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border: 1px solid var(--color-text);
   border-radius: 50px;
   width: 100%;
 }
-.feedContainer .feedList {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+.feedContainer .feedWrap {
+  height: 390px;
+  overflow: hidden;
+  margin-left: 15px;
 }
-.feedContainer .feedList article {
-  margin-top: 10px;
+.feedContainer .feedWrap .feedList article {
+  margin-top: 15px;
   width: 48%;
-  height: 200px;
+  height: 180px;
+  padding: 0 5px;
 }
-.feedContainer .feedList article div {
+.feedContainer .feedWrap .feedList article div {
   position: relative;
   width: 100%;
   height: 180px;
 }
-.feedContainer .feedList article div a {
+.feedContainer .feedWrap .feedList article div a {
   display: block;
 }
-.feedContainer .feedList article div a h3 {
+.feedContainer .feedWrap .feedList article div a h3 {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 30px;
   position: absolute;
   width: 100%;
-  bottom: -20px;
+  bottom: 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 0 15px;
   font-size: 13px;
   font-weight: 100;
-  text-align: center;
 }
-.feedContainer .feedList article div a img {
+.feedContainer .feedWrap .feedList article div a img {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 5px;
+  padding-left: 7px;
+}
+.feedContainer::before {
+  display: block;
+  content: "";
+  border: 1px solid var(--color-gray2);
+  opacity: 0.3;
+}
+
+/*** section 7 hotClip ****/
+.hotClipContainer .hotClip .hotClipTit {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotClipContainer .hotClip .hotClipTit h2 {
+  font-size: 20px;
+}
+.hotClipContainer .hotClip .hotClipTit h2 img {
+  width: 22px;
+  margin: 0 0 2px 3px;
+}
+.hotClipContainer .hotClipVideo a {
+  position: relative;
+  display: block;
+}
+.hotClipContainer .hotClipVideo a .hotClipWrap {
+  display: block;
+  width: 100%;
+  height: 180px;
+}
+.hotClipContainer .hotClipVideo a .hotClipWrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hotClipContainer .hotClipVideo a button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  padding: 15px 15px 15px 20px;
+  background: var(--color-accent);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.hotClipContainer .hotClipVideo a button img {
+  width: 100%;
+  height: 100%;
+  filter: invert(100);
+}
+.hotClipContainer::before {
+  display: block;
+  content: "";
+  border: 1px solid var(--color-gray2);
+  opacity: 0.3;
 }
 
 #gnb {

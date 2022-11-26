@@ -1,6 +1,6 @@
 /***** section 1 *****/
 .tit {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   p {
     color: var(--color-gray3);
     font-size: 12px;
@@ -208,7 +208,6 @@
 }
 
 /**** section 5 post ****/
-
 .postContainer{
   .post {
     overflow: hidden;
@@ -317,20 +316,20 @@
 
 /*** section 6 feed ****/
 .feedContainer{
-  height: 530px;
-  overflow: hidden;
+  margin-bottom: 30px;
   .feed{
     .feedTit{
+      margin-top: 30px; 
       @include flex-style;
       h2{ 
         font-size: 20px;
         img{
-          @include titImg-style;
+          width: 22px;
+          margin: 0 0 2px 3px;
         }
       }
     }
   }
-  
   .feedTag{
     ul{
       display: flex;
@@ -341,7 +340,7 @@
           span{
             font-size: 11px;
             display: block;
-            padding: 5px 10px;
+            padding: 5px 15px;
             border: 1px solid var(--color-text);
             border-radius: 50px;
             width: 100%;
@@ -350,75 +349,114 @@
       }
     }
   }
-
-  // .feedList{
-  //   margin-top: 15px;
-  //   ul{
-  //     @include flex-style;
-  //     flex-wrap: wrap;
-  //     li{
-  //       width: 49%;
-  //       height: 230px;
-  //       a{
-  //         display: block;
-  //         font-size: 13px;
-  //         .feedImg{
-  //           display: inline-block; 
-  //           width: 100%;
-  //           height: 200px;
-  //           overflow: hidden;
-  //           border-radius: 10px;
-  //           img{
-  //             width: 100%;
-  //             height: 100%;
-  //             object-fit: cover;
-  //           } 
-  //         }
-  //         p{
-  //           padding-left: 5px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  .feedList{
-    @include flex-style;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    article{
-      margin-top: 10px;
-      width: 48%;
-      height: 200px;
-     div{
-      position: relative;
-      width: 100%;
-      height: 180px;
-      a{
-        display: block;
-        h3{
-          position: absolute;
-          width: 100%;
-          bottom:-20px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font: {
-            size: 13px;
-            weight: 100;
+  .feedWrap{  
+    height: 390px;
+    overflow: hidden;
+    margin-left: 15px;
+    .feedList{
+      article{
+        margin-top: 15px;
+        width: 48%;
+        height: 180px;
+        padding: 0 5px;
+       div{
+        position: relative;
+        width: 100%;
+        height: 180px;
+        a{
+          display: block;
+          h3{
+            height: 30px;
+            background: rgba(255,255,255,.5);
+            line-height: 30px;
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 15px;
+            font: {
+              size: 13px;
+              weight: 100;
+            }
           }
-          text-align: center;
-        }
+          img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding-left: 7px;
+          }
+       }
+      }
+     }
+    }
+  }
+  &::before {
+    display: block;
+    content: "";
+    border: 1px solid var(--color-gray2);
+    opacity: 0.3;
+  }
+}
+
+/*** section 7 hotClip ****/
+.hotClipContainer{
+  .hotClip{
+    .hotClipTit{
+      margin-top: 30px; 
+      @include flex-style;
+      h2{ 
+        font-size: 20px;
         img{
-          position: absolute;
-          top: 0;
+          width: 22px;
+          margin: 0 0 2px 3px;
+        }
+      }
+    }
+  }
+  .hotClipVideo{
+    a{
+      position: relative;
+
+      display: block;
+      .hotClipWrap{
+        display: block;
+        width: 100%;
+        height: 180px;
+        img{
           width: 100%;
           height: 100%;
           object-fit: cover;
-          padding: 5px;
         }
-     }
+      }
+      button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        border:0;
+        padding: 15px 15px 15px 20px;
+        background: var(--color-accent);
+        border-radius: 50px;
+        cursor: pointer;
+        img{
+          width: 100%;
+          height: 100%;
+          filter: invert(100);
+        }
+      }
     }
-   }
+  }
+  &::before{
+    display: block;
+    content: "";
+    border: 1px solid var(--color-gray2);
+    opacity: 0.3;
   }
 }
