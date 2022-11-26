@@ -1,6 +1,13 @@
 /***** section 1 *****/
 .tit {
   margin-bottom: 15px;
+  @include flex-style;
+  h2{
+    font-size: 18px;
+      img{
+        @include titImg-style;
+      }
+  }
   p {
     color: var(--color-gray3);
     font-size: 12px;
@@ -11,18 +18,6 @@
   }
 }
 .tktContainer {
-  .tktTit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h2{ 
-      font-size: 20px;
-      img{
-        @include titImg-style;
-      }
-    }
-  }
-  
   .tktMenu {
     .tktBar {
       font-size: 14px;
@@ -179,16 +174,6 @@
 
 /***** section 4 ******/
 .eventBannerContainer{
-  .event{
-    .eventTit{
-      @include flex-style;
-      h2{ 
-        font-size: 20px;
-        img{
-          @include titImg-style;
-        }
-      }
-    }
     .eventImg{
       img{
         width: 100%;
@@ -196,7 +181,6 @@
         margin-bottom: 10px;;
       }
     }
-  }
   .playBannerContainer{
     a{
       img{
@@ -213,16 +197,6 @@
     overflow: hidden;
     margin-right: 0;
     padding-bottom: 40px;
-    .postTit{
-      padding-right: 20px;
-      @include flex-style;
-      h2{ 
-        font-size: 20px;
-        img{
-          @include titImg-style;
-        }
-      }
-    }
     .postTxt{
       @include flex-style;
       padding-right: 20px;
@@ -322,9 +296,8 @@
       margin-top: 30px; 
       @include flex-style;
       h2{ 
-        font-size: 20px;
         img{
-          width: 22px;
+          width: 20px;
           margin: 0 0 2px 3px;
         }
       }
@@ -377,7 +350,7 @@
             text-overflow: ellipsis;
             padding: 0 15px;
             font: {
-              size: 13px;
+              size: 12px;
               weight: 100;
             }
           }
@@ -405,18 +378,14 @@
 /*** section 7 hotClip ****/
 .hotClipContainer{
   .hotClip{
+    margin-bottom: 40px;
     .hotClipTit{
-      margin-top: 30px; 
-      @include flex-style;
-      h2{ 
-        font-size: 20px;
-        img{
-          width: 22px;
-          margin: 0 0 2px 3px;
-        }
+      margin-top: 30px;
+      img{
+        vertical-align: middle;
       }
     }
-  }
+   }
   .hotClipVideo{
     a{
       position: relative;
@@ -430,6 +399,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 10px;
         }
       }
       button{
@@ -458,5 +428,52 @@
     content: "";
     border: 1px solid var(--color-gray2);
     opacity: 0.3;
+  }
+}
+
+
+/*** footer ****/
+footer{
+  font-size: 11px;
+  background: var(--color-gray0);
+  padding: 40px 20px;
+  text-align: center;
+  line-height: 1.8;
+  color: var(--color-gray3);
+  .footerMenu{
+    font: {
+      size: 13px;
+      weight: 600;
+    }
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    p{
+      padding: 0 5px;
+      a{
+        color: var(--color-gray4);
+      }
+      &:nth-child(1){
+        font-weight: 100;
+      }
+    }
+  }
+  .companyInfo{
+    p{
+      margin: 3px 0 10px 0;
+      color: var(--color-gray4);
+      font-weight: 600;
+      span{
+        padding: 0 5px;
+      }
+      address{
+
+      }
+    }
+  }
+  .copy{
+    display: block;
+    margin: 10px 0;
+    color: var(--color-gray2);
   }
 }

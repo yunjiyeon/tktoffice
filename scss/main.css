@@ -142,7 +142,7 @@ body {
 
 /***** 배너 ******/
 .bannerContainer {
-  margin: 70px 0 40px 0;
+  margin: 70px 0 30px 0;
   position: relative;
   font-family: "GmarketSansMedium";
   overflow: hidden;
@@ -200,6 +200,17 @@ body {
 /***** section 1 *****/
 .tit {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tit h2 {
+  font-size: 18px;
+}
+.tit h2 img {
+  width: 24px;
+  margin-left: 5px;
+  vertical-align: bottom;
 }
 .tit p {
   color: var(--color-gray3);
@@ -210,19 +221,6 @@ body {
   width: 12px;
 }
 
-.tktContainer .tktTit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.tktContainer .tktTit h2 {
-  font-size: 20px;
-}
-.tktContainer .tktTit h2 img {
-  width: 25px;
-  margin-left: 5px;
-  vertical-align: bottom;
-}
 .tktContainer .tktMenu .tktBar {
   font-size: 14px;
   display: flex;
@@ -370,20 +368,7 @@ body {
 }
 
 /***** section 4 ******/
-.eventBannerContainer .event .eventTit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.eventBannerContainer .event .eventTit h2 {
-  font-size: 20px;
-}
-.eventBannerContainer .event .eventTit h2 img {
-  width: 25px;
-  margin-left: 5px;
-  vertical-align: bottom;
-}
-.eventBannerContainer .event .eventImg img {
+.eventBannerContainer .eventImg img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -398,20 +383,6 @@ body {
   overflow: hidden;
   margin-right: 0;
   padding-bottom: 40px;
-}
-.postContainer .post .postTit {
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.postContainer .post .postTit h2 {
-  font-size: 20px;
-}
-.postContainer .post .postTit h2 img {
-  width: 25px;
-  margin-left: 5px;
-  vertical-align: bottom;
 }
 .postContainer .post .postTxt {
   display: flex;
@@ -510,11 +481,8 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.feedContainer .feed .feedTit h2 {
-  font-size: 20px;
-}
 .feedContainer .feed .feedTit h2 img {
-  width: 22px;
+  width: 20px;
   margin: 0 0 2px 3px;
 }
 .feedContainer .feedTag ul {
@@ -562,7 +530,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 15px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 100;
 }
 .feedContainer .feedWrap .feedList article div a img {
@@ -582,18 +550,14 @@ body {
 }
 
 /*** section 7 hotClip ****/
+.hotClipContainer .hotClip {
+  margin-bottom: 40px;
+}
 .hotClipContainer .hotClip .hotClipTit {
   margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.hotClipContainer .hotClip .hotClipTit h2 {
-  font-size: 20px;
-}
-.hotClipContainer .hotClip .hotClipTit h2 img {
-  width: 22px;
-  margin: 0 0 2px 3px;
+.hotClipContainer .hotClip .hotClipTit img {
+  vertical-align: middle;
 }
 .hotClipContainer .hotClipVideo a {
   position: relative;
@@ -609,6 +573,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 .hotClipContainer .hotClipVideo a button {
   position: absolute;
@@ -634,6 +599,45 @@ body {
   content: "";
   border: 1px solid var(--color-gray2);
   opacity: 0.3;
+}
+
+/*** footer ****/
+footer {
+  font-size: 11px;
+  background: var(--color-gray0);
+  padding: 40px 20px;
+  text-align: center;
+  line-height: 1.8;
+  color: var(--color-gray3);
+}
+footer .footerMenu {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+footer .footerMenu p {
+  padding: 0 5px;
+}
+footer .footerMenu p a {
+  color: var(--color-gray4);
+}
+footer .footerMenu p:nth-child(1) {
+  font-weight: 100;
+}
+footer .companyInfo p {
+  margin: 3px 0 10px 0;
+  color: var(--color-gray4);
+  font-weight: 600;
+}
+footer .companyInfo p span {
+  padding: 0 5px;
+}
+footer .copy {
+  display: block;
+  margin: 10px 0;
+  color: var(--color-gray2);
 }
 
 #gnb {
