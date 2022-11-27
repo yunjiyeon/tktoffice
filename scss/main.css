@@ -626,7 +626,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0 10px 20px 10px;
 }
 .bottomMenuContainer .bottomMenu ul li {
   width: 20%;
@@ -647,9 +647,10 @@ body {
   width: 100%;
   padding: 5px;
 }
-.bottomMenuContainer .bottomMenu ul li a span {
+.bottomMenuContainer .bottomMenu ul li a .bottomTxt {
   display: block;
   font-size: 11px;
+  margin-top: -5px;
 }
 
 /*** topBtn ***/
@@ -657,36 +658,37 @@ body {
   position: fixed;
   right: 0px;
   bottom: 100px;
-  z-index: 150;
+  z-index: 50;
+  transition: 0.4s;
 }
 .fixedBtn .tktBtnWrap {
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 100px;
+  width: 90px;
   height: 50px;
   border-radius: 50px 0 0 50px;
   background: rgb(229, 9, 20);
   background: linear-gradient(164deg, rgb(229, 9, 20) 0%, rgb(255, 87, 8) 0%, rgb(255, 0, 0) 0%, rgb(255, 119, 0) 76%, rgb(255, 134, 87) 100%);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
-.fixedBtn .tktBtnWrap #tktBtn {
+.fixedBtn .tktBtnWrap .tktBtn {
   color: var(--color-white);
   border: none;
   background: transparent;
   cursor: pointer;
 }
-.fixedBtn .tktBtnWrap #tktBtn span {
+.fixedBtn .tktBtnWrap .tktBtn span {
   font-size: 9px;
 }
-.fixedBtn .tktBtnWrap #tktBtn p {
+.fixedBtn .tktBtnWrap .tktBtn p {
   font-size: 12px;
   font-weight: 700;
 }
 .fixedBtn .tktBtnWrap .tktBtnImg {
   display: block;
-  width: 20x;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 5px;
   transform: rotate(-45deg);
 }
@@ -707,13 +709,13 @@ body {
 
 .fixedBtnActive {
   bottom: 150px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
-#topBtn {
+.topBtn {
   position: fixed;
   right: 20px;
-  bottom: 100px;
+  bottom: 50px;
   z-index: 150;
   width: 45px;
   height: 45px;
@@ -722,18 +724,25 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  z-index: 50;
   opacity: 0;
-  z-index: 150;
+  transition: 0.4s;
 }
-#topBtn img {
+.topBtn img {
   width: 20px;
   height: 20px;
 }
 @media (min-width: 640px) {
-  #topBtn {
+  .topBtn {
     right: 50%;
     margin-right: -296px;
   }
+}
+
+.topBtnActive {
+  bottom: 100px;
+  transition: 0.4s;
+  opacity: 0;
 }
 
 /*** footer ****/
@@ -824,7 +833,8 @@ footer .copy {
 }
 .gnbContainer .loginContainer h3 {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 900;
 }
 .gnbContainer .loginContainer a {
   color: #ffffff;
@@ -834,7 +844,7 @@ footer .copy {
   justify-content: space-between;
   align-items: center;
   margin: 40px 0 20px 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #ffffff;
 }
 .gnbContainer .loginContainer .loginBox .login a:nth-child(1) {
@@ -852,7 +862,7 @@ footer .copy {
   bottom: 0;
   right: 0;
   left: 0;
-  top: 200px;
+  top: 180px;
 }
 .gnbBack .gnbBox {
   margin: 40px 20px 0 20px;
@@ -864,12 +874,12 @@ footer .copy {
   margin-bottom: 20px;
 }
 .gnbBack .gnbBox .gnbTit h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 900;
   color: var(--color-accent);
 }
 .gnbBack .gnbBox .gnbTit p {
-  font-size: 13px;
+  font-size: 12px;
 }
 .gnbBack .gnbBox .gnbTit p a {
   color: var(--color-gray3);
@@ -887,7 +897,7 @@ footer .copy {
 }
 .gnbMenuContainer .gnbMenu li {
   width: 21%;
-  font-size: 14px;
+  font-size: 11px;
   margin-top: 15px;
 }
 .gnbMenuContainer .gnbMenu li a {
@@ -909,62 +919,14 @@ footer .copy {
   display: block;
 }
 
-.darkMode {
-  margin: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* 토글 버튼 */
-}
-.darkMode button {
-  border: 0;
-  background: transparent;
-  padding: 10px 0px 10px 20px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 800;
-}
-.darkMode .toggleSwitch {
-  width: 40px;
-  margin: 13px 13px 13px 7px;
-  height: 20px;
-  display: block;
-  position: relative;
-  border-radius: 30px;
-  background-color: #fff;
-  border: 2px solid #222222;
-  cursor: pointer;
-}
-.darkMode .toggleSwitch .toggleButton {
-  /* 버튼은 토글보다 작아야함  */
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background: #222222;
-}
-.darkMode #toggle:checked ~ .toggleSwitch {
-  background: #222222;
-}
-.darkMode #toggle:checked ~ .toggleSwitch .toggleButton {
-  left: calc(100% - 18px);
-  background: #fff;
-}
-.darkMode .toggleSwitch, .darkMode .toggleButton {
-  transition: all 0.2s ease-in;
-}
-
 .notice {
   background: var(--color-gray0);
+  margin: 50px 0 20px 0;
 }
 .notice p {
   line-height: 80px;
   margin: 0 30px;
-  font-size: 13px;
+  font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -986,7 +948,7 @@ footer .copy {
   width: 50px;
 }
 .gnbBottom .alram {
-  font-size: 13px;
+  font-size: 12px;
   margin-right: 10px;
 }
 .gnbBottom .alram a:nth-child(1) {
@@ -994,4 +956,193 @@ footer .copy {
 }
 .gnbBottom .alram a:nth-child(2) {
   margin-left: 5px;
+}
+
+.s_tktContainer {
+  position: relative;
+}
+
+.searchContainer {
+  margin-top: 80px;
+}
+.searchContainer .search {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  background: var(--color-white);
+  outline: none;
+}
+.searchContainer .search input {
+  width: 100%;
+  height: 35px;
+  padding-left: 55px;
+  font-size: 13px;
+  border: 1px solid var(--color-text);
+  border-radius: 50px;
+  outline: none;
+}
+.searchContainer .search .searchBtn {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 20px;
+  line-height: 35px;
+  margin: 0 10px;
+}
+.searchContainer .search .searchBtn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.s_tktMenuContainer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s_tktMenu, .s_tktOrder {
+  position: relative;
+}
+
+.s_tktMenu {
+  width: 60%;
+}
+
+.s_tktOrder {
+  width: 38%;
+}
+
+#s_tktMenuBtn {
+  text-align: start;
+  padding-left: 20px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--color-text);
+  border-radius: 50px;
+  background: var(--color-white);
+  cursor: pointer;
+}
+
+.s_tktMenuBtnImg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  width: 20px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.s_tktMenuBtnImg img {
+  width: 100%;
+}
+
+.darkBg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+}
+
+.s_popupMenu, .s_popupOrder {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  max-width: 640px;
+  min-width: 270px;
+  height: 310px;
+  margin: 0 auto;
+  z-index: 150;
+  background: var(--color-white);
+  border-radius: 10px 10px 0 0;
+  font-size: 13px;
+}
+
+.s_popupOrder {
+  height: 210px;
+}
+
+.s_popup {
+  margin: 30px 0 50px 0;
+}
+.s_popup li {
+  border-bottom: 1px solid var(--color-gray1);
+  line-height: 3.5;
+  text-align: center;
+}
+.s_popup li:last-child {
+  border-bottom: 0;
+}
+.s_popup li a {
+  display: block;
+}
+
+.s_tktListContainer {
+  margin: 10px 18px 90px 18px;
+}
+.s_tktListContainer .s_tktList article {
+  width: 50%;
+  float: left;
+  cursor: pointer;
+  padding: 2px;
+}
+.s_tktListContainer .s_tktList article div {
+  padding: 4px;
+}
+.s_tktListContainer .s_tktList article div a {
+  display: block;
+  line-height: 1.5;
+}
+.s_tktListContainer .s_tktList article div a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.s_tktListContainer .s_tktList article div a .s_tktTxt h3 {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 100;
+  color: var(--color-gray3);
+}
+.s_tktListContainer .s_tktList article div a .s_tktTxt h3 span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 15px;
+  color: var(--color-text);
+  font-weight: 600;
+}
+.s_tktListContainer .s_tktList article div a .s_tktTxt p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+  font-size: 12px;
+  color: var(--color-gray3);
+}
+.s_tktListContainer .s_tktList article div a .s_tktTxt button {
+  display: block;
+  width: 100%;
+  margin: 7px 0 0 0;
+  padding: 8px 23px;
+  border-radius: 50px;
+  font-size: 13px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

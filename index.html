@@ -13,6 +13,9 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -85,7 +88,7 @@
         <div class="ticketing inner">
           <div class="tktTit tit">
             <h2>예매<img src="img/tkt.png" alt=""></h2>
-            <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
+            <a href="ticketing.html"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
           </div>
           <div class="tktMenu">
             <ul class="tktBar">
@@ -745,6 +748,7 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer>
       <div class="footerMenu">
         <p><a href="#">이용약관</a></p>
@@ -758,38 +762,38 @@
       <span class="copy">Copyright 2021. 케이씨엘디 주식회사. All right reserved.</span>
     </footer>
   
-  
+    <!-- bottomMenu 하단 고정 메뉴 -->
     <div class="bottomMenuContainer">
       <div class="bottomMenu">
         <ul>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span class="bottomMenuImg"><img src="img/b-home.png" alt=""></span>
-              <span>홈</span>
+              <span class="bottomTxt">홈</span>
             </a>
           </li>
           <li>
             <a href="#">
               <span class="bottomMenuImg"><img src="img/b-store.png" alt=""></span>
-              <span>스토어</span>
+              <span class="bottomTxt">스토어</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="ticketing.html">
               <span class="bottomMenuImg"><img src="img/b-ticketing.png" alt=""></span>
-              <span>예매</span>
+              <span class="bottomTxt">예매</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="feed.html">
               <span class="bottomMenuImg"><img src="img/b-feed.png" alt=""></span>
-              <span>피드</span>
+              <span class="bottomTxt">피드</span>
             </a>
           </li>
           <li>
             <a href="#">
               <span class="bottomMenuImg"><img src="img/b-user.png" alt=""></span>
-              <span>MY</span>
+              <span class="bottomTxt">MY</span>
             </a>
           </li>
         </ul>
@@ -800,7 +804,7 @@
     <div class="fixedBtn">
       <div class="fixedTkt">
         <a href="#" class="tktBtnWrap">
-          <button id="tktBtn">
+          <button class="tktBtn">
             <span>빠르고 쉽게</span>
             <p>지금 예매</p>
           </button>
@@ -808,11 +812,10 @@
         </a>
       </div>
     </div>
-    <button id="topBtn">
+    <button class="topBtn">
       <img src="img/topBtn.png" alt="">
     </button>
   </div> 
-
 
 
 
@@ -901,13 +904,13 @@
                 </a>
               </li>
             </ul>
-            <div class="darkMode">
+            <!-- <div class="darkMode">
               <button>다크모드</button>
               <input type="checkbox" id="toggle" hidden> 
               <label for="toggle" class="toggleSwitch">
                 <span class="toggleButton"></span>
               </label>
-            </div>
+            </div> -->
             <div class="notice">
               <p>[공지] 서버 점검 안내 (2022.11.29 am 12:00 ~ 2022.11.30 am 05:00)</p>
             </div>
@@ -920,7 +923,7 @@
                 </ul>
               </div>
               <div class="alram">
-                <a href="#"><sapn>알림함</span></a> | 
+                <a href="#"><span>알림함</span></a> | 
                 <a href="#"><span>고객센터</span></a>
               </div>
             </div>

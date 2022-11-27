@@ -50,7 +50,6 @@
     }
   }
 }
-
 .tktMainList {
   margin: initial;
   padding: 20px 0;
@@ -440,7 +439,6 @@
   }
 }
 
-
 /*** bottomMenu ***/
 .bottomMenuContainer {
   position: fixed;
@@ -457,7 +455,7 @@
   
     ul{
       @include flex-style;
-      padding: 10px;
+      padding: 0 10px 20px 10px;
       li{
         width: 20%;
         margin: 5px;
@@ -475,9 +473,10 @@
               padding: 5px;
             }
           }
-          span{
+          .bottomTxt{
             display: block;
             font-size: 11px;
+            margin-top: -5px;
           }
         }
       }
@@ -490,19 +489,19 @@
   position: fixed;
   right: 0px;
   bottom: 100px;
-  z-index: 150;
+  z-index: 50;
+  transition: .4s;
   .tktBtnWrap{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100px;
+    width: 90px;
     height: 50px;
     border-radius: 50px 0 0 50px;
     background: rgb(229,9,20);
     background: linear-gradient(164deg, rgba(229,9,20,1) 0%, rgba(255,87,8,1) 0%, rgba(255,0,0,1) 0%, rgba(255,119,0,1) 76%, rgba(255,134,87,1) 100%);
     box-shadow: 3px 3px 10px rgba(0,0,0,.15);
-
-    #tktBtn{
+    .tktBtn{
       color: var(--color-white); 
       border: none;
       background: transparent;
@@ -519,8 +518,8 @@
     }
     .tktBtnImg{
       display: block;
-      width: 20x;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       margin-left: 5px;
       transform: rotate(-45deg);
       img{
@@ -538,16 +537,14 @@
     margin-right: -320px;
   }
 }
-
 .fixedBtnActive{
   bottom: 150px;
-  transition: .3s;
+  transition: .4s;
 }
-
-#topBtn{
+.topBtn{
   position: fixed;
   right: 20px;
-  bottom: 100px;
+  bottom: 50px;
   z-index: 150;
   width: 45px;
   height: 45px;
@@ -556,8 +553,9 @@
   border: none;
   cursor: pointer;
   box-shadow: 3px 3px 10px rgba(0,0,0,.15);
+  z-index: 50;
   opacity: 0;
-  z-index: 150;
+  transition: .4s;
   img {
     width: 20px;
     height: 20px;
@@ -566,6 +564,11 @@
     right: 50%;
     margin-right: -296px;
   }
+}
+.topBtnActive{
+  bottom:100px;
+  transition: .4s;
+  opacity: 0;
 }
 
 /*** footer ****/
@@ -601,9 +604,6 @@ footer{
       font-weight: 600;
       span{
         padding: 0 5px;
-      }
-      address{
-
       }
     }
   }
