@@ -483,70 +483,93 @@
 }
 
 /*** topBtn ***/
-.fixedBtn{
-  border
-  position: fixed;
-  right: 0px;
-  bottom: 200px;
-  z-index: 150;
-  .tktBtnWrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-    height: 60px;
-    border-radius: 50px 0 0 50px;
-    background: red; // 그라데이션 넣기 
-    #tktBtn{
-      border: none;
-      background: transparent;
-    }
-    .tktBtnImg{
-      display: block;
-      width: 40px;
-      height: 40px;
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        padding: 3px;
+  .fixedBtn{
+    position: fixed;
+    right: 0px;
+    bottom: 100px;
+    z-index: 50;
+    transition: .4s;
+    .tktBtnWrap{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: 90px;
+      height: 50px;
+      border-radius: 50px 0 0 50px;
+      background: rgb(229,9,20);
+      background: linear-gradient(164deg, rgba(229,9,20,1) 0%, rgba(255,87,8,1) 0%, rgba(255,0,0,1) 0%, rgba(255,119,0,1) 76%, rgba(255,134,87,1) 100%);
+      box-shadow: 3px 3px 10px rgba(0,0,0,.15);
+      .tktBtn{
+        color: var(--color-white); 
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        span{
+          font-size: 9px;
+        }
+        p{
+          font: {
+            size: 12px;
+            weight: 700;
+          }
+        }
       }
+      .tktBtnImg{
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+        transform: rotate(-45deg);
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          padding: 0 5px 0 0px;
+          filter: invert(100);
+        }
+      }
+      
     }
-    
+    @media ( min-width: 640px) {
+      right: 50%;
+      margin-right: -320px;
+    }
   }
-  @media ( min-width: 640px) {
-    right: 50%;
-    margin-right: -320px;
+
+  .fixedBtnActive{
+    bottom: 150px;
+    transition: .4s;
   }
-}
-#topBtn{
-  position: fixed;
-  right: 30px;
-  bottom: 130px;
-  z-index: 150;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: var(--color-gray1);
-  padding-top: 8px;
-  opacity: 1;
-  transition: .3s;
-  border: none;
-  cursor: pointer;
-  box-shadow: 3px 3px 10px rgba(0,0,0,.15);
-  @media ( min-width: 640px) {
-    right: 50%;
-    margin-right: -296px;
+
+  .topBtn{
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 150;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-gray1);
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.15);
+    z-index: 50;
+    opacity: 0;
+    transition: .4s;
+    img {
+      width: 20px;
+      height: 20px;
+    }    
+    @media ( min-width: 640px) {
+      right: 50%;
+      margin-right: -296px;
+    }
   }
-}
-
-#topBtn img {
-  width: 24px;
-  height: 25px;
-  margin-bottom: 5px;
-}
-
-
+  .topBtnActive{
+    bottom:100px;
+    transition: .4s;
+    opacity: 0;
+  }
 
 /*** footer ****/
 footer{
