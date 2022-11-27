@@ -1,5 +1,8 @@
 .s_tktContainer{
   position: relative;
+  h2{
+    font-size: 25px;
+  }
 }
 .searchContainer {
   margin-top: 80px;
@@ -40,6 +43,7 @@
 }
 
 .s_tktMenuContainer{
+  color: var(--color-text);
   margin-top: 5px;
   @include flex-style;
 }

@@ -237,7 +237,7 @@ body {
 }
 .tktContainer .tktMenu .tktBar .tktActive::after {
   position: absolute;
-  bottom: -8px;
+  bottom: 14px;
   left: 0;
   content: "";
   width: 100%;
@@ -382,19 +382,17 @@ body {
   margin-right: 0;
   padding-bottom: 40px;
 }
-.postContainer .post .postWrap {
-  margin-right: 20px;
-}
-.postContainer .post .postWrap .postTxt {
+.postContainer .post .postTxt {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
 }
-.postContainer .post .postWrap .postTxt p {
+.postContainer .post .postTxt p {
   font-size: 13px;
   line-height: 1.5;
 }
-.postContainer .post .postWrap .postTxt a span {
+.postContainer .post .postTxt a span {
   line-height: 1.5;
   padding: 7px 13px;
   background: var(--color-gray1);
@@ -961,6 +959,9 @@ footer .copy {
 .s_tktContainer {
   position: relative;
 }
+.s_tktContainer h2 {
+  font-size: 25px;
+}
 
 .searchContainer {
   margin-top: 80px;
@@ -999,6 +1000,7 @@ footer .copy {
 }
 
 .s_tktMenuContainer {
+  color: var(--color-text);
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
