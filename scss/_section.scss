@@ -490,13 +490,13 @@
   position: fixed;
   right: 0px;
   bottom: 100px;
-  z-index: 150;
+  z-index: 50;
   transition: .4s;
   .tktBtnWrap{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100px;
+    width: 90px;
     height: 50px;
     border-radius: 50px 0 0 50px;
     background: rgb(229,9,20);
@@ -519,8 +519,8 @@
     }
     .tktBtnImg{
       display: block;
-      width: 20x;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       margin-left: 5px;
       transform: rotate(-45deg);
       img{
@@ -556,7 +556,7 @@
   border: none;
   cursor: pointer;
   box-shadow: 3px 3px 10px rgba(0,0,0,.15);
-  z-index: 150;
+  z-index: 50;
   opacity: 0;
   transition: .4s;
   img {
