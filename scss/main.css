@@ -656,7 +656,7 @@ body {
 .bottomMenuContainer .bottomMenu ul li a .bottomTxt {
   display: block;
   font-size: 11px;
-  margin-top: -5px;
+  margin-top: -7px;
 }
 
 /*** topBtn ***/
@@ -968,7 +968,7 @@ footer .copy {
   position: relative;
 }
 .s_tktContainer h2 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .searchContainer {
@@ -1028,6 +1028,7 @@ footer .copy {
 
 #s_tktMenuBtn {
   text-align: start;
+  font-size: 14px;
   padding-left: 20px;
   width: 100%;
   height: 35px;
@@ -1123,7 +1124,7 @@ footer .copy {
 }
 .s_tktListContainer .s_tktList article div a .s_tktTxt h3 {
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 100;
   color: var(--color-gray3);
 }
@@ -1132,7 +1133,7 @@ footer .copy {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--color-text);
   font-weight: 600;
 }
@@ -1141,7 +1142,7 @@ footer .copy {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-top: 5px;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--color-gray3);
 }
 .s_tktListContainer .s_tktList article div a .s_tktTxt button {
@@ -1162,4 +1163,108 @@ footer .copy {
 }
 .s_tktMenu #s_tktMenuBtn span {
   display: none;
+}
+
+.ticketingDetails .sub {
+  display: flex;
+  align-items: center;
+}
+.ticketingDetails .sub .btnClose {
+  font-size: 1px;
+  cursor: pointer;
+  line-height: 28.8px;
+  color: transparent;
+}
+.ticketingDetails .sub img {
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.detailsContainer {
+  position: relative;
+  margin: 70px 0 30px 0;
+  color: var(--color-white);
+}
+.detailsContainer .detailsBg span {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+.detailsContainer .detailsBg span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(1px);
+}
+.detailsContainer .detailsBg::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.detailsContainer .detailsPost {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.detailsContainer .detailsPost .detailsImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.detailsContainer .detailsPost .detailsImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.detailsContainer .detailsPost .detailsTxt {
+  margin: 0 5%;
+  line-height: 1.5;
+  color: var(--color-gray2);
+}
+.detailsContainer .detailsPost .detailsTxt h3 {
+  font-size: 13px;
+}
+.detailsContainer .detailsPost .detailsTxt h3 span {
+  display: block;
+  font-size: 18px;
+  color: var(--color-white);
+}
+.detailsContainer .detailsPost .detailsTxt p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.detailsContainer .detailsPost .detailsTxt strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+.detailsInfoContainer .detailsInfo {
+  line-height: 1.5;
+  font-size: 13px;
+}
+.detailsInfoContainer .detailsInfo ul li {
+  display: flex;
+  margin: 15px 0;
+}
+.detailsInfoContainer .detailsInfo ul li p {
+  width: 70px;
+  color: var(--color-gray4);
+}
+.detailsInfoContainer .detailsInfo ul li span {
+  margin-left: 20px;
 }/*# sourceMappingURL=main.css.map */

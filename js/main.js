@@ -240,8 +240,8 @@ $('.s_popup > li').click(function(){
 
 
 
-const $searchInput = document.querySelector("#searchInput");
-const $wordList = document.querySelector(".wordList");
+const $searchInput = document.querySelector("article");
+const $wordList = document.querySelector("s_tktTxt");
 
 // 특수문자 처리
 const escapeRegExp = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -302,7 +302,7 @@ $searchInput.addEventListener("input", (e) => {
   const regex = createFuzzyMatcher(query);
   const words = $wordList.children;
   for (let i = 0; i < words.length; i++) {
-    if (regex.test(words[i].textContent.toLowerCase())) words[i].classList.remove("hidden");
-    else words[i].classList.add("hidden");
+    if (regex.test(words[i].textContent.toLowerCase())) words[i].removeClass("hide");
+    else words[i].addClass("hide");
   }
 });
