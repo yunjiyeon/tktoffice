@@ -47,8 +47,17 @@
       
       <section class="s_tktMenuContainer inner">
         <div class="s_tktMenu">
+          <!-- <ul>
+            <li>
+              <input type="button" value="전체">
+            </li>
+          </ul> -->
           <button id="s_tktMenuBtn">
-            <span>전체</span>
+            <span class="on">전체</span>
+            <!-- <span>연극</span>
+            <span>뮤지컬</span>
+            <span>콘서트</span>
+            <span>전시회</span> -->
           </button>
           <span class="s_tktMenuBtnImg">
             <img src="img/bottomBtn.png" alt="">
@@ -351,57 +360,49 @@
               </a>
             </div>
           </article>
-        
-
-
-          
         </div>
-        
       </section>
-      
-
     </main>
 
 
   
-  
-    <!-- bottomMenu 하단 고정 메뉴 -->
-    <div class="bottomMenuContainer">
-      <div class="bottomMenu">
-        <ul>
-          <li>
-            <a href="index.html">
-              <span class="bottomMenuImg"><img src="img/b-home.png" alt=""></span>
-              <span class="bottomTxt">홈</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="bottomMenuImg"><img src="img/b-store.png" alt=""></span>
-              <span class="bottomTxt">스토어</span>
-            </a>
-          </li>
-          <li>
-            <a href="ticketing.html">
-              <span class="bottomMenuImg"><img src="img/b-ticketing.png" alt=""></span>
-              <span class="bottomTxt">예매</span>
-            </a>
-          </li>
-          <li>
-            <a href="feed.html">
-              <span class="bottomMenuImg"><img src="img/b-feed.png" alt=""></span>
-              <span class="bottomTxt">피드</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="bottomMenuImg"><img src="img/b-user.png" alt=""></span>
-              <span class="bottomTxt">MY</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+   <!-- 하단 고정 메뉴-->
+   <div class="bottomMenuContainer">
+    <div class="bottomMenu">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="bottomMenuImg"><img src="img/b-home.png" alt=""></span>
+            <span class="bottomTxt">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="bottomMenuImg"><img src="img/b-store.png" alt=""></span>
+            <span class="bottomTxt">스토어</span>
+          </a>
+        </li>
+        <li>
+          <a href="ticketing.html" class="menuActive">
+            <span class="bottomMenuImg"><img src="img/b-ticketing.png" alt=""></span>
+            <span class="bottomTxt">예매</span>
+          </a>
+        </li>
+        <li>
+          <a href="feed.html">
+            <span class="bottomMenuImg"><img src="img/b-feed.png" alt=""></span>
+            <span class="bottomTxt">피드</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="bottomMenuImg"><img src="img/b-user.png" alt=""></span>
+            <span class="bottomTxt">MY</span>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 
     <!-- topBtn -->   
     <button class="topBtn">

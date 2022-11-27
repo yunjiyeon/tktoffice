@@ -43,7 +43,6 @@
 }
 
 .s_tktMenuContainer{
-  color: var(--color-text);
   margin-top: 5px;
   @include flex-style;
 }
@@ -67,6 +66,7 @@
   border: 1px solid var(--color-text);
   border-radius: 50px;
   background: var(--color-white);  cursor: pointer;
+  color: var(--color-text);
 
 }
 .s_tktMenuBtnImg{
@@ -193,5 +193,16 @@
         }
       }
     }
+  }
+}
+
+
+
+.s_tktMenu #s_tktMenuBtn{
+  .on{
+    display: block;
+  }
+  span{
+    display: none;
   }
 }

@@ -382,6 +382,9 @@ body {
   margin-right: 0;
   padding-bottom: 40px;
 }
+.postContainer .post .postTit {
+  margin-right: 18px;
+}
 .postContainer .post .postTxt {
   display: flex;
   justify-content: space-between;
@@ -631,9 +634,14 @@ body {
   margin: 5px;
   text-align: center;
 }
+.bottomMenuContainer .bottomMenu ul li .menuActive {
+  color: var(--color-text);
+  opacity: 1;
+}
 .bottomMenuContainer .bottomMenu ul li a {
   display: block;
   color: var(--color-gray4);
+  opacity: 0.5;
 }
 .bottomMenuContainer .bottomMenu ul li a .bottomMenuImg {
   width: 40px;
@@ -1000,7 +1008,6 @@ footer .copy {
 }
 
 .s_tktMenuContainer {
-  color: var(--color-text);
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
@@ -1028,6 +1035,7 @@ footer .copy {
   border-radius: 50px;
   background: var(--color-white);
   cursor: pointer;
+  color: var(--color-text);
 }
 
 .s_tktMenuBtnImg {
@@ -1147,4 +1155,11 @@ footer .copy {
   color: var(--color-white);
   border: none;
   cursor: pointer;
+}
+
+.s_tktMenu #s_tktMenuBtn .on {
+  display: block;
+}
+.s_tktMenu #s_tktMenuBtn span {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

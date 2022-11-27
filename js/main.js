@@ -59,6 +59,7 @@ const pSlide = new Swiper('#postSlide', postSlide)
 
 
 
+
 /****** tkt 클릭시 변동 ******/
 const $btn = $('.tktMenu li a');  //버튼역할하는 nav a를 변수로
 
@@ -154,6 +155,20 @@ $(function(){
     }, 400);
     return false;
   });
+
+
+
+
+
+// const $popupMenu = $('.s_popup li a');  //버튼역할하는 nav a를 변수로
+// const 
+// $popupMenu.click(function(){
+//   $('.s_tktMenu #s_tktMenuBtn span').removeClass('on');
+//   $('.s_tktMenu #s_tktMenuBtn span').addClass('on');
+
+// });
+
+
 
 
 
