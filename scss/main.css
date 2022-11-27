@@ -89,7 +89,6 @@ body {
   min-width: 270px;
   background: var(--color-bg);
   margin: 0 auto;
-  height: 100vh;
   color: var(--color-text);
 }
 .Container::-webkit-scrollbar {
@@ -238,7 +237,7 @@ body {
 }
 .tktContainer .tktMenu .tktBar .tktActive::after {
   position: absolute;
-  bottom: 13px;
+  bottom: -8px;
   left: 0;
   content: "";
   width: 100%;
@@ -383,17 +382,19 @@ body {
   margin-right: 0;
   padding-bottom: 40px;
 }
-.postContainer .post .postTxt {
+.postContainer .post .postWrap {
+  margin-right: 20px;
+}
+.postContainer .post .postWrap .postTxt {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 20px;
 }
-.postContainer .post .postTxt p {
+.postContainer .post .postWrap .postTxt p {
   font-size: 13px;
   line-height: 1.5;
 }
-.postContainer .post .postTxt a span {
+.postContainer .post .postWrap .postTxt a span {
   line-height: 1.5;
   padding: 7px 13px;
   background: var(--color-gray1);
@@ -655,33 +656,48 @@ body {
 .fixedBtn {
   position: fixed;
   right: 0px;
-  bottom: 200px;
+  bottom: 100px;
   z-index: 150;
+  transition: 0.4s;
 }
 .fixedBtn .tktBtnWrap {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  width: 130px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
   border-radius: 50px 0 0 50px;
-  background: red;
+  background: rgb(229, 9, 20);
+  background: linear-gradient(164deg, rgb(229, 9, 20) 0%, rgb(255, 87, 8) 0%, rgb(255, 0, 0) 0%, rgb(255, 119, 0) 76%, rgb(255, 134, 87) 100%);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
-.fixedBtn .tktBtnWrap #tktBtn {
+.fixedBtn .tktBtnWrap .tktBtn {
+  color: var(--color-white);
   border: none;
   background: transparent;
+  cursor: pointer;
+}
+.fixedBtn .tktBtnWrap .tktBtn span {
+  font-size: 9px;
+}
+.fixedBtn .tktBtnWrap .tktBtn p {
+  font-size: 12px;
+  font-weight: 700;
 }
 .fixedBtn .tktBtnWrap .tktBtnImg {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 20x;
+  height: 20px;
+  margin-left: 5px;
+  transform: rotate(-45deg);
 }
 .fixedBtn .tktBtnWrap .tktBtnImg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 3px;
+  padding: 0 5px 0 0px;
+  filter: invert(100);
 }
 @media (min-width: 640px) {
   .fixedBtn {
@@ -690,33 +706,42 @@ body {
   }
 }
 
-#topBtn {
+.fixedBtnActive {
+  bottom: 150px;
+  transition: 0.4s;
+}
+
+.topBtn {
   position: fixed;
-  right: 30px;
-  bottom: 130px;
+  right: 20px;
+  bottom: 50px;
   z-index: 150;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: var(--color-gray1);
-  padding-top: 8px;
-  opacity: 1;
-  transition: 0.3s;
   border: none;
   cursor: pointer;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  z-index: 150;
+  opacity: 0;
+  transition: 0.4s;
+}
+.topBtn img {
+  width: 20px;
+  height: 20px;
 }
 @media (min-width: 640px) {
-  #topBtn {
+  .topBtn {
     right: 50%;
     margin-right: -296px;
   }
 }
 
-#topBtn img {
-  width: 24px;
-  height: 25px;
-  margin-bottom: 5px;
+.topBtnActive {
+  bottom: 100px;
+  transition: 0.4s;
+  opacity: 0;
 }
 
 /*** footer ****/
