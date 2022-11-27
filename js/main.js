@@ -23,7 +23,6 @@ let bannerSlide = {
 }
 const bSlide = new Swiper('#bannerSlide', bannerSlide)
 
-
 /****** main tkt slide ******/
 let tktSlide = {
   slidesPerView : 1.3,
@@ -36,7 +35,6 @@ let tktSlide = {
 }
 const tSlide = new Swiper('#tktSlide', tktSlide)
 
-
 /****** show slide ******/
 let showSlide = {
   slidesPerView : 2.5,
@@ -44,7 +42,6 @@ let showSlide = {
   loop : true,
 }
 const sSlide = new Swiper('#showSlide', showSlide)
-
 
 /***** post slide *****/
 let postSlide = {
@@ -55,49 +52,44 @@ let postSlide = {
 const pSlide = new Swiper('#postSlide', postSlide)
 
 
-
-
-
-
 /****** tkt 클릭시 변동 ******/
-const $btn = $('.tktMenu li a');  //버튼역할하는 nav a를 변수로
+const $btn = $('.tktMenu li');  //버튼역할하는 nav a를 변수로
 
 $btn.click(function(){
   $btn.removeClass('tktActive');
   $(this).addClass('tktActive');
-});
-
-
-
-// $('.tktWrap').isotope({
-//   // options
-//   itemSelector: '.all',
-//   stagger:100,
-//   transitionDuration: '0.2s',
-//   hiddenStyle: {
-//     opacity: 0
-//   },
-//   visibleStyle: {
-//     opacity: 1
-//   }
 // });
+// window.addEventListener("load", () => {
+//   //Masonry 레이아웃(Isotope 플러그인 이용)
+//   const iso = new Isotope("#tktSlide", {
+//     // options
+//     itemSelector: ".tktWrap li",
+//   });
 
-// $('.btnAll').click(function(){
-//   $('.tktWrap').isotope({ filter: '*' });
-// })
-// $('.btnPlay').click(function(){
-//   $('.tktWrap').isotope({ filter: '.play' });
-// })
-// $('.btnMusical').click(function(){
-//   $('.tktWrap').isotope({ filter: '.musical' });
-// })
-// $('.btnConcert').click(function(){
-//   $('.tktWrap').isotope({ filter: '.concert' });
-// })
-// $('.btnExhibit').click(function(){
-//   $('.tktWrap').isotope({ filter: '.exhibit' });
-// })
+// const tktFilterBtn = document.querySelectorAll(".tktBar>li"); //.btn>li들을 변수에
 
+//   for (let el of tktFilterBtn) {
+//     //배열 filterBtn 의 아이템(갯수) 만큼 반복
+//     el.addEventListener("click", (e) => {
+//       e.preventDefault();
+
+//       //클릭을 할때 각 아이템(버튼)에 반복, on클라스 없애줌
+//       for (let el of tktFilterBtn) {
+//         el.classList.remove("tktActive");
+//       }
+
+//       //클릭한 버튼에 클라스 넣어줌
+//       e.currentTarget.classList.add("tktActive");
+
+//       //클릭한 버튼에 있는 a태그 안의 속성 href의 value값을 가져온다
+//       const filering = e.currentTarget.querySelector("a").getAttribute("href");
+
+//       iso.arrange({ filter: filering }); //버튼을 누르면 필터링 작동(플러그인)
+//     });
+//   }
+
+});
+  
 
 
 /******* feed ******/
@@ -131,3 +123,25 @@ window.addEventListener("load", () => {
     });
   }
 });
+
+
+/*** topBtn ****/
+$(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 600){
+      $('#topBtn').fadeIn();
+      $('#topBtn').css('opacity','0.7');
+      $('.fixedBtn').addClass('fixedBtnActive');
+    }else{
+      $('#topBtn').fadeOut();
+      $('.fixedBtn').removeClass('fixedBtnActive');
+    }
+  });
+});
+  
+  $('#topBtn').click(function(){
+    $('html, body').animate({
+      scrollTop : 0
+    }, 400);
+    return false;
+  });
