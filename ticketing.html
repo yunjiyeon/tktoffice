@@ -47,17 +47,8 @@
       
       <section class="s_tktMenuContainer inner">
         <div class="s_tktMenu">
-          <!-- <ul>
-            <li>
-              <input type="button" value="전체">
-            </li>
-          </ul> -->
           <button id="s_tktMenuBtn">
-            <span class="on">전체</span>
-            <!-- <span>연극</span>
-            <span>뮤지컬</span>
-            <span>콘서트</span>
-            <span>전시회</span> -->
+            <span class="menuBtnTxt">전체</span>
           </button>
           <span class="s_tktMenuBtnImg">
             <img src="img/bottomBtn.png" alt="">
@@ -65,7 +56,7 @@
         </div>
         <div class="s_tktOrder">
           <button id="s_tktMenuBtn">
-            <span>예매율순</span>
+            <span class="orderBtnTxt">예매율순</span>
           </button>
           <span class="s_tktMenuBtnImg">
             <img src="img/bottomBtn.png" alt="">
@@ -77,18 +68,18 @@
       <div class="darkBg"></div>
       <div class="s_popupMenu">
         <ul class="s_popup">
-          <li class="on"><a href=".s_all">전체</button></a></li>
-          <li><a href=".s_play">연극</button></a></li>
-          <li><a href=".s_musical">뮤지컬</button></a></li>
-          <li><a href=".s_concert">콘서트</button></a></li>
-          <li><a href=".s_exhibit">전시/행사</button></a></li>
+          <li class="on"><button id="allBtn" type="button"><a href=".s_all">전체</a></button></li>
+          <li><button id="playBtn" type="button"><a href=".s_play">연극</button></a></li>
+          <li><button id="musicalBtn" type="button"><a href=".s_musical">뮤지컬</button></a></li>
+          <li><button id="concertBtn" type="button"><a href=".s_concert">콘서트</button></a></li>
+          <li><button id="exhibitBtn" type="button"><a href=".s_exhibit">전시/행사</button></a></li>
         </ul>
       </div>
       <div class="s_popupOrder">
         <ul class="s_popup">
-          <li><a href="#">예매율순</button></a></li>
-          <li><a href="#">최신순</button></a></li>
-          <li><a href="#">가나다순</button></a></li>
+          <li><button id="tktRateBtn" type="button"><a href="#">예매율순</a></button></li>
+          <li><button id="latestBtn" type="button"><a href="#">최신순</a></button></li>
+          <li><button id="alphabetBtn" type="button"><a href="#">가나다순</a></button></li>
         </ul>
       </div>
 
@@ -327,7 +318,7 @@
           <article class="s_all s_concert">
             <div>
               <a href="#">
-                <span><img src="img/banner2-1.jpg" alt="" /></span>
+                <span><img src="img/feed21.jpg" alt="" /></span>
                 <div class="s_tktTxt">
                   <h3>&lt;콘서트&gt;<span>LUCY 앵콜 콘서트〈Childhood〉</span></h3>
                   <p>서울 | K-LIVE HALL <br>2022.12.03 ~ 2022.12.03</p>

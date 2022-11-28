@@ -2,6 +2,7 @@
 :root {
   --color-bg: #ffffff;
   --color-white: #ffffff;
+  --color-gray: #fafafa;
   --color-gray0: #f5f5f5;
   --color-gray1: #eeeeee;
   --color-gray2: #dddddd;
@@ -106,7 +107,7 @@ body {
   background: var(--color-bg);
   margin: 0 auto;
   padding: 0 20px;
-  height: 70px;
+  height: 60px;
   line-height: 70px;
   box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.12);
   z-index: 100;
@@ -135,13 +136,13 @@ body {
   color: transparent;
 }
 #header .logoContainer .sub img {
-  width: 1.8rem;
-  margin-left: 0.7rem;
+  width: 30px;
+  margin-left: 10px;
 }
 
 /***** 배너 ******/
 .bannerContainer {
-  margin: 70px 0 30px 0;
+  margin: 60px 0 30px 0;
   position: relative;
   font-family: "GmarketSansMedium";
   overflow: hidden;
@@ -265,8 +266,8 @@ body {
 .tktMainList #tktSlide a .tktImg .label {
   position: absolute;
   top: 0;
-  right: 15%;
-  width: 10%;
+  right: 10%;
+  width: 15%;
   border-radius: 0;
   box-shadow: none;
 }
@@ -487,14 +488,17 @@ body {
   margin: 0 0 2px 3px;
   vertical-align: middle;
 }
-.feedContainer .feedTag ul {
+.feedContainer .feedTag {
+  margin-top: 5px;
+}
+.feedContainer .feedTag .feedBtn {
   display: flex;
   flex-wrap: wrap;
 }
-.feedContainer .feedTag ul li {
+.feedContainer .feedTag .feedBtn li {
   margin: 0 10px 5px 0;
 }
-.feedContainer .feedTag ul li a span {
+.feedContainer .feedTag .feedBtn li a span {
   font-size: 11px;
   display: block;
   padding: 5px 15px;
@@ -505,26 +509,25 @@ body {
 .feedContainer .feedWrap {
   height: 390px;
   overflow: hidden;
-  margin-left: 15px;
 }
 .feedContainer .feedWrap .feedList article {
   margin-top: 15px;
-  width: 48%;
-  height: 180px;
+  width: 50%;
   padding: 0 5px;
 }
 .feedContainer .feedWrap .feedList article div {
   position: relative;
   width: 100%;
   height: 180px;
+  overflow: hidden;
 }
 .feedContainer .feedWrap .feedList article div a {
   display: block;
 }
 .feedContainer .feedWrap .feedList article div a h3 {
-  height: 30px;
+  height: 35px;
   background: rgba(255, 255, 255, 0.5);
-  line-height: 30px;
+  line-height: 35px;
   position: absolute;
   width: 100%;
   bottom: 0px;
@@ -542,7 +545,6 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding-left: 7px;
 }
 .feedContainer::before {
   display: block;
@@ -663,7 +665,7 @@ body {
 .fixedBtn {
   position: fixed;
   right: 0px;
-  bottom: 100px;
+  bottom: 120px;
   z-index: 50;
   transition: 0.4s;
 }
@@ -671,12 +673,13 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 90px;
+  width: 115px;
   height: 50px;
   border-radius: 50px 0 0 50px;
   background: rgb(229, 9, 20);
   background: linear-gradient(164deg, rgb(229, 9, 20) 0%, rgb(255, 87, 8) 0%, rgb(255, 0, 0) 0%, rgb(255, 119, 0) 76%, rgb(255, 134, 87) 100%);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
 }
 .fixedBtn .tktBtnWrap .tktBtn {
   color: var(--color-white);
@@ -695,7 +698,7 @@ body {
   display: block;
   width: 24px;
   height: 24px;
-  margin-left: 5px;
+  margin: 0 7px;
   transform: rotate(-45deg);
 }
 .fixedBtn .tktBtnWrap .tktBtnImg img {
@@ -726,10 +729,10 @@ body {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: var(--color-gray1);
+  background-color: var(--color-white);
   border: none;
   cursor: pointer;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   z-index: 50;
   opacity: 0;
   transition: 0.4s;
@@ -972,7 +975,7 @@ footer .copy {
 }
 
 .searchContainer {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 .searchContainer .search {
   position: relative;
@@ -985,7 +988,7 @@ footer .copy {
 .searchContainer .search input {
   width: 100%;
   height: 35px;
-  padding-left: 55px;
+  padding-left: 46px;
   font-size: 16px;
   border: 1px solid var(--color-text);
   border-radius: 50px;
@@ -1088,14 +1091,18 @@ footer .copy {
 }
 .s_popup li {
   border-bottom: 1px solid var(--color-gray1);
-  line-height: 3.5;
   text-align: center;
 }
 .s_popup li:last-child {
   border-bottom: 0;
 }
-.s_popup li a {
-  display: block;
+.s_popup li button {
+  width: 100%;
+  height: 100%;
+  line-height: 3.5;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 .s_tktListContainer {
@@ -1158,11 +1165,9 @@ footer .copy {
   cursor: pointer;
 }
 
-.s_tktMenu #s_tktMenuBtn .on {
-  display: block;
-}
-.s_tktMenu #s_tktMenuBtn span {
-  display: none;
+button {
+  font-family: "NanumSquareNeo-Variable";
+  color: var(--color-text);
 }
 
 .ticketingDetails .sub {
@@ -1182,7 +1187,7 @@ footer .copy {
 
 .detailsContainer {
   position: relative;
-  margin: 70px 0 30px 0;
+  margin: 60px 0 30px 0;
   color: var(--color-white);
 }
 .detailsContainer .detailsBg span {
@@ -1259,12 +1264,196 @@ footer .copy {
 }
 .detailsInfoContainer .detailsInfo ul li {
   display: flex;
-  margin: 15px 0;
+  margin: 12px 0;
 }
 .detailsInfoContainer .detailsInfo ul li p {
   width: 70px;
   color: var(--color-gray4);
 }
 .detailsInfoContainer .detailsInfo ul li span {
-  margin-left: 20px;
+  margin-left: 15px;
+}
+
+.d_infoMenuContainer {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li {
+  border-top: 1px solid var(--color-gray2);
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .infoBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .infoBox button {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  padding-left: 18px;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .infoBox span {
+  position: absolute;
+  right: 5%;
+  width: 20px;
+  height: 20px;
+  line-height: 50px;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .infoBox span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .enterInfo p {
+  line-height: 1.5;
+  font-size: 12px;
+  padding: 30px 20px;
+  background: var(--color-gray);
+  border-top: 1px solid var(--color-gray1);
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo {
+  font-size: 13px;
+  padding: 20px;
+  background: var(--color-gray);
+  border-top: 1px solid var(--color-gray1);
+  line-height: 1.5;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo strong {
+  color: var(--color-accent);
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo .cancleFee {
+  padding: 10px 0 24px 0;
+  width: 100%;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo .cancleFee table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo .cancleFee table .colgroup {
+  font-size: 12px;
+  line-height: 28px;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo .cancleFee table .date, .d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo .cancleFee table .fee {
+  background: var(--color-gray1);
+  border: 0 none;
+  border-top: 1px solid var(--color-gray3);
+  border-bottom: 1px solid var(--color-gray2);
+  height: 29px;
+  font-size: 12px;
+  padding: 0;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li .cancleInfo .cancleFee table td {
+  padding: 0 5px;
+}
+.d_infoMenuContainer .d_infoMenu .d_infoMenuWrap li img {
+  width: 100%;
+}
+
+.infoContent {
+  display: none;
+}
+
+.booking {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+}
+.booking button {
+  display: block;
+  width: 100%;
+  padding: 15px 23px;
+  border-radius: 50px;
+  font-size: 13px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+}
+
+.s_feedContainer {
+  margin-bottom: 100px;
+}
+.s_feedContainer .s_feedTag {
+  margin-top: 5px;
+}
+.s_feedContainer .s_feedTag .s_feedBtn {
+  display: flex;
+  flex-wrap: wrap;
+}
+.s_feedContainer .s_feedTag .s_feedBtn li {
+  margin: 0 10px 5px 0;
+}
+.s_feedContainer .s_feedTag .s_feedBtn li a span {
+  font-size: 11px;
+  display: block;
+  padding: 5px 15px;
+  border: 1px solid var(--color-text);
+  border-radius: 50px;
+  width: 100%;
+  height: 25px;
+}
+.s_feedContainer .s_feedWrap {
+  overflow: hidden;
+}
+.s_feedContainer .s_feedWrap .s_feedList article {
+  margin-top: 15px;
+  width: 100%;
+  padding: 0 5px;
+}
+.s_feedContainer .s_feedWrap .s_feedList article div {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.s_feedContainer .s_feedWrap .s_feedList article div a {
+  display: block;
+}
+.s_feedContainer .s_feedWrap .s_feedList article div a h3 {
+  height: 20%;
+  background: rgba(255, 255, 255, 0.6);
+  line-height: 4;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.s_feedContainer .s_feedWrap .s_feedList article div a p {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.s_feedContainer .s_feedWrap .s_feedList article div a img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

@@ -65,8 +65,8 @@
         .label{
           position: absolute;
           top: 0;
-          right: 15%;
-          width: 10%;
+          right: 10%;
+          width: 15%;
           border-radius: 0;
           box-shadow: none;
         }
@@ -291,22 +291,23 @@
 
 /*** section 6 feed ****/
 .feedContainer{
-  margin-bottom: 30px;
-  .feed{
-    .feedTit{
-      margin-top: 30px; 
-      @include flex-style;
-      h2{ 
-        img{
-          width: 16px;
-          margin: 0 0 2px 3px;
-          vertical-align: middle;
+    margin-bottom: 30px;
+    .feed{
+      .feedTit{
+        margin-top: 30px; 
+        @include flex-style;
+        h2{ 
+          img{
+            width: 16px;
+            margin: 0 0 2px 3px;
+            vertical-align: middle;
+          }
         }
       }
     }
-  }
   .feedTag{
-    ul{
+    margin-top: 5px;
+    .feedBtn{
       display: flex;
       flex-wrap: wrap;
       li{
@@ -326,24 +327,24 @@
   }
   .feedWrap{  
     height: 390px;
-    overflow: hidden;
-    margin-left: 15px;
+    overflow: hidden;    
     .feedList{
       article{
         margin-top: 15px;
-        width: 48%;
-        height: 180px;
+        width: 50%;
         padding: 0 5px;
        div{
         position: relative;
         width: 100%;
         height: 180px;
+        overflow: hidden;
+
         a{
           display: block;
           h3{
-            height: 30px;
+            height: 35px;
             background: rgba(255,255,255,.5);
-            line-height: 30px;
+            line-height: 35px;
             position: absolute;
             width: 100%;
             bottom: 0px;
@@ -362,7 +363,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            padding-left: 7px;
           }
        }
       }
@@ -376,6 +376,8 @@
     opacity: 0.3;
   }
 }
+
+
 
 /*** section 7 hotClip ****/
 .hotClipContainer{
@@ -496,19 +498,20 @@
   .fixedBtn{
     position: fixed;
     right: 0px;
-    bottom: 100px;
+    bottom: 120px;
     z-index: 50;
     transition: .4s;
     .tktBtnWrap{
       display: flex;
       justify-content: end;
       align-items: center;
-      width: 90px;
+      width: 115px;
       height: 50px;
       border-radius: 50px 0 0 50px;
       background: rgb(229,9,20);
       background: linear-gradient(164deg, rgba(229,9,20,1) 0%, rgba(255,87,8,1) 0%, rgba(255,0,0,1) 0%, rgba(255,119,0,1) 76%, rgba(255,134,87,1) 100%);
       box-shadow: 3px 3px 10px rgba(0,0,0,.15);
+      opacity: 0.9;
       .tktBtn{
         color: var(--color-white); 
         border: none;
@@ -528,7 +531,7 @@
         display: block;
         width: 24px;
         height: 24px;
-        margin-left: 5px;
+        margin: 0 7px;
         transform: rotate(-45deg);
         img{
           width: 100%;
@@ -559,10 +562,10 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: var(--color-gray1);
+    background-color: var(--color-white);
     border: none;
     cursor: pointer;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.15);
+    box-shadow: 0px 0px 8px rgba(0,0,0,.2);
     z-index: 50;
     opacity: 0;
     transition: .4s;

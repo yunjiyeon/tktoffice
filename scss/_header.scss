@@ -9,7 +9,7 @@
   background:var(--color-bg);
   margin: 0 auto;
   padding: 0 20px;
-  height: 70px;
+  height: 60px;
   line-height: 70px;
   box-shadow: 3px 6px 10px rgba(0,0,0,.12);
   z-index: 100;
@@ -39,8 +39,8 @@
         color: transparent;
       }
       img {
-        width: 1.8rem;
-        margin-left: 0.7rem;
+        width: 30px;
+        margin-left: 10px;
       }
     }
   }
@@ -48,7 +48,7 @@
 
 /***** 배너 ******/ 
 .bannerContainer {
-  margin: 70px 0 30px 0;
+  margin: 60px 0 30px 0;
   position: relative;
   font-family: 'GmarketSansMedium';
   overflow: hidden;

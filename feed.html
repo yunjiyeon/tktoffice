@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매표소</title>
+  <link rel="stylesheet" href="scss/reset.css" />
+  <link rel="stylesheet" href="scss/main.css" />
+  <script src="https://kit.fontawesome.com/364ad93dfb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="Container s_tktContainer">
+    <!-- header -->
+    <header id="header">
+      <div class="logoContainer">
+        <div class="logo">
+          <h2>피드</h2>    
+        </div>
+        <div class="sub">
+          <a href="#"><img src="img/ticket.png" alt="티켓" /></a>
+          <span class="btnSub"><img src="img/ham_dark.png" alt="메뉴바"/>메뉴</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="searchContainer inner">
+        <form action="" class="search">
+          <input id="searchTxt" type="text" placeholder="검색어를 입력하세요">
+          <span class="searchBtn"><img src="img/search.png" alt=""></span>
+        </form>
+      </section>
+      <section class="s_feedContainer inner"> 
+        <nav class="s_feedTag">
+          <ul class="s_feedBtn"> 
+            <li class ="on">
+              <a href=".s_feedAll"><span># All</span></a>
+            </li>
+            <li>
+              <a href=".s_boxOffice"><span># 박스오피스</span></a>
+            </li>
+            <li>
+              <a href=".s_interview"><span># 표-터뷰</span></a>
+            </li>
+            <li>
+              <a href=".s_play"><span># 연극</span></a>
+            </li>
+            <li>
+              <a href=".s_musical"><span># 뮤지컬</span></a>
+            </li>
+            <li>
+              <a href=".s_concert"><span># 콘서트</span></a>
+            </li>
+            <li>
+              <a href=".s_exhibit"><span># 전시</span></a>
+            </li>
+            <li>
+          </ul>
+        </nav>
+        <div class="s_feedWrap">
+          <div class="s_feedList">
+            <article class="s_feedAll s_exhibit">
+              <div>
+                <a href="#">
+                  <img src="img/feed9.jpeg" alt="" />
+                  <h3>[서촌] 'YOSIGO 사진전' 따듯한 휴일의 기록</h3>
+                  <p>평범한 일상의 단면에 담긴 감성 ‘요시고 사진전: 따뜻한 휴일의 기록’</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_musical">
+              <div>
+                <a href="#">
+                  <img src="img/feed1.jpg" alt="" />
+                  <h3>[뮤지컬] 믿고 보는 뮤지컬 시카고가 돌아왔다</h3>
+                  <p>21주년 맞는 뮤지컬 &lt;시카고&gt; 캐스팅 공개…“최정원, 윤공주, 아이비, 티파니 영, 최재림 등 출연”</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_concert">
+              <div>
+                <a href="#">
+                  <img src="img/feed3.jpg" alt="" />
+                  <h3>[콘서트] '사건의 지평선' 윤하 콘서트 2022</h3>
+                  <p>‘독보적 라이브 여신’ 윤하, 12월 단독 콘서트 `END THEORY` 개최 </p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_exhibit">
+              <div>
+                <a href="#">
+                  <img src="img/feed4.jpg" alt="" />
+                  <h3>[성수] vivian maier 사진전은 어때?</h3>
+                  <p>베이비시터 천재 사진작가 '비비안 마이어' 사진전 개막</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_interview">
+              <div>
+                <a href="#">
+                  <img src="img/feed20.jpg" alt="" />
+                  <h3>[표터뷰] 샘바이펜 &lt;모노폴리&gt; 가짜 예술을 하는 진짜 예술가</h3>
+                  <p>MZ세대가 가장 열광하는 아티스트, ‘샘바이펜’</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_boxOffice">
+              <div>
+                <a href="#">
+                  <img src="img/feed0-3.jpg" alt="" />
+                  <h3>[박스오피스] 이번 주 박스오피스</h3>
+                  <p>분야별 뜨거운 관심을 받고 있는 작품들!</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_musical s_interview">
+              <div>
+                <a href="feedDetails.html">
+                  <img src="img/feed6.jpg" alt="" />
+                  <h3>[표터뷰] 'CHICAGO' 완벽한 록시 하트 민경아</h3>
+                  <p>민경아 "서른살에 만난 섹시한 '록시', 큰 용기 얻었죠"</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_interview">
+              <div>
+                <a href="#">
+                  <img src="img/feed8.jpg" alt="" />
+                  <h3>[표터뷰][단독] 트리플 밀리언 셀러 | NCT DREAM , 겨울 컴백 </h3>
+                  <p>'컴백' NCT DREAM, 2연속 '트리플 밀리언셀러' 초읽기</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_play s_interview">
+              <div>
+                <a href="#">
+                  <img src="img/feed7.jpg" alt="" />
+                  <h3>[표터뷰] 대학로의 '떠오르는 별' 연극 배우 박소은씨</h3>
+                  <p>“새 작품마다 쉬운 건 없어…연극은 소명, 무대는 생명 같죠”</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_boxOffice">
+              <div>
+                <a href="#">
+                  <img src="img/feed0-1.jpg" alt="" />
+                  <h3>[박스오피스] 이번 주 박스 오피스</h3>
+                  <p>분야별 뜨거운 관심을 받고 있는 작품들!</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_play">
+              <div>
+                <a href="#">
+                  <img src="img/feed2.jpg" alt="" />
+                  <h3>[대학로] 대학로의 무대가 끝나고 난 뒤, 이야기</h3>
+                  <p>배우들의 뒤풀이 현장</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_play">
+              <div>
+                <a href="#">
+                  <img src="img/feed11.jpg" alt="" />
+                  <h3>[청주] '제 20회 소극장 연극제' 개최</h3>
+                  <p>충북연극협회 주최 17일까지 전국 5개 극단 참여 다양한 작품 선봬</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_boxOffice">
+              <div>
+                <a href="#">
+                  <img src="img/feed0.jpg" alt="" />
+                  <h3>[박스오피스] 이번 주 박스 오피스</h3>
+                  <p>분야별 뜨거운 관심을 받고 있는 작품들!</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_concert">
+              <div>
+                <a href="#">
+                  <img src="img/feed15.jpg" alt="" />
+                  <h3>[콘서트] 멜로망스 단독 콘서트 '인사'</h3>
+                  <p>멜로망스, 연말 전국투어 콘서트…서울→울산 9개 도시 간다</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_boxOffice">
+              <div>
+                <a href="#">
+                  <img src="img/feed0-2.jpg" alt="" />
+                  <h3>[박스오피스] 이번 주 박스 오피스</h3>
+                  <p>분야별 뜨거운 관심을 받고 있는 작품들!</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_exhibit">
+              <div>
+                <a href="#">
+                  <img src="img/feed19.jpg" alt="" />
+                  <h3>[고양] 봄을 품은 전시 &lt;테레사 프레이타스 사진전&gt;</h3>
+                  <p>더현대 서울서 '테레사 프레이타스' 사진전 관람 어떠세요?</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_musical">
+              <div>
+                <a href="#">
+                  <img src="img/feed16.jpg" alt="" />
+                  <h3>[뮤지컬] 드라큘라 '명불허전 류큘' 류정환의 귀환</h3>
+                  <p>더 입체적이고 더 섬세해서… 치명적인 드라큘라</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_concert">
+              <div>
+                <a href="#">
+                  <img src="img/feed21.jpg" alt="" />
+                  <h3>[콘서트] LUCY 전국 콘서트</h3>
+                  <p>밴드 루시(LUCY), 12월 두 번째 단독 콘서트 개최…11일 티켓 오픈 기대 UP</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_musical">
+              <div>
+                <a href="#">
+                  <img src="img/feed17.jpg" alt="" />
+                  <h3>[뮤지컬] 세상을 바꾸는 소녀, 마틸다</h3>
+                  <p>천재 소녀가 온다! 뮤지컬 마틸다 파헤쳐보기</p>
+                </a>
+              </div>
+            </article>
+            <article class="s_feedAll s_exhibit">
+              <div>
+                <a href="#">
+                  <img src="img/feed18.jpg" alt="" />
+                  <h3>[강남] 사랑을 그린 고양이 화가 '루이스 웨인전'</h3>
+                  <p>정신병을 의심받은 고양이 애호가의 작품 세계, 루이스 웨인의 캣 사이키델리아</p>
+                </a>
+              </div>
+            </article>
+
+            <article class="s_feedAll s_concert">
+              <div>
+                <a href="#">
+                  <img src="img/feed14.png" alt="" />
+                  <h3>[콘서트] IU GOLDEN HOUR</h3>
+                  <p>잠실에 떼창 울려퍼진 '좋은날'…8만명 몰린 아이유 콘서트 '심쿵'</p>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+
+    <!-- 하단 고정 메뉴-->
+    <div class="bottomMenuContainer">
+    <div class="bottomMenu">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="bottomMenuImg"><img src="img/b-home.png" alt=""></span>
+            <span class="bottomTxt">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="bottomMenuImg"><img src="img/b-store.png" alt=""></span>
+            <span class="bottomTxt">스토어</span>
+          </a>
+        </li>
+        <li>
+          <a href="ticketing.html">
+            <span class="bottomMenuImg"><img src="img/b-ticketing.png" alt=""></span>
+            <span class="bottomTxt">예매</span>
+          </a>
+        </li>
+        <li>
+          <a href="feed.html" class="menuActive">
+            <span class="bottomMenuImg"><img src="img/b-feed.png" alt=""></span>
+            <span class="bottomTxt">피드</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="bottomMenuImg"><img src="img/b-user.png" alt=""></span>
+            <span class="bottomTxt">MY</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- topBtn -->
+    <div class="fixedBtn">
+      <div class="fixedTkt">
+        <a href="ticketing.html" class="tktBtnWrap">
+          <button class="tktBtn">
+            <span>빠르고 쉽게</span>
+            <p>지금 예매</p>
+          </button>
+          <span class="tktBtnImg"><img src="img/ticket.png" alt=""></span>
+        </a>
+      </div>
+    </div>
+    <button class="topBtn">
+      <img src="img/topBtn.png" alt="">
+    </button>
+  </div>
+
+
+  <!-- sub menu -->
+  <div id="gnb"> 
+    <div class="gnbContainer">
+      <div class="gnbTop">
+        <h2>
+          <a href="#">
+            <span>매표소</span>
+            <img src="img/logo_W.png" alt="">
+          </a>
+        </h2>
+        <div class="close"><img src="img/close_w.png" alt=""></div>
+      </div>
+      
+      <div class="loginContainer">
+        <h3><a href="#">로그인을 해 주세요:)</a></h3>
+        <div class="loginBox">
+          <div class="login">
+            <a href="#">
+              <span>로그인</span>
+            </a> | 
+            <a href="#">
+              <span>회원가입</span>
+            </a>
+          </div>
+          <p><a href="#">비회원 예매확인</a></p>
+        </div>
+      </div>
+      <div class="gnbBack">
+        <div class="gnbBox">
+          <div class="gnbTit">
+            <h3>QUICK MENU</h3>
+            <p><a href="#">전체 메뉴 보기
+              <img src="img/b-right.png" alt=""></a></p><!-- 아래 방향 화살표로 이미지 바꾸기-->
+          </div>
+          <div class="gnbMenuContainer">
+            <ul class="gnbMenu">
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/play_icon4.png" alt=""></div>
+                  <span>연극<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/musical_icon.png" alt=""></div>
+                  <span>뮤지컬<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/concert_icon2.png" alt=""></div>
+                  <span>콘서트<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/exhibit_icon.png" alt=""></div>
+                  <span>전시/행사<br>예매</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/store_icon.png" alt=""></div>
+                  <span>스토어</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/sale_icon.png" alt=""></div>
+                  <span>제휴/할인</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/event_icon.png" alt=""></div>
+                  <span>이벤트</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="imgBox"><img src="img/qna_icon.png" alt=""></div>
+                  <span>상담톡</span>
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="darkMode">
+              <button>다크모드</button>
+              <input type="checkbox" id="toggle" hidden> 
+              <label for="toggle" class="toggleSwitch">
+                <span class="toggleButton"></span>
+              </label>
+            </div> -->
+            <div class="notice">
+              <p>[공지] 서버 점검 안내 (2022.11.29 am 12:00 ~ 2022.11.30 am 05:00)</p>
+            </div>
+            <div class="gnbBottom">
+              <div class="sns">
+                <ul>
+                  <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+                  <li><a href="#"><img src="img/instagrame.png" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="alram">
+                <a href="#"><span>알림함</span></a> | 
+                <a href="#"><span>고객센터</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

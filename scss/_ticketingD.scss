@@ -1,3 +1,8 @@
+button{
+  font-family: "NanumSquareNeo-Variable";
+  color: var(--color-text);
+}
+
 .ticketingDetails{
   .sub {
     display: flex;
@@ -16,7 +21,7 @@
 }
 .detailsContainer {
   position: relative;
-  margin: 70px 0 30px 0;
+  margin: 60px 0 30px 0;
   color: var(--color-white);
   .detailsBg{
     span{
@@ -92,15 +97,133 @@
     ul{
       li{
         display: flex;
-        margin: 15px 0;
+        margin: 12px 0;
         p{
           width: 70px;
           color: var(--color-gray4);
         }
         span{
-          margin-left: 20px;
+          margin-left: 15px;
         }
       }
     }
+  }
+}
+
+
+.d_infoMenuContainer{
+  width: 100%;
+  margin-bottom: 100px;
+  .d_infoMenu{
+    .d_infoMenuWrap{
+      li{
+        border-top: 1px solid var(--color-gray2);    
+        .infoBox{
+          position: relative;
+          width: 100%;
+          height: 50px;
+          button{
+            width: 100%;
+            height: 100%;
+            text-align: start;
+            padding-left: 18px;
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            cursor: pointer;
+          }
+          span{
+            position: absolute;
+            right: 5%;
+            width: 20px;
+            height: 20px;
+            line-height: 50px;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .enterInfo{
+          p{
+            line-height: 1.5;
+            font-size: 12px;
+            padding: 30px 20px;
+            background: var(--color-gray);
+            border-top: 1px solid var(--color-gray1);
+          }
+        }
+        .cancleInfo{
+          font-size: 13px;
+          padding: 20px;
+          background: var(--color-gray);
+          border-top: 1px solid var(--color-gray1);
+          line-height: 1.5;
+          strong{
+            color: var(--color-accent);
+          }
+          .cancleFee{
+            padding: 10px 0 24px 0;
+            width: 100%;
+            table{
+              border-collapse: collapse;
+              width: 100%;
+              text-align: center;
+
+              .colgroup{
+                font-size: 12px;
+                line-height: 28px;
+              }
+              .date, .fee{
+                background: var(--color-gray1);
+                border: 0 none;
+                border-top: 1px solid var(--color-gray3);
+                border-bottom: 1px solid var(--color-gray2);
+                height: 29px;
+                font-size: 12px;
+                padding: 0;
+              }
+              td{
+                padding: 0 5px;
+              }
+            }
+          }
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.infoContent{
+  display: none;
+}
+
+
+.booking{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.5);
+
+  button{
+    display: block;
+    width: 100%;
+    padding: 15px 23px;
+    border-radius: 50px;
+    font-size: 13px;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    
   }
 }
