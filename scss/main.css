@@ -261,13 +261,13 @@ body {
   overflow: hidden;
 }
 .tktMainList #tktSlide a .tktImg img {
-  width: 90%;
+  width: 80%;
   border-radius: 10px;
 }
 .tktMainList #tktSlide a .tktImg .label {
   position: absolute;
   top: 0;
-  right: 10%;
+  right: 15%;
   width: 15%;
   border-radius: 0;
   box-shadow: none;

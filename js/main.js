@@ -25,7 +25,7 @@ const bSlide = new Swiper("#bannerSlide", bannerSlide);
 
 /****** main tkt slide ******/
 let tktSlide = {
-  slidesPerView: 1.3,
+  slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
   autoplay: {
