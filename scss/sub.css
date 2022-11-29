@@ -132,7 +132,6 @@ html.dark {
   z-index: 150;
   background: var(--color-white);
   border-radius: 10px 10px 0 0;
-  font-size: 14px;
 }
 
 .s_popupOrder {
@@ -156,6 +155,7 @@ html.dark {
   border: 0;
   background: transparent;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .s_tktListContainer {
