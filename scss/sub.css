@@ -68,7 +68,8 @@ html.dark {
   align-items: center;
 }
 
-.s_tktMenu, .s_tktOrder {
+.s_tktMenu,
+.s_tktOrder {
   position: relative;
 }
 
@@ -117,7 +118,8 @@ html.dark {
   z-index: 110;
 }
 
-.s_popupMenu, .s_popupOrder {
+.s_popupMenu,
+.s_popupOrder {
   display: none;
   position: fixed;
   bottom: 0px;
@@ -125,12 +127,12 @@ html.dark {
   left: 0;
   max-width: 640px;
   min-width: 270px;
-  height: 310px;
+  height: 300px;
   margin: 0 auto;
   z-index: 150;
   background: var(--color-white);
   border-radius: 10px 10px 0 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .s_popupOrder {
