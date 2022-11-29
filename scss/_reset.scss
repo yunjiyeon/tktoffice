@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 header,
 main,
 section,
@@ -35,7 +34,6 @@ img {
   vertical-align: middle;
 }
 
-
 @font-face {
   font-family: "NanumSquareNeo-Variable";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
@@ -45,22 +43,23 @@ img {
 }
 
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-body{
+body {
   font-family: "NanumSquareNeo-Variable";
   color: var(--color-text);
 }
 
-.show{
+.show {
   opacity: 1;
 }
 
-.hide{
+.hide {
   opacity: 0;
 }
 
@@ -68,15 +67,15 @@ body{
   margin: 0 18px;
 }
 
-.body{
+.body {
   overflow-y: scroll;
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; 
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none; /* 크롬, 사파리, 오페라, 엣지 */
   }
 }
-.Container { 
+.Container {
   max-width: 640px;
   min-width: 270px;
   background: var(--color-bg);

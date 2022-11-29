@@ -122,12 +122,24 @@ window.addEventListener("load", () => {
   }
 });
 
-/**** 동영상 실행 *****/
+// 피드 하트
+// $(".heart img").click(function () {
+//   $(this).css({ display: "none" });
+//   $(".clickHeart").css({ display: "block" });
+// });
+
+// $(".heart img").click(function () {
+//   $(this).css({ display: "none" });
+//   $(".clickHeart").css({ display: "block" });
+// });
+
+/**** 동영상 실행  *****/
 $(".videoDarkBg, .videoClose").click(function () {
   $(".videoDarkBg").css({ display: "none" });
   $(".videoClose").css({ display: "none" });
   $(".videoPopup").hide();
 });
+
 $(".video").click(function () {
   $(".videoPopup").show();
   $(".videoDarkBg").css({ display: "block" });
