@@ -2,11 +2,11 @@
 .tit {
   margin-bottom: 15px;
   @include flex-style;
-  h2{
+  h2 {
     font-size: 18px;
-      img{
-        @include titImg-style;
-      }
+    img {
+      @include titImg-style;
+    }
   }
   p {
     color: var(--color-gray3);
@@ -30,7 +30,7 @@
       .tktActive {
         position: relative;
         color: var(--color-text);
-        &::after{
+        &::after {
           position: absolute;
           bottom: 14px;
           left: 0;
@@ -57,12 +57,12 @@
   overflow: hidden;
   #tktSlide {
     a {
-      .tktImg{
+      .tktImg {
         img {
           width: 90%;
           border-radius: 10px;
         }
-        .label{
+        .label {
           position: absolute;
           top: 0;
           right: 10%;
@@ -72,7 +72,7 @@
         }
       }
     }
-    .tktTxt{
+    .tktTxt {
       margin: 0 10px;
 
       h3 {
@@ -84,7 +84,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      p{
+      p {
         color: var(--color-gray3);
         font-size: 11px;
         font-weight: 100;
@@ -93,18 +93,18 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      .tktBtn{
+      .tktBtn {
         padding: 8px 23px;
         border-radius: 50px;
         font-size: 13px;
         background: var(--color-accent);
         color: var(--color-white);
       }
-    }    
+    }
   }
 }
 
-/***** section 2 *****/ 
+/***** section 2 *****/
 .showList {
   overflow: hidden;
   margin: 10px 0px 0 18px;
@@ -119,7 +119,7 @@
     width: 100%;
     border-radius: 10px;
   }
-  &::before{
+  &::before {
     display: block;
     content: "";
     border: 1px solid var(--color-gray2);
@@ -131,25 +131,25 @@
 /****** section 3 *******/
 .myMenuContainer {
   width: 100%;
-  .myMenu{
+  .myMenu {
     margin: 40px 30px;
     background: var(--color-gray0);
     border-radius: 10px;
-    ul{
+    ul {
       @include flex-style;
       padding: 10px;
-      li{
+      li {
         width: 25%;
         margin: 3.75px;
         text-align: center;
-        a{
+        a {
           display: block;
           color: var(--color-gray4);
-          .myMenuImg{
+          .myMenuImg {
             width: 50px;
             height: 50px;
             display: inline-block;
-            img{
+            img {
               display: block;
               width: 100%;
               background: var(--color-white);
@@ -157,10 +157,10 @@
               padding: 5px;
             }
           }
-          span{
+          span {
             display: block;
             font-size: 12px;
-            &:last-child{
+            &:last-child {
               padding-top: 3px;
             }
           }
@@ -171,43 +171,43 @@
 }
 
 /***** section 4 ******/
-.eventBannerContainer{
-    .eventImg{
-      img{
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;;
-      }
+.eventBannerContainer {
+  .eventImg {
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
-  .playBannerContainer{
-    a{
-      img{
+  }
+  .playBannerContainer {
+    a {
+      img {
         width: 100%;
-        margin: 20px 0 30px 0 ;
+        margin: 20px 0 30px 0;
       }
     }
   }
 }
 
 /**** section 5 post ****/
-.postContainer{
+.postContainer {
   .post {
     overflow: hidden;
     margin-right: 0;
     padding-bottom: 40px;
-    .postTit{
+    .postTit {
       margin-right: 18px;
     }
-    .postTxt{
+    .postTxt {
       @include flex-style;
       padding-right: 20px;
 
-      p{
+      p {
         font-size: 13px;
         line-height: 1.5;
       }
-      a{
-        span{
+      a {
+        span {
           line-height: 1.5;
           padding: 7px 13px;
           background: var(--color-gray1);
@@ -219,29 +219,29 @@
     }
   }
 
-  #postSlide{
+  #postSlide {
     padding-top: 10px;
-    .postWrap{
+    .postWrap {
       @include flex-style;
-      
+
       li {
         border-radius: 10px;
         background: var(--color-gray0);
-        box-shadow: 3px 3px 8px rgba(0,0,0,.1);
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        img{
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
-        .postContent{
+        .postContent {
           height: 140px;
           padding: 10px;
           p {
             padding-top: 10px;
-            color: var(--color-gray5)
+            color: var(--color-gray5);
           }
-          .showName{
+          .showName {
             font: {
               size: 12px;
               weight: 700;
@@ -250,11 +250,12 @@
             overflow: hidden;
             text-overflow: ellipsis;
           }
-          .id, .review{
+          .id,
+          .review {
             font-size: 10px;
             color: var(--color-gray4);
           }
-          .review{
+          .review {
             display: -webkit-box;
             word-wrap: break-word;
             -webkit-line-clamp: 2;
@@ -263,22 +264,22 @@
             line-height: 2;
           }
         }
-        .postBtn{
+        .postBtn {
           display: flex;
           padding: 0px 0px 10px 10px;
-          button{
+          button {
             margin-right: 3px;
             border: 0;
             background: transparent;
             width: 14px;
             height: 14px;
             cursor: pointer;
-            img{
+            img {
               width: 100%;
               height: 100%;
             }
           }
-          span{
+          span {
             font-size: 12px;
             line-height: 20px;
             margin-right: 7px;
@@ -290,30 +291,30 @@
 }
 
 /*** section 6 feed ****/
-.feedContainer{
-    margin-bottom: 30px;
-    .feed{
-      .feedTit{
-        margin-top: 30px; 
-        @include flex-style;
-        h2{ 
-          img{
-            width: 16px;
-            margin: 0 0 2px 3px;
-            vertical-align: middle;
-          }
+.feedContainer {
+  margin-bottom: 30px;
+  .feed {
+    .feedTit {
+      margin-top: 30px;
+      @include flex-style;
+      h2 {
+        img {
+          width: 16px;
+          margin: 0 0 2px 3px;
+          vertical-align: middle;
         }
       }
     }
-  .feedTag{
+  }
+  .feedTag {
     margin-top: 5px;
-    .feedBtn{
+    .feedBtn {
       display: flex;
       flex-wrap: wrap;
-      li{
+      li {
         margin: 0 10px 5px 0;
-        a{
-          span{
+        a {
+          span {
             font-size: 11px;
             display: block;
             padding: 5px 15px;
@@ -325,48 +326,48 @@
       }
     }
   }
-  .feedWrap{  
+  .feedWrap {
     height: 390px;
-    overflow: hidden;    
-    .feedList{
-      article{
+    overflow: hidden;
+    .feedList {
+      article {
         margin-top: 15px;
         width: 50%;
         padding: 0 5px;
-       div{
-        position: relative;
-        width: 100%;
-        height: 180px;
-        overflow: hidden;
+        div {
+          position: relative;
+          width: 100%;
+          height: 180px;
+          overflow: hidden;
 
-        a{
-          display: block;
-          h3{
-            height: 35px;
-            background: rgba(255,255,255,.5);
-            line-height: 35px;
-            position: absolute;
-            width: 100%;
-            bottom: 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding: 0 15px;
-            font: {
-              size: 12px;
-              weight: 100;
+          a {
+            display: block;
+            h3 {
+              height: 35px;
+              background: rgba(255, 255, 255, 0.5);
+              line-height: 35px;
+              position: absolute;
+              width: 100%;
+              bottom: 0px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              padding: 0 15px;
+              font: {
+                size: 12px;
+                weight: 100;
+              }
+            }
+            img {
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
-          img{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-       }
+        }
       }
-     }
     }
   }
   &::before {
@@ -377,36 +378,33 @@
   }
 }
 
-
-
 /*** section 7 hotClip ****/
-.hotClipContainer{
-  .hotClip{
+.hotClipContainer {
+  .hotClip {
     margin-bottom: 40px;
-    .hotClipTit{
+    .hotClipTit {
       margin-top: 30px;
-      img{
+      img {
         vertical-align: middle;
       }
     }
-   }
-  .hotClipVideo{
-    a{
+  }
+  .hotClipVideo {
+    .video {
       position: relative;
-
-      display: block;
-      .hotClipWrap{
+      cursor: pointer;
+      .hotClipWrap {
         display: block;
         width: 100%;
         height: 180px;
-        img{
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           border-radius: 10px;
         }
       }
-      button{
+      button {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -414,18 +412,18 @@
         text-align: center;
         width: 50px;
         height: 50px;
-        border:0;
+        border: 0;
         padding: 15px 15px 15px 18px;
         background: var(--color-accent);
         border-radius: 50px;
         cursor: pointer;
-        img{
+        img {
           width: 100%;
           height: 100%;
           filter: invert(100);
         }
       }
-      p{
+      p {
         margin: 10px 0 0 10px;
         font-size: 13px;
         white-space: nowrap;
@@ -434,7 +432,7 @@
       }
     }
   }
-  &::before{
+  &::before {
     display: block;
     content: "";
     border: 1px solid var(--color-gray2);
@@ -454,34 +452,33 @@
   background: var(--color-white);
   border-top: 1px solid var(--color-gray1);
   z-index: 100;
-  .bottomMenu{
-    
-    ul{
+  .bottomMenu {
+    ul {
       @include flex-style;
       padding: 0 10px 20px 10px;
-      li{
+      li {
         width: 20%;
         margin: 5px;
         text-align: center;
-        .menuActive{
-          color:var(--color-text);
+        .menuActive {
+          color: var(--color-text);
           opacity: 1;
         }
-        a{
+        a {
           display: block;
           color: var(--color-gray4);
           opacity: 0.5;
-          .bottomMenuImg{
+          .bottomMenuImg {
             width: 40px;
             height: 40px;
             display: inline-block;
-            img{
+            img {
               display: block;
               width: 100%;
               padding: 5px;
             }
           }
-          .bottomTxt{
+          .bottomTxt {
             display: block;
             font-size: 11px;
             margin-top: -7px;
@@ -492,107 +489,112 @@
   }
 }
 
-
-
 /*** topBtn ***/
-  .fixedBtn{
-    position: fixed;
-    right: 0px;
-    bottom: 120px;
-    z-index: 50;
-    transition: .4s;
-    .tktBtnWrap{
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      width: 115px;
-      height: 50px;
-      border-radius: 50px 0 0 50px;
-      background: rgb(229,9,20);
-      background: linear-gradient(164deg, rgba(229,9,20,1) 0%, rgba(255,87,8,1) 0%, rgba(255,0,0,1) 0%, rgba(255,119,0,1) 76%, rgba(255,134,87,1) 100%);
-      box-shadow: 3px 3px 10px rgba(0,0,0,.15);
-      opacity: 0.9;
-      .tktBtn{
-        color: var(--color-white); 
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        span{
-          font-size: 9px;
-        }
-        p{
-          font: {
-            size: 12px;
-            weight: 700;
-          }
-        }
-      }
-      .tktBtnImg{
+.fixedBtn {
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+  z-index: 50;
+  transition: 0.4s;
+  .tktBtnWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+    background: rgb(229, 9, 20);
+    background: linear-gradient(
+      164deg,
+      rgba(229, 9, 20, 1) 0%,
+      rgba(255, 87, 8, 1) 0%,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 119, 0, 1) 76%,
+      rgba(255, 134, 87, 1) 100%
+    );
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+    .tktBtn {
+      color: var(--color-white);
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      span {
         display: block;
-        width: 24px;
-        height: 24px;
-        margin: 0 7px;
-        transform: rotate(-45deg);
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          padding: 0 5px 0 0px;
-          filter: invert(100);
+        font-size: 9px;
+      }
+      p {
+        font: {
+          size: 12px;
+          weight: 700;
         }
       }
-      
     }
-    @media ( min-width: 640px) {
-      right: 50%;
-      margin-right: -320px;
+    .tktBtnImg {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin: 0 -10px 0 7px;
+      transform: rotate(-45deg);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0 5px 0 0px;
+        filter: invert(100);
+      }
     }
   }
+  @media (min-width: 640px) {
+    right: 50%;
+    margin-right: -320px;
+  }
+}
 
-  .fixedBtnActive{
-    bottom: 150px;
-    transition: .4s;
-  }
+.fixedBtnActive {
+  bottom: 150px;
+  transition: 0.4s;
+}
 
-  .topBtn{
-    position: fixed;
-    right: 20px;
-    bottom: 50px;
-    z-index: 150;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.2);
-    z-index: 50;
-    opacity: 0;
-    transition: .4s;
-    img {
-      width: 20px;
-      height: 20px;
-    }    
-    @media ( min-width: 640px) {
-      right: 50%;
-      margin-right: -296px;
-    }
+.topBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 150;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  opacity: 0;
+  transition: 0.4s;
+  img {
+    width: 20px;
+    height: 20px;
   }
-  .topBtnActive{
-    bottom:100px;
-    transition: .4s;
-    opacity: 0;
+  @media (min-width: 640px) {
+    right: 50%;
+    margin-right: -296px;
   }
+}
+.topBtnActive {
+  bottom: 100px;
+  transition: 0.4s;
+  opacity: 0;
+}
 
 /*** footer ****/
-footer{
+footer {
   font-size: 11px;
   background: var(--color-gray0);
   padding: 40px 20px 100px 20px;
   text-align: center;
   line-height: 1.8;
   color: var(--color-gray3);
-  .footerMenu{
+  .footerMenu {
     font: {
       size: 12px;
       weight: 600;
@@ -600,27 +602,27 @@ footer{
     display: flex;
     justify-content: center;
     line-height: 2;
-    p{
+    p {
       padding: 0 5px;
-      a{
+      a {
         color: var(--color-gray4);
       }
-      &:nth-child(1){
+      &:nth-child(1) {
         font-weight: 100;
       }
     }
   }
-  .companyInfo{
-    p{
+  .companyInfo {
+    p {
       margin: 3px 0 10px 0;
       color: var(--color-gray4);
       font-weight: 600;
-      span{
+      span {
         padding: 0 5px;
       }
     }
   }
-  .copy{
+  .copy {
     display: block;
     margin: 10px 0;
     color: var(--color-gray2);

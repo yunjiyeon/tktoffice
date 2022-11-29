@@ -7,6 +7,7 @@
   <title>매표소</title>
   <link rel="stylesheet" href="scss/reset.css" />
   <link rel="stylesheet" href="scss/main.css" />
+  <link rel="stylesheet" href="scss/sub.css">
   <script src="https://kit.fontawesome.com/364ad93dfb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -32,7 +33,7 @@
         </div>
         <div class="sub">
           <a href="#"><img src="img/ticket.png" alt="티켓" /></a>
-          <span class="btnSub"><img src="img/ham_dark.png" alt="메뉴바" />메뉴</span>
+          <span class="btnSub"><img src="img/ham_dark.png" alt="메뉴바" /></span>
         </div>
       </div>
     </header>
@@ -723,6 +724,7 @@
           </div>
         </div>
       </section>
+      
       <!-- section 7 hotClip -->
       <section class="hotClipContainer inner">
         <div class="hotClip">
@@ -731,13 +733,19 @@
             <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
           </div>
           <div class="hotClipVideo">
-            <a href="">
+            <div class="video">
               <div class="hotClipWrap"><img src="img/hotclip.jpg" alt=""></div>
               <button><img src="img/playbtn5.png" alt=""></button>
               <p>[뮤지컬] 영원한 스테디셀러 뮤지컬, 캣츠 'memory'</p>
-            </a>
+            </div>
           </div>
+          <div class="videoDarkBg"></div>
+          <div class="videoPopup">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lf-GIxU7VBA" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <button class="videoClose"><img src="img/close_w.png" alt=""></div></button>
         </div>
+        
       </section>
     </main>
 

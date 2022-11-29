@@ -1,193 +1,223 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>매표소</title>
-  <link rel="stylesheet" href="scss/reset.css" />
-  <link rel="stylesheet" href="scss/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>매표소</title>
+    <link rel="stylesheet" href="scss/reset.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/sub.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script defer src="js/main.js"></script>
-</head>
-<body>
-  <div class="Container s_tktContainer ticketingDetails">
-    <!-- header -->
-    <header id="header">
-      <div class="logoContainer">
-        <div class="logo">
-          <h2>예매 상세</h2>    
-        </div>
-        <div class="sub">
-          <a href="ticketingDetails.html"><img src="img/refresh.png" alt="" /></a>
-          <a href="ticketing.html" class="btnClose"><img src="img/close.png" alt="닫기"/>닫기</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="detailsContainer">
-        <div class="detailsBg">
-          <span><img src="img/paly5.jpg" alt=""></span>
-        </div>
-        <div class="detailsPost">
-          <span class="detailsImg"><img src="img/paly5.jpg" alt="" /></span>
-          <div class="detailsTxt">
-            <h3>&lt;연극&gt;<span>[대구] 로맨틱 코미디연극 [옥탑방 고양이]</span></h3>
-            <p>운명특급<br>단짠로맨스 | 코미디연극</p>
-            <p class="saleTxt"><strong>매표소 단독 20% 할인</strong></p>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="Container s_tktContainer ticketingDetails">
+      <!-- header -->
+      <header id="header">
+        <div class="logoContainer">
+          <div class="logo">
+            <h2>예매 상세</h2>
+          </div>
+          <div class="sub">
+            <a href="ticketingDetails.html"
+              ><img src="img/refresh.png" alt=""
+            /></a>
+            <a href="ticketing.html" class="btnClose"
+              ><img src="img/close.png" alt="닫기"
+            /></a>
           </div>
         </div>
-      </section>
-      <section class="detailsInfoContainer inner">
-        <div class="detailsInfo">
-          <ul>
-            <li>
-              <p>공연장르</p>
-              <span>연극</span>
-            </li>
-            <li>
-              <p>공연일정</p>
-              <span>2022년 5월 01일(일) ~ 12월 31일(토)</span>
-            </li>
-            <li>
-              <p>공연시간</p>
-              <span>[주중] 오후 3시, 5시 15분<br>[주말] 오후 3시, 5시 15분, 7시 30분</span>
-            </li>
-            <li>
-              <p>공연장소</p>
-              <span>대학로 틴틴홀</span>
-            </li>
-            <li>
-              <p>관람시간</p>
-              <span>100분</span>
-            </li>
-            <li>
-              <p>관람연령</p>
-              <span>만 13세 이상</span>
-            </li>
-            <li>
-              <p>기본가</p>
-              <span>일반석 35,000원</span>
-            </li>
-            <li>
-              <p></p>
-              <span></span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="d_infoMenuContainer">
-        <div class="d_infoMenu">
-          <ul class="d_infoMenuWrap">
-            <li >
-              <div class="infoBox">
-                <button class="info_btn">공연정보</button>
-                <span><img src="img/bottomBtn.png" alt=""></span>
-              </div>
-              <div class="infoContent">
-                <img src="img/catinfo2.png" alt="">
-              </div>
-            </li>
-            <li >
-              <div class="infoBox">
-                <button class="info_btn">할인정보</button>
-                <span><img src="img/bottomBtn.png" alt=""></span>
-              </div>
-              <div class="infoContent">
-                <img src="img/catSale1.jpg" alt="">
-                <img src="img/catSale.jpg" alt="">
-              </div>
-            </li>
-            <li >
-              <div class="infoBox">
-                <button class="info_btn">유의사항</button>
-                <span><img src="img/bottomBtn.png" alt=""></span>
-              </div>
-              <div class="infoContent">
-                <img src="img/catinfo1.jpg" alt="">
-              </div>
-            </li>
-            <li >
-              <div class="infoBox">
-                <button class="info_btn">기획사 정보</button>
-                <span><img src="img/bottomBtn.png" alt=""></span>
-              </div>
-              <div class="enterInfo infoContent">
-                <p>주최/주관: 비컨크리에이티브㈜<br>문의: 053-252-5733</p>
-              </div>
-            </li>
-            <li >
-              <div class="infoBox">
-                <button class="info_btn">예매 / 취소 / 환불 안내</button>
-                <span><img src="img/bottomBtn.png" alt=""></span>
-              </div>
-              <div class="cancleInfo infoContent">
-                <p>취소 일자에 따라 아래와 같이 취소수수료가 부과됩니다.<br>예매일보다 관람일 기준이 우선 적용되오니 유의해주시기 바랍니다.<br><strong>단, 예매 후 7일 이내라도 취소시점이 공연일로부터 10일 이내라면 그에 해당하는 취소수수료가 부과됩니다.</strong><br>(단, 상품에 따라 취소 정책이 달라질 수 있고, 각 공연이 공지하는 취소 정책이 우선 적용되므로, 예매 시 참고하시기 바랍니다.)<p>
-                <div class="cancleFee">
-                  <table>
-                    <colgroup>
-                      <col width="50%">
-                      <col width="50%">
-                    </colgroup>
-                  <tbody>
-                    <tr>
-                      <th class="date">취소일</th>
-                      <th class="fee">취소 수수료</th>
-                    </tr>
-                    <tr>
-                      <td>예매 후 7일 이내</td>
-                      <td>없음</td>
-                    </tr>
-                    <tr>
-                      <td>예매 후 8일 ~ 관람일 10일 전까지</td>
-                      <td><strong>장당 4,000원</strong>(단, 티켓 금액의 10% 이내)</td>
-                    </tr>
-                    <tr>
-                      <td>관람일 9일 전 ~ 관람일 7일 전까지</td>
-                      <td>티켓 금액의 10%</td>
-                    </tr> 
-                    <tr>
-                      <td>관람일 6일 전 ~ 관람일 3일 전까지</td>
-                      <td>티켓 금액의 20%</td>
-                    </tr>
-                    <tr>
-                      <td>관람일 2일 전 ~ 취소마감일시까지</td>
-                      <td>티켓 금액의 30%</td>
-                    </tr>
-                  </tbody>
-                  </table>
+      </header>
+
+      <main>
+        <section class="detailsContainer">
+          <div class="detailsBg">
+            <span><img src="img/paly5.jpg" alt="" /></span>
+          </div>
+          <div class="detailsPost">
+            <span class="detailsImg"><img src="img/paly5.jpg" alt="" /></span>
+            <div class="detailsTxt">
+              <h3>
+                &lt;연극&gt;<span
+                  >[대구] 로맨틱 코미디연극 [옥탑방 고양이]</span
+                >
+              </h3>
+              <p>운명특급<br />단짠로맨스 | 코미디연극</p>
+              <p class="saleTxt"><strong>매표소 단독 20% 할인</strong></p>
+            </div>
+          </div>
+        </section>
+        <section class="detailsInfoContainer inner">
+          <div class="detailsInfo">
+            <ul>
+              <li>
+                <p>공연장르</p>
+                <span>연극</span>
+              </li>
+              <li>
+                <p>공연일정</p>
+                <span>2022년 5월 01일(일) ~ 12월 31일(토)</span>
+              </li>
+              <li>
+                <p>공연시간</p>
+                <span
+                  >[주중] 오후 3시, 5시 15분<br />[주말] 오후 3시, 5시 15분, 7시
+                  30분</span
+                >
+              </li>
+              <li>
+                <p>공연장소</p>
+                <span>대학로 틴틴홀</span>
+              </li>
+              <li>
+                <p>관람시간</p>
+                <span>100분</span>
+              </li>
+              <li>
+                <p>관람연령</p>
+                <span>만 13세 이상</span>
+              </li>
+              <li>
+                <p>기본가</p>
+                <span>일반석 35,000원</span>
+              </li>
+              <li>
+                <p></p>
+                <span></span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="d_infoMenuContainer">
+          <div class="d_infoMenu">
+            <ul class="d_infoMenuWrap">
+              <li>
+                <div class="infoBox">
+                  <button class="info_btn">공연정보</button>
+                  <span><img src="img/bottomBtn.png" alt="" /></span>
                 </div>
-                <p>예매수수료는 예매 당일 밤 12시 이전 취소 시에만 환불되며, 그 이후 기간에는 환불되지 않습니다.<br>취소는 MY공연>예매확인/취소 에서 직접 취소 또는 고객센터(1544-6399)를 통해 취소 가능합니다.<br>티켓이 배송된 후에는 PC/모바일 취소가 불가, 취소마감시간 이전에 예스24 고객센터로 티켓이 반송되어야 취소 가능합니다.<br>(취소수수료는 티켓 도착일 기준으로 부과되며, 배송비는 환불되지 않습니다.)각 상품별로 취소 정책이 다르게 적용될 수 있으니, 각 상품 안내 사항을 확인해주시기 바랍니다.<br>
-                </p>
-              </div>
-            </li> 
-          </ul>
-        </div>
-      </section>
-      
+                <div class="infoContent">
+                  <img src="img/catinfo2.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="infoBox">
+                  <button class="info_btn">할인정보</button>
+                  <span><img src="img/bottomBtn.png" alt="" /></span>
+                </div>
+                <div class="infoContent">
+                  <img src="img/catSale1.jpg" alt="" />
+                  <img src="img/catSale.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="infoBox">
+                  <button class="info_btn">유의사항</button>
+                  <span><img src="img/bottomBtn.png" alt="" /></span>
+                </div>
+                <div class="infoContent">
+                  <img src="img/catinfo1.jpg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="infoBox">
+                  <button class="info_btn">기획사 정보</button>
+                  <span><img src="img/bottomBtn.png" alt="" /></span>
+                </div>
+                <div class="enterInfo infoContent">
+                  <p>주최/주관: 비컨크리에이티브㈜<br />문의: 053-252-5733</p>
+                </div>
+              </li>
+              <li>
+                <div class="infoBox">
+                  <button class="info_btn">예매 / 취소 / 환불 안내</button>
+                  <span><img src="img/bottomBtn.png" alt="" /></span>
+                </div>
+                <div class="cancleInfo infoContent">
+                  <p>
+                    취소 일자에 따라 아래와 같이 취소수수료가 부과됩니다.<br />예매일보다
+                    관람일 기준이 우선 적용되오니 유의해주시기 바랍니다.<br /><strong
+                      >단, 예매 후 7일 이내라도 취소시점이 공연일로부터 10일
+                      이내라면 그에 해당하는 취소수수료가 부과됩니다.</strong
+                    ><br />(단, 상품에 따라 취소 정책이 달라질 수 있고, 각
+                    공연이 공지하는 취소 정책이 우선 적용되므로, 예매 시
+                    참고하시기 바랍니다.)
+                  </p>
+                  <p></p>
+                  <div class="cancleFee">
+                    <table>
+                      <colgroup>
+                        <col width="50%" />
+                        <col width="50%" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th class="date">취소일</th>
+                          <th class="fee">취소 수수료</th>
+                        </tr>
+                        <tr>
+                          <td>예매 후 7일 이내</td>
+                          <td>없음</td>
+                        </tr>
+                        <tr>
+                          <td>예매 후 8일 ~ 관람일 10일 전까지</td>
+                          <td>
+                            <strong>장당 4,000원</strong>(단, 티켓 금액의 10%
+                            이내)
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관람일 9일 전 ~ 관람일 7일 전까지</td>
+                          <td>티켓 금액의 10%</td>
+                        </tr>
+                        <tr>
+                          <td>관람일 6일 전 ~ 관람일 3일 전까지</td>
+                          <td>티켓 금액의 20%</td>
+                        </tr>
+                        <tr>
+                          <td>관람일 2일 전 ~ 취소마감일시까지</td>
+                          <td>티켓 금액의 30%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>
+                    예매수수료는 예매 당일 밤 12시 이전 취소 시에만 환불되며, 그
+                    이후 기간에는 환불되지 않습니다.<br />취소는
+                    MY공연>예매확인/취소 에서 직접 취소 또는
+                    고객센터(1544-6399)를 통해 취소 가능합니다.<br />티켓이
+                    배송된 후에는 PC/모바일 취소가 불가, 취소마감시간 이전에
+                    예스24 고객센터로 티켓이 반송되어야 취소 가능합니다.<br />(취소수수료는
+                    티켓 도착일 기준으로 부과되며, 배송비는 환불되지
+                    않습니다.)각 상품별로 취소 정책이 다르게 적용될 수 있으니,
+                    각 상품 안내 사항을 확인해주시기 바랍니다.<br />
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
-    </main>
+      <div class="booking">
+        <button>예매하기</button>
+      </div>
 
-    <div class="booking">
-      <button>
-        예매하기
+      <!-- topBtn -->
+      <button class="topBtn">
+        <img src="img/topBtn.png" alt="" />
       </button>
     </div>
-
-    <!-- topBtn -->   
-    <button class="topBtn">
-      <img src="img/topBtn.png" alt="">
-    </button>
-  </div> 
-
-  
-</body>
+  </body>
 </html>
