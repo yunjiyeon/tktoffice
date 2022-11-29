@@ -508,6 +508,10 @@ button {
      object-fit: cover;
 }
 
+.clickHeart {
+  display: none;
+}
+
 /** feedDetails **/
 .d_feedContainer {
   margin-top: 60px;
@@ -535,7 +539,7 @@ button {
 }
 .interveiwContainer h2 {
   text-align: center;
-  margin: 20px 0 10px 0;
+  margin: 30px 0 10px 0;
   font-size: 16px;
 }
 .interveiwContainer h2 img {
@@ -556,13 +560,14 @@ button {
   margin: 20px auto;
 }
 .interveiwContainer .interviewTit {
-  font-size: 17px;
-  padding: 30px 0 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 0 20px 0;
 }
 
 .interviewInfo {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   overflow: hidden;
 }
@@ -582,12 +587,13 @@ button {
 
 .interviewBox {
   margin: 20px 18px 20px 18px;
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.7;
   overflow: hidden;
 }
 .interviewBox .question {
-  font-size: 12.5px;
+  margin-top: 10px;
+  font-size: 14.5px;
   font-weight: 600;
   padding: 10px 0;
 }
