@@ -33,7 +33,6 @@ html.dark {
   width: 100%;
   height: 35px;
   display: flex;
-  background: var(--color-white);
   outline: none;
 }
 .searchContainer .search input {
@@ -41,7 +40,8 @@ html.dark {
   height: 35px;
   padding-left: 46px;
   font-size: 16px;
-  border: 1px solid var(--color-text);
+  border: none;
+  background: var(--color-gray0);
   border-radius: 50px;
   outline: none;
 }
@@ -677,7 +677,7 @@ button {
 }
 
 .interviewDate {
-  margin: 20px 18px 30px 18px;
+  margin: 30px 0;
   font-size: 11px;
   color: var(--color-gray2);
 }
@@ -728,9 +728,9 @@ button {
   z-index: 120;
   max-width: 640px;
   min-width: 270px;
-  height: 50vh;
+  height: 35vh;
   margin: 0 auto;
-  background: black;
+  padding: 0 30px;
 }
 
 .videoDarkBg {
@@ -747,7 +747,7 @@ button {
 .videoClose {
   display: none;
   position: fixed;
-  bottom: 15%;
+  bottom: 25%;
   left: 50%;
   transform: translate(-50%);
   z-index: 120;
@@ -763,4 +763,150 @@ button {
   width: 100%;
   height: 100%;
   padding: 10px;
+}
+
+.s_storeontainer {
+  position: relative;
+}
+.s_storeontainer h2 {
+  font-size: 20px;
+}
+
+.s_storeMenuContainer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s_storeMenu,
+.s_storeOrder {
+  position: relative;
+}
+
+.s_storeMenu {
+  width: 60%;
+}
+
+.s_storeOrder {
+  width: 38%;
+}
+
+#s_storeMenuBtn {
+  text-align: start;
+  font-size: 14px;
+  padding-left: 20px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--color-text);
+  border-radius: 50px;
+  background: var(--color-white);
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.s_storeMenuBtnImg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  width: 20px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.s_storeMenuBtnImg img {
+  width: 100%;
+}
+
+.darkBg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+}
+
+.store_popupMenu,
+.store_popupOrder {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  max-width: 640px;
+  min-width: 270px;
+  height: 100px;
+  margin: 0 auto;
+  z-index: 150;
+  background: var(--color-white);
+  border-radius: 10px 10px 0 0;
+}
+
+.store_popupOrder {
+  height: 210px;
+}
+
+.store_popup {
+  margin: 30px 0 50px 0;
+}
+.store_popup li {
+  border-bottom: 1px solid var(--color-gray1);
+  text-align: center;
+}
+.store_popup li:last-child {
+  border-bottom: 0;
+}
+.store_popup li button {
+  width: 100%;
+  height: 100%;
+  line-height: 3.5;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.s_storeListContainer {
+  margin-top: 10px;
+}
+.s_storeListContainer .s_storeList {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.s_storeListContainer .s_storeList article {
+  width: 50%;
+  float: left;
+  cursor: pointer;
+  padding: 4px;
+}
+.s_storeListContainer .s_storeList article div {
+  padding: 4px;
+}
+.s_storeListContainer .s_storeList article div a {
+  display: block;
+  line-height: 1.5;
+}
+.s_storeListContainer .s_storeList article div a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.s_storeListContainer .s_storeList article div a .s_storeTxt h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.s_storeListContainer .s_storeList article div a .s_storeTxt p {
+  padding-top: 5px;
+  font-size: 11px;
+  color: var(--color-gray3);
 }/*# sourceMappingURL=sub.css.map */

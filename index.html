@@ -741,7 +741,7 @@
           </div>
           <div class="videoDarkBg"></div>
           <div class="videoPopup">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lf-GIxU7VBA" frameborder="0" allowfullscreen></iframe>
+            <iframe id="player" width="100%" height="100%" src="https://www.youtube.com/embed/lf-GIxU7VBA?color=white&loop=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
           </div>
           <button class="videoClose"><img src="img/close_w.png" alt=""></div></button>
         </div>
@@ -750,16 +750,18 @@
 
     <!-- footer -->
     <footer>
+      <button class="officeInfoBtn">매표소<img src="img/bottomBtn.png" alt=""></button>
+      <div class="officeInfo">
+        <p><span>케이씨엘디 (주)</span> | <span>대표이사 : 류승훈</span></p>
+        <span>사업자등록번호:340-87-02358<br>통신판매업 신고번호:제2021-부산해운대-1796<br>고객센터:1234-5678 testemail@gmail.com</span>
+        <span class="copy">Copyright 2021. 케이씨엘디 주식회사. All right reserved.</span>
+      </div>
       <div class="footerMenu">
         <p><a href="#">이용약관</a></p>
-        <p><a href="#">개인정보 처리 방침</a></p>
+        <p><a href="#"> 개인정보 처리 방침</a></p>
+        <p><a href="#"> 위치기반 서비스 이용 약관</a></p>
+        <p><a href="#"> 법적고지</a></p>
       </div>
-      <div class="companyInfo">
-        <p><span>케이씨엘디 주식회사</span> | <span>대표이사 : 류승훈</span></p>
-        <address>48059 부산광역시 해운대구 센텀중앙로 78, 1303호</address> 
-        <span>사업자등록번호:340-87-02358<br>통신판매업 신고번호:제2021-부산해운대-1796<br>고객센터:1234-5678 testemail@gmail.com</span>
-      </div>
-      <span class="copy">Copyright 2021. 케이씨엘디 주식회사. All right reserved.</span>
     </footer>
   
     <!-- bottomMenu 하단 고정 메뉴 -->
@@ -773,7 +775,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="store.html">
               <span class="bottomMenuImg"><img src="img/b-store.png" alt=""></span>
               <span class="bottomTxt">스토어</span>
             </a>
@@ -855,31 +857,31 @@
           <div class="gnbMenuContainer">
             <ul class="gnbMenu">
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/play_icon4.png" alt=""></div>
                   <span>연극<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/musical_icon.png" alt=""></div>
                   <span>뮤지컬<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/concert_icon2.png" alt=""></div>
                   <span>콘서트<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/exhibit_icon.png" alt=""></div>
                   <span>전시/행사<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="store.html">
                   <div class="imgBox"><img src="img/store_icon.png" alt=""></div>
                   <span>스토어</span>
                 </a>
@@ -910,6 +912,8 @@
                 <span class="toggleButton"></span>
               </label>
             </div> -->
+          </div>
+          <div class="fixedGnbBottom">
             <div class="notice">
               <p>[공지] 서버 점검 안내 (2022.11.29 am 12:00 ~ 2022.11.30 am 05:00)</p>
             </div>

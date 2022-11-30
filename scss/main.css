@@ -356,6 +356,7 @@ body {
 .myMenuContainer .myMenu ul li a .myMenuImg img {
   display: block;
   width: 100%;
+  height: 100%;
   background: var(--color-white);
   border-radius: 50px;
   padding: 5px;
@@ -760,41 +761,78 @@ body {
 
 /*** footer ****/
 footer {
-  font-size: 11px;
+  font-size: 10px;
   background: var(--color-gray0);
   padding: 40px 20px 100px 20px;
-  text-align: center;
   line-height: 1.8;
+  color: var(--color-gray3);
+  max-width: 640px;
+  min-width: 270px;
+  margin: 0 auto;
+}
+footer .officeInfoBtn {
+  border: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #414141;
+  background: transparent;
+  cursor: pointer;
+}
+footer .officeInfoBtn img {
+  margin-left: 5px;
+  width: 14px;
+}
+footer .officeInfo {
+  display: none;
   color: var(--color-gray3);
 }
 footer .footerMenu {
-  font-size: 12px;
-  font-weight: 600;
   display: flex;
-  justify-content: center;
   line-height: 2;
+  font-size: 10px;
 }
 footer .footerMenu p {
-  padding: 0 5px;
+  display: flex;
+  align-items: center;
 }
 footer .footerMenu p a {
-  color: var(--color-gray4);
+  display: block;
+  color: var(--color-gray3);
 }
-footer .footerMenu p:nth-child(1) {
-  font-weight: 100;
+footer .footerMenu p:last-child::after {
+  display: none;
+  border: none;
+}
+footer .footerMenu p:nth-child(2) {
+  font-weight: 600;
+}
+footer .footerMenu p:nth-child(2) a {
+  color: #414141;
+}
+footer .footerMenu p::after {
+  display: block;
+  content: "";
+  height: 7px;
+  border: 1px solid var(--color-gray2);
+  margin: 5px;
 }
 footer .companyInfo p {
   margin: 3px 0 10px 0;
-  color: var(--color-gray4);
+  color: var(--color-gray3);
   font-weight: 600;
 }
 footer .companyInfo p span {
   padding: 0 5px;
 }
 footer .copy {
+  font-size: 9px;
   display: block;
   margin: 10px 0;
-  color: var(--color-gray2);
+  color: var(--color-gray3);
+}
+
+.btnImg {
+  transform: rotate(180deg);
 }
 
 #gnb {
@@ -868,7 +906,7 @@ footer .copy {
 }
 
 .gnbBack {
-  background: var(--color-bg);
+  background: var(--color-gray);
   border-top: 10px solid var(--color-accent);
   border-radius: 20px 20px 0 0;
   position: absolute;
@@ -901,72 +939,87 @@ footer .copy {
   width: 13px;
 }
 
+.gnbMenuContainer {
+  width: 100%;
+  padding: 0 10px 20px 10px;
+}
 .gnbMenuContainer .gnbMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  text-align: center;
 }
 .gnbMenuContainer .gnbMenu li {
-  width: 21%;
+  padding: 5px;
+  width: 25%;
   font-size: 11px;
-  margin-top: 15px;
+  text-align: center;
 }
 .gnbMenuContainer .gnbMenu li a {
+  display: block;
   line-height: 1.3;
 }
 .gnbMenuContainer .gnbMenu li a .imgBox {
-  border-radius: 50%;
-  background: var(--color--bg);
+  display: inline-block;
   border: 1px solid var(--color-gray2);
+  border-radius: 50px;
+  background: var(--color-bg);
 }
 .gnbMenuContainer .gnbMenu li a .imgBox img {
   display: block;
   width: 100%;
-  padding: 17px;
-  opacity: 1;
+  height: 100%;
+  padding: 15px;
 }
 .gnbMenuContainer .gnbMenu span {
-  margin-top: 10px;
+  margin-top: 5px;
   display: block;
 }
 
-.notice {
-  background: var(--color-gray0);
-  margin: 50px 0 20px 0;
+.fixedGnbBottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 150;
+  background: var(--color-gray);
+  padding: 10px;
 }
-.notice p {
+.fixedGnbBottom .notice {
+  width: 100%;
+  background: var(--color-gray1);
+  margin: 20px 0;
+}
+.fixedGnbBottom .notice p {
   line-height: 80px;
-  margin: 0 30px;
+  padding: 0 30px;
   font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.gnbBottom {
+.fixedGnbBottom .gnbBottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
 }
-.gnbBottom .sns ul {
+.fixedGnbBottom .gnbBottom .sns ul {
   display: flex;
 }
-.gnbBottom .sns ul a {
+.fixedGnbBottom .gnbBottom .sns ul a {
   margin-right: 10px;
 }
-.gnbBottom .sns ul a img {
-  width: 50px;
+.fixedGnbBottom .gnbBottom .sns ul a img {
+  width: 40px;
 }
-.gnbBottom .alram {
+.fixedGnbBottom .gnbBottom .alram {
   font-size: 12px;
   margin-right: 10px;
 }
-.gnbBottom .alram a:nth-child(1) {
+.fixedGnbBottom .gnbBottom .alram a:nth-child(1) {
   margin-right: 5px;
 }
-.gnbBottom .alram a:nth-child(2) {
+.fixedGnbBottom .gnbBottom .alram a:nth-child(2) {
   margin-left: 5px;
 }/*# sourceMappingURL=main.css.map */
