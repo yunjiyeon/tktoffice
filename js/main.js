@@ -54,6 +54,20 @@ let postSlide = {
 };
 const pSlide = new Swiper("#postSlide", postSlide);
 
+
+/*** event slide ***/
+let eventSlide = {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    //자동슬라이드 (false-비활성화)
+    delay: 2500, // 시간 설정 
+    disableOnInteraction: false, // false-스와이프 후 자동 재생
+  },
+};
+const eSlide = new Swiper("#eventSlide", eventSlide);
+
 /****** tkt 클릭시 변동 ******/
 const $btn = $(".tktMenu li a"); //버튼역할하는 nav a를 변수로
 

@@ -909,4 +909,15 @@ button {
   padding-top: 5px;
   font-size: 11px;
   color: var(--color-gray3);
+}
+
+.s_eventContainer {
+  padding: 70px 0 30px 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+.s_eventContainer li img {
+  width: 90%;
+  border-radius: 10px;
 }/*# sourceMappingURL=sub.css.map */
