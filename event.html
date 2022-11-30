@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>매표소</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="img/applogo.png">
+  <meta nmae="apple-mobile-web-app-capable" content="yes" />
+
   <link rel="stylesheet" href="scss/reset.css" />
   <link rel="stylesheet" href="scss/main.css" />
   <link rel="stylesheet" href="scss/sub.css">
@@ -28,7 +32,7 @@
     <header id="header">
       <div class="logoContainer">
         <div class="logo">
-          <h2>스토어</h2>    
+          <h2>이벤트</h2>    
         </div>
         <div class="sub">
           <a href="#"><img src="img/ticket.png" alt="티켓" /></a>
@@ -38,47 +42,71 @@
     </header>
 
     <main>
-      <section class="searchContainer inner">
-        <form action="" class="search">
-          <input id="searchTxt" type="text" placeholder="검색어를 입력하세요">
-          <!-- <button>SEARCH</button> -->
-          <span class="searchBtn"><img src="img/search.png" alt=""></span>
-        </form>
+      <!-- <section class="s_eventContainer">
+        <div class="s_event inner">
+          <div class="s_eventTit tit"> 
+            <h2>이벤트<img src="img/gift.png" alt=""></h2>
+            <a href="#"><p>전체보기<img src="img/b-right.png" alt="전체보기" /></p></a>
+          </div>
+          <div class="eventImg">
+            <a href="#">
+              <img src="img/event5.jpg" alt="">
+            </a>
+          </div>
+          <div class="eventImg">
+            <a href="#">
+              <img src="img/event8.png" alt="">
+            </a>
+          </div>
+          <div class="eventImg">
+            <a href="#">
+              <img src="img/event7.jpg" alt="">
+            </a>
+          </div>
+          <div class="eventImg">
+            <a href="#">
+              <img src="img/event6.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="container s_eventContainer">
+        <div id="eventSlide" class="swiper-container">
+          <ul class="eventWrap swiper-wrapper">
+              <li class="s_eventImg swiper-slide all musical">
+                <a href="#">
+                  <img src="img/event5.jpg" alt="">
+                </a>
+              </li>
+              <li class="s_eventImg swiper-slide all play">
+                <a href="ticketingDetails.html">
+                  <img src="img/event5.jpg" alt="">
+                </a>
+              </li>
+              <li class="s_eventImg swiper-slide all play">
+                <a href="#">
+                  <img src="img/event5.jpg" alt="">
+                </a>
+              </li>
+              <li class="s_eventImg swiper-slide all concert">
+                <a href="#">
+                  <img src="img/event5.jpg" alt="">
+                </a>
+              </li>
+              <li class="s_eventImg swiper-slide all play">
+                <a href="#">
+                  <img src="img/event5.jpg" alt="">
+                </a>
+              </li>
+          </ul>
+        </div>
+  
       </section>
       
-      <section class="s_storeMenuContainer inner">
-        <div class="s_storeMenu">
-          <button id="s_storeMenuBtn">
-            <span class="menuBtnTxt">전체</span>
-          </button>
-          <span class="s_storeMenuBtnImg">
-            <img src="img/bottomBtn.png" alt="">
-          </span>
-        </div>
-        <div class="s_storeOrder">
-          <button id="s_storeMenuBtn">
-            <span class="orderBtnTxt">최신순</span>
-          </button>
-          <span class="s_storeMenuBtnImg">
-            <img src="img/bottomBtn.png" alt="">
-          </span>
-        </div>  
-      </section>
 
 
-      <div class="darkBg"></div>
-      <div class="store_popupMenu">
-        <ul class="store_popup">
-          <li class="on"><button id="allBtn" type="button"><a href=".s_all">전체</a></button></li>
-        </ul>
-      </div>
-      <div class="store_popupOrder">
-        <ul class="store_popup">
-          <li><button id="s_NewBtn" type="button"><a href="#">최신순</a></button></li>
-          <li><button id="s_latestBtn" type="button"><a href="#">판매순</a></button></li>
-          <li><button id="s_alphabetBtn" type="button"><a href="#">가나다순</a></button></li>
-        </ul>
-      </div>
+
 
       <section class="s_storeListContainer inner">
         <div class="s_storeList">
@@ -232,7 +260,7 @@
   </div> 
 
   <!-- sub menu -->
-  <div id="gnb">
+  <div id="gnb"> 
     <div class="gnbContainer">
       <div class="gnbTop">
         <h2>
@@ -268,31 +296,31 @@
           <div class="gnbMenuContainer">
             <ul class="gnbMenu">
               <li>
-                <a href="ticketing.html">
+                <a href="#">
                   <div class="imgBox"><img src="img/play_icon4.png" alt=""></div>
                   <span>연극<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="ticketing.html">
+                <a href="#">
                   <div class="imgBox"><img src="img/musical_icon.png" alt=""></div>
                   <span>뮤지컬<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="ticketing.html">
+                <a href="#">
                   <div class="imgBox"><img src="img/concert_icon2.png" alt=""></div>
                   <span>콘서트<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="ticketing.html">
+                <a href="#">
                   <div class="imgBox"><img src="img/exhibit_icon.png" alt=""></div>
                   <span>전시/행사<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="store.html">
+                <a href="#">
                   <div class="imgBox"><img src="img/store_icon.png" alt=""></div>
                   <span>스토어</span>
                 </a>
@@ -316,15 +344,6 @@
                 </a>
               </li>
             </ul>
-            <!-- <div class="darkMode">
-              <button>다크모드</button>
-              <input type="checkbox" id="toggle" hidden> 
-              <label for="toggle" class="toggleSwitch">
-                <span class="toggleButton"></span>
-              </label>
-            </div> -->
-          </div>
-          <div class="fixedGnbBottom">
             <div class="notice">
               <p>[공지] 서버 점검 안내 (2022.11.29 am 12:00 ~ 2022.11.30 am 05:00)</p>
             </div>

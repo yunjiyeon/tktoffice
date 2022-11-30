@@ -1,0 +1,67 @@
+{
+  "name":"매표소",
+  "short_name":"문화 공연 플랫폼 매표소",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "모바일 앱 프로젝트입니다",
+  "dir": "auto",
+  "lang": "ko",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "https://yunjiyeon.github.io/tktoffice/",
+  "start_url": "https://yunjiyeon.github.io/tktoffice/", 
+  
+  "gcm_sender_id": "", 
+  "gcm_user_visible_only": true,
+
+  "categories": [],
+  "screenshots": [
+    {
+      "src":"images/screenshot1.png",
+      "sizes":"312x736",
+      "type":"image/png"
+    },
+    {
+      "src":"images/screenshot2.png",
+      "sizes":"312x736",
+      "type":"image/png"
+    },
+    {
+      "src":"images/screenshot3.png",
+      "sizes":"312x736",
+      "type":"image/png"
+    },
+    {
+      "src":"images/screenshot4.png",
+      "sizes":"312x736",
+      "type":"image/png"
+    }
+  ],
+  "icons": [
+    {
+      "src": "images/icon5.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose":"any"
+    },
+    {
+      "src": "images/icon4.png", 
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose":"maskable"
+    },
+    {
+      "src": "images/icon3.png", 
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose":"maskable"
+    },
+    {
+      "src": "images/icon3.png", 
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose":"maskable"
+    }
+  ],
+  "shortcuts": []
+}
