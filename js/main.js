@@ -115,7 +115,7 @@ window.addEventListener("load", () => {
     itemSelector: "article",
   });
 
-  const filterBtn = document.querySelectorAll(".s_feedBtn>li"); //.btn>li들을 변수에
+  const filterBtn = document.querySelectorAll(".sfeedBtn>li"); //.btn>li들을 변수에
 
   for (let el of filterBtn) {
     //배열 filterBtn 의 아이템(갯수) 만큼 반복

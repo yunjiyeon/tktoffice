@@ -521,14 +521,14 @@ button {
 .s_feedContainer .s_feedTag {
   margin-top: 5px;
 }
-.s_feedContainer .s_feedTag .s_feedBtn {
+.s_feedContainer .s_feedTag .sfeedBtn {
   display: flex;
   flex-wrap: wrap;
 }
-.s_feedContainer .s_feedTag .s_feedBtn li {
+.s_feedContainer .s_feedTag .sfeedBtn li {
   margin: 0 10px 5px 0;
 }
-.s_feedContainer .s_feedTag .s_feedBtn li a span {
+.s_feedContainer .s_feedTag .sfeedBtn li a span {
   font-size: 11px;
   display: block;
   padding: 5px 15px;
