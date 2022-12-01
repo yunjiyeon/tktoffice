@@ -941,7 +941,7 @@ footer .copy {
 
 .gnbMenuContainer {
   width: 100%;
-  padding: 0 10px 20px 10px;
+  padding: 0 10px 200px 10px;
 }
 .gnbMenuContainer .gnbMenu {
   display: flex;
@@ -976,15 +976,6 @@ footer .copy {
   display: block;
 }
 
-.fixedGnbBottom {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 150;
-  background: var(--color-gray);
-  padding: 10px 20px;
-}
 .fixedGnbBottom .notice {
   width: 100%;
   background: var(--color-gray1);

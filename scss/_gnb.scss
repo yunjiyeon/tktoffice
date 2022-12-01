@@ -103,7 +103,7 @@
 .gnbMenuContainer {
   
   width: 100%;
-  padding: 0 10px 20px 10px;
+  padding: 0 10px 200px 10px;
 
   .gnbMenu {
     @include flex-style;
@@ -137,66 +137,8 @@
   }
 }
 
-// .darkMode{
-//   margin: 20px;
-//   text-align: center;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//     button{
-//       border: 0;
-//       background: transparent;
-//       padding: 10px 0px 10px 20px;
-//       cursor: pointer;
-//       font-size: 15px;
-//       font-weight: 800;
-//     }
-//     .toggleSwitch {
-//       width: 40px;
-//       margin: 13px 13px 13px 7px;
-//       height: 20px;
-//       display: block;
-//       position: relative;
-//       border-radius: 30px;
-//       background-color: #fff;
-//       border: 2px solid #222222;
-//       cursor: pointer;
-//     }
-
-//      /* 토글 버튼 */
-//     .toggleSwitch .toggleButton {
-//       /* 버튼은 토글보다 작아야함  */
-//       width: 12px;
-//       height: 12px;
-//       position: absolute;
-//       top: 50%;
-//       left: 4px;
-//       transform: translateY(-50%);
-//       border-radius: 50%;
-//       background: #222222;
-//     }
-
-//     #toggle:checked ~ .toggleSwitch {
-//       background: #222222;
-//     }
-
-//     #toggle:checked ~ .toggleSwitch .toggleButton {
-//       left: calc(100% - 18px);
-//       background: #fff;
-//     }
-
-//     .toggleSwitch, .toggleButton {
-//       transition: all 0.2s ease-in;
-//     }
-//   }
 .fixedGnbBottom{
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 150;
-  background: var(--color-gray);
-  padding: 10px 20px;
+
 
   .notice {
     width: 100%;
