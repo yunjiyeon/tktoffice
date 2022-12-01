@@ -983,7 +983,7 @@ footer .copy {
   bottom: 0;
   z-index: 150;
   background: var(--color-gray);
-  padding: 10px;
+  padding: 10px 20px;
 }
 .fixedGnbBottom .notice {
   width: 100%;
@@ -1002,7 +1002,7 @@ footer .copy {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 .fixedGnbBottom .gnbBottom .sns ul {
   display: flex;

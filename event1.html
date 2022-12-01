@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta nmae="apple-mobile-web-app-capable" content="yes" />
-  <title>매표소</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" href="img/webicon.png">
-  
+  <title>매표소</title>  
   <link rel="stylesheet" href="scss/reset.css" />
   <link rel="stylesheet" href="scss/main.css" />
   <link rel="stylesheet" href="scss/sub.css">
@@ -71,9 +67,9 @@
       </section> -->
 
       <section class="container s_eventContainer">
-        <div id="eventSlide" class="swiper-container">
-          <ul class="eventWrap swiper-wrapper">
-              <li class="s_eventImg swiper-slide">
+        <div id="eventSlide" >
+          <ul class="eventWrap">
+              <li class="s_eventImg">
                 <div>
                   <a href="#">
                     <img src="img/event5.jpg" alt="">
@@ -83,28 +79,35 @@
               <li class="s_eventImg swiper-slide">
                 <div>
                   <a href="#">
-                    <img src="img/event5.jpg" alt="">
+                    <img src="img/event2.png" alt="">
                   </a>
                 </div>
               </li>
               <li class="s_eventImg swiper-slide">
                 <div>
                   <a href="#">
-                    <img src="img/event5.jpg" alt="">
+                    <img src="img/event3.png" alt="">
                   </a>
                 </div>
               </li>
               <li class="s_eventImg swiper-slide">
                 <div>
                   <a href="#">
-                    <img src="img/event5.jpg" alt="">
+                    <img src="img/event7.jpg" alt="">
                   </a>
                 </div>
               </li>
               <li class="s_eventImg swiper-slide">
                 <div>
                   <a href="#">
-                    <img src="img/event5.jpg" alt="">
+                    <img src="img/event8.png" alt="">
+                  </a>
+                </div>
+              </li>
+              <li class="s_eventImg swiper-slide">
+                <div>
+                  <a href="#">
+                    <img src="img/event6.jpg" alt="">
                   </a>
                 </div>
               </li>
@@ -112,103 +115,7 @@
         </div>
   
       </section>
-      
-
-
-
-
-      <section class="s_storeListContainer inner">
-        <div class="s_storeList">
-          <article class="s_all">
-              <div>
-                <a href="#">
-                  <span><img src="img/store9.jpg" alt="" /></span>
-                  <div class="s_storeTxt">
-                    <h3>[배송] 뮤지컬 인터뷰 포토북 MD </h3>
-                    <p>62,000원</p>
-                  </div>
-                </a>
-              </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store1.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] 왕복 서간 디자인 MD &lt;파우치,텀블러&gt;</h3>
-                  <p>12,000원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store2.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] &lt;연극&gt; 어나더 컨트리 MD 패키지</h3>
-                  <p>38,000원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store4.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] 신의 아그네스 MD 묻지마 패키지</h3>
-                  <p>59,900원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store5.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] 베어더 뮤지컬 MD</h3>
-                  <p>76,600원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store6.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] 파스텔 티켓북</h3>
-                  <p>26,600원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store7.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] 뮤지컬 엑스 칼리버 MD 셋트</h3>
-                  <p>59,000원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-          <article class="s_all ">
-            <div>
-              <a href="#">
-                <span><img src="img/store10.jpg" alt="" /></span>
-                <div class="s_storeTxt">
-                  <h3>[배송] &lt;시데레우스&gt; 자수 에코백</h3>
-                  <p>20,000원</p>
-                </div>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
+    
     </main>
 
 
@@ -241,7 +148,7 @@
             <span class="bottomTxt">피드</span>
           </a>
         </li>
-        <li>
+        <li class="bottomMyMenu">
           <a href="#">
             <span class="bottomMenuImg"><img src="img/b-user.png" alt=""></span>
             <span class="bottomTxt">MY</span>
@@ -269,7 +176,7 @@
   </div> 
 
   <!-- sub menu -->
-  <div id="gnb"> 
+  <div id="gnb">
     <div class="gnbContainer">
       <div class="gnbTop">
         <h2>
@@ -305,31 +212,31 @@
           <div class="gnbMenuContainer">
             <ul class="gnbMenu">
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/play_icon4.png" alt=""></div>
                   <span>연극<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/musical_icon.png" alt=""></div>
                   <span>뮤지컬<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/concert_icon2.png" alt=""></div>
                   <span>콘서트<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="ticketing.html">
                   <div class="imgBox"><img src="img/exhibit_icon.png" alt=""></div>
                   <span>전시/행사<br>예매</span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="store.html">
                   <div class="imgBox"><img src="img/store_icon.png" alt=""></div>
                   <span>스토어</span>
                 </a>
@@ -341,7 +248,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="event1.html">
                   <div class="imgBox"><img src="img/event_icon.png" alt=""></div>
                   <span>이벤트</span>
                 </a>
@@ -353,6 +260,15 @@
                 </a>
               </li>
             </ul>
+            <!-- <div class="darkMode">
+              <button>다크모드</button>
+              <input type="checkbox" id="toggle" hidden> 
+              <label for="toggle" class="toggleSwitch">
+                <span class="toggleButton"></span>
+              </label>
+            </div> -->
+          </div>
+          <div class="fixedGnbBottom">
             <div class="notice">
               <p>[공지] 서버 점검 안내 (2022.11.29 am 12:00 ~ 2022.11.30 am 05:00)</p>
             </div>

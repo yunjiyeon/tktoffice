@@ -1,5 +1,5 @@
 /****** gnb sub menu slide ******/
-$(".btnSub").click(function () {
+$(".btnSub, .bottomMyMenu").click(function () {
   $("#gnb").removeClass("hide");
   $("#gnb").animate({ right: 0, left: 0 }, 300, "swing"); // swing 속도감이 높아짐
   $('.topBtn, .fixedBtn').addClass("hide");

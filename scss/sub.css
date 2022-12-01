@@ -916,6 +916,10 @@ button {
   text-align: center;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 100px;
+}
+.s_eventContainer li {
+  margin: 10px 0;
 }
 .s_eventContainer li img {
   width: 90%;

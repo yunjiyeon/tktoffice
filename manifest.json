@@ -1,6 +1,6 @@
 {
-  "name":"매표소",
-  "short_name":"문화 공연 플랫폼 매표소",
+  "name":"문화 공연 플랫폼 매표소",
+  "short_name":"매표소",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "description": "모바일 앱 프로젝트입니다",
