@@ -8,8 +8,8 @@
   "lang": "ko",
   "display": "standalone",
   "orientation": "any",
-  "scope": "/",
-  "start_url": "/", 
+  "scope": "https://yunjiyeon.github.io/tktoffice/",
+  "start_url": "https://yunjiyeon.github.io/tktoffice/", 
   
   "gcm_sender_id": "", 
   "gcm_user_visible_only": true,
@@ -57,7 +57,7 @@
       "purpose":"maskable"
     },
     {
-      "src": "images/icon3.png", 
+      "src": "images/icon2.png", 
       "sizes": "48x48",
       "type": "image/png",
       "purpose":"maskable"
