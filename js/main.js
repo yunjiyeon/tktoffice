@@ -110,7 +110,7 @@ window.addEventListener("load", () => {
 /******* feed ******/
 window.addEventListener("load", () => {
   //Masonry 레이아웃(Isotope 플러그인 이용)
-  const iso = new Isotope(".s_feedList", {
+  const iso = new Isotope(".sfeedList", {
     // options
     itemSelector: "article",
   });
@@ -137,17 +137,6 @@ window.addEventListener("load", () => {
     });
   }
 });
-
-// 피드 하트
-// $(".heart img").click(function () {
-//   $(this).css({ display: "none" });
-//   $(".clickHeart").css({ display: "block" });
-// });
-
-// $(".heart img").click(function () {
-//   $(this).css({ display: "none" });
-//   $(".clickHeart").css({ display: "block" });
-// });
 
 /**** 동영상 정지  *****/
 $(".videoDarkBg, .videoClose").click(function () {
@@ -280,7 +269,7 @@ $(".s_popup > li, .store_popup > li").click(function () {
 /**** 서브 메뉴 레이아웃  *****/
 window.addEventListener("load", () => {
   //Masonry 레이아웃(Isotope 플러그인 이용)
-  const iso = new Isotope(".s_tktList", {
+  const iso = new Isotope(".stktList", {
     // options
     itemSelector: "article",
   });
@@ -307,40 +296,6 @@ window.addEventListener("load", () => {
     });
   }
 });
-
-/** 스토어 레이아웃 **/
-// window.addEventListener("load", () => {
-//   //Masonry 레이아웃(Isotope 플러그인 이용)
-//   const iso = new Isotope(".s_storeList", {
-//     // options
-//     itemSelector: "article",
-//   });
-
-//   const storeTktListBtn = document.querySelectorAll(".store_popup > li"); //.btn>li들을 변수에
-
-//   for (let el of storeTktListBtn) {
-//     //배열 filterBtn 의 아이템(갯수) 만큼 반복
-//     el.addEventListener("click", (e) => {
-//       e.preventDefault();
-
-//       //클릭을 할때 각 아이템(버튼)에 반복, on클라스 없애줌
-//       for (let el of sTktListBtn) {
-//         el.classList.remove("on");
-//       }
-
-//       //클릭한 버튼에 클라스 넣어줌
-//       e.currentTarget.classList.add("on");
-
-//       //클릭한 버튼에 있는 a태그 안의 속성 href의 value값을 가져온다
-//       const storeTkt = e.currentTarget.querySelector("a").getAttribute("href");
-
-//       iso.arrange({ filter: storeTkt }); //버튼을 누르면 필터링 작동(플러그인)
-//     });
-//   }
-// });
-
-
-/*** 예매 검색 필터 ***/
 
 /** 공연 정보 toggle **/
 

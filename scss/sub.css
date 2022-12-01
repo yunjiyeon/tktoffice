@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-bg: #ffffff;
   --color-white: #ffffff;
@@ -16,6 +17,86 @@ html.dark {
   --color-text: #ffffff;
   --color-grey: #585a5e;
   --color-gray1: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+section,
+aside,
+article,
+footer,
+nav,
+menu,
+details,
+figure,
+figcaption {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "NanumSquareNeo-Variable";
+  color: var(--color-text);
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.inner {
+  margin: 0 18px;
+}
+
+.body {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none;
+}
+.body::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.Container {
+  max-width: 640px;
+  min-width: 270px;
+  background: var(--color-bg);
+  margin: 0 auto;
+  color: var(--color-text);
 }
 
 .s_tktContainer {
@@ -161,20 +242,20 @@ html.dark {
 .s_tktListContainer {
   margin: 10px 18px 90px 18px;
 }
-.s_tktListContainer .s_tktList article {
+.s_tktListContainer .stktList article {
   width: 50%;
   float: left;
   cursor: pointer;
   padding: 2px;
 }
-.s_tktListContainer .s_tktList article div {
+.s_tktListContainer .stktList article div {
   padding: 4px;
 }
-.s_tktListContainer .s_tktList article div a {
+.s_tktListContainer .stktList article div a {
   display: block;
   line-height: 1.5;
 }
-.s_tktListContainer .s_tktList article div a img {
+.s_tktListContainer .stktList article div a img {
   display: block;
   width: 100%;
   height: 100%;
@@ -182,13 +263,13 @@ html.dark {
      object-fit: cover;
   border-radius: 15px;
 }
-.s_tktListContainer .s_tktList article div a .s_tktTxt h3 {
+.s_tktListContainer .stktList article div a .s_tktTxt h3 {
   margin-top: 5px;
   font-size: 12px;
   font-weight: 100;
   color: var(--color-gray3);
 }
-.s_tktListContainer .s_tktList article div a .s_tktTxt h3 span {
+.s_tktListContainer .stktList article div a .s_tktTxt h3 span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -197,7 +278,7 @@ html.dark {
   color: var(--color-text);
   font-weight: 600;
 }
-.s_tktListContainer .s_tktList article div a .s_tktTxt p {
+.s_tktListContainer .stktList article div a .s_tktTxt p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -205,7 +286,7 @@ html.dark {
   font-size: 11px;
   color: var(--color-gray3);
 }
-.s_tktListContainer .s_tktList article div a .s_tktTxt button {
+.s_tktListContainer .stktList article div a .s_tktTxt button {
   display: block;
   width: 100%;
   margin: 7px 0 0 0;
@@ -459,22 +540,22 @@ button {
 .s_feedContainer .s_feedWrap {
   overflow: hidden;
 }
-.s_feedContainer .s_feedWrap .s_feedList article {
+.s_feedContainer .s_feedWrap .sfeedList article {
   margin-top: 15px;
   width: 100%;
   padding: 0 5px;
 }
-.s_feedContainer .s_feedWrap .s_feedList article div {
+.s_feedContainer .s_feedWrap .sfeedList article div {
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
-.s_feedContainer .s_feedWrap .s_feedList article div a {
+.s_feedContainer .s_feedWrap .sfeedList article div a {
   display: block;
 }
-.s_feedContainer .s_feedWrap .s_feedList article div a h3 {
+.s_feedContainer .s_feedWrap .sfeedList article div a h3 {
   height: 20%;
   background: rgba(255, 255, 255, 0.6);
   line-height: 4;
@@ -488,7 +569,7 @@ button {
   font-size: 15px;
   font-weight: 600;
 }
-.s_feedContainer .s_feedWrap .s_feedList article div a p {
+.s_feedContainer .s_feedWrap .sfeedList article div a p {
   position: absolute;
   right: 0;
   left: 0;
@@ -501,7 +582,7 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.s_feedContainer .s_feedWrap .s_feedList article div a img {
+.s_feedContainer .s_feedWrap .sfeedList article div a img {
   position: absolute;
   top: 0;
   width: 100%;
