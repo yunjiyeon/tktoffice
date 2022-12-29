@@ -1,8 +1,9 @@
-PROJECT 2 | 매표소 (PWA App/Web Develop)
-=============
+# PROJECT 2 | 매표소 (PWA App/Web Develop)
+> 문화 공연 예매 플랫폼 웹/앱 사이트 개발 (PWA)
+<br>
 * 기여도 : 개인 100% <br> 
 * 기간 : 2022.11
-
+<br>
 
 ## 매표소란?
 <img src="./img/applogo1.png" width="50" > <img src="./img/mps_logo.png" width="50"> <img src="./img/textlog.jpg" width="170" >
